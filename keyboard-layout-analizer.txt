@@ -1,0 +1,10 @@
+http://patorjk.com/keyboard-layout-analyzer/#/load/CmfJCP8t
+
+
+Rank Layout Score
+#1 Colemak 70.44
+#2 Arno's Engram 68.29
+#3 Simplified Dvorak 67.83
+#4 Programmer Dvorak 67.82
+#5 Personalized 60.35
+#6 AZERTY 46.67
