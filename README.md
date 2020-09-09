@@ -1,21 +1,34 @@
 # Arno's Engram key layout
 
-The __Engram layout__ is an optimal keyboard layout for touch typing in English <br>
-created by Arno Klein (https://binarybottle.com),  with open source code on [GitHub](https://github.com/binarybottle/engram-layout):
+The [Engram layout](https://github.com/binarybottle/engram-layout) is an optimal keyboard layout for touch typing in English created by [Arno Klein](https://binarybottle.com),  with open source code.
 
-                   Q  I  O  U  '  "  D  N  L  Y  Z
-                   P  H  E  A  ,  .  T  S  R  C  X 
-                   B  J  K  G  (  )  M  F  W  V
 
-Shift accesses similar-looking characters above the numbers:
+                   Q  I  O  U        D  N  L  Y  Z  
+                   P  H  E  A        T  S  R  C  X 
+                   B  J  K  G        M  F  W  V
 
-                ~  !  =  ?  +  $  @  ^  &  %  *  [  ]
-                #  1  2  3  4  5  6  7  8  9  0  <  >
+The `Shift` key accesses similar-looking characters above the numbers:
 
-and related punctuation:
+                   !  =  ?  +  $  @  ^  &  %  *
+                   1  2  3  4  5  6  7  8  9  0
+
+and accesses related, but less common punctuation:
 
                 `    \    ;    :    {    }    |    _
                 '    "    ,    .    (    )    /    -
+
+The complete layout:
+
+
+           ~        !  =  ?  +  $  @  ^  &  %  *  <  >
+           #        1  2  3  4  5  6  7  8  9  0  [  ]     Back
+
+         Tab        Q  I  O  U  '  "  D  N  L  Y  Z  -     /
+         Cap        P  H  E  A  ,  .  T  S  R  C  X        Enter
+         Shift      B  J  K  G  (  )  M  F  W  V           Shift
+
+         Ctrl  Fn  Cmd  Alt     Space     Alt  Ctrl       Arrows
+
 # Contents
 1. [Rationale](#rationale)
 2. [Comparison with other key layouts](#comparison)
@@ -26,28 +39,28 @@ and related punctuation:
 ## Rationale <a name="rationale">
 
 **Why?** <br>
-In the future, I hope to include an engaging rationale for why I took on this challenge. <br>
-Suffice to say that I have battled repetitive strain injury since I worked <br>
-on an old DEC workstation at the MIT Media Lab while composing my thesis back in the mid-90s. <br>
-Ever since then I have experimented with different key layouts (Dvorak, Colemak, my own, etc.), <br>
-which place too much stress on tendons, with lateral extension of the index and little fingers, <br>
-and on uniform distribution of finger use, which has damaged my little fingers. <br>
-I have also experimented with a wide variety of human interface technologies <br>
-(voice dictation, one-handed keyboard, keyless keyboard, foot mouse, and ergonomic keyboards <br>
-like the Kinesis Advantage. I recently got an Ergodox that I am looking forward <br>
+In the future, I hope to include an engaging rationale for why I took on this challenge.
+Suffice to say that I have battled repetitive strain injury since I worked
+on an old DEC workstation at the MIT Media Lab while composing my thesis back in the mid-90s.
+Ever since then I have experimented with different key layouts (Dvorak, Colemak, my own, etc.),
+which place too much stress on tendons, with lateral extension of the index and little fingers,
+and on uniform distribution of finger use, which has damaged my little fingers.
+I have also experimented with a wide variety of human interface technologies
+(voice dictation, one-handed keyboard, keyless keyboard, foot mouse, and ergonomic keyboards
+like the Kinesis Advantage. I recently got an Ergodox that I am looking forward
 to trying out with the Engram layout.
 
 **"Engram"?** <br>
-The name is a pun, referring both to "n-gram", letter permutations used to compute <br>
-this layout, and "engram", or memory trace, the postulated change in neural tissue <br>
+The name is a pun, referring both to "n-gram", letter permutations used to compute
+this layout, and "engram", or memory trace, the postulated change in neural tissue
 to account for the persistence of memory.
 
 ## Comparison with other key layouts <a name="comparison">
 
-Despite the fact that the Engram layout was designed to reduce strain and discomfort, <br>
+Despite the fact that the Engram layout was designed to reduce strain and discomfort, 
 not to reduce finger travel from the home row, 
-it scores higher than all other key layouts <br>
-(Colemak, Dvorak, QWERTY, etc.) I've tested using the online Keyboard Layout Analyzer, <br>
+it scores higher than all other key layouts 
+(Colemak, Dvorak, QWERTY, etc.) I've tested using the online Keyboard Layout Analyzer, 
 for all of the examples of prose and tweet data I've tried, including the data sets below:
 
 - [See the complete analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/x0WPtw3x)
@@ -67,7 +80,7 @@ According to the Keyboard Layout Analyzer:
     the distance your fingers moved (33%), 
     how often you use particular fingers (33%),
     and how often you switch fingers and hands while typing (34%)."
-
+    
 ## Factors used to compute the layout <a name="factors">
   - **N-gram letter frequencies** (based on Google's book scanning project)
   - **Flow factors** (affecting transitions between ordered key pairs) <br>
