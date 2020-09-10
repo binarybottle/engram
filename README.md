@@ -7,24 +7,24 @@ The [Engram layout](https://github.com/binarybottle/engram-layout) is an optimal
                    P  H  E  A        T  S  R  C  X 
                    B  J  K  G        M  F  W  V
 
-The `Shift` key accesses similar-looking characters above the numbers:
+The Shift key accesses characters (top) that look similar to the numbers:
 
                    !  =  ?  +  $  @  ^  &  %  *
                    1  2  3  4  5  6  7  8  9  0
 
-and accesses related, but less common punctuation:
+and accesses related but less common punctuation (top):
 
                 `    \    ;    :    {    }    |    _
                 '    "    ,    .    (    )    /    -
 
-The complete layout:
+Swapping the Backspace and Caps lock keys completes the layout:
 
 
            ~        !  =  ?  +  $  @  ^  &  %  *  <  >
-           #        1  2  3  4  5  6  7  8  9  0  [  ]     Back
+           #        1  2  3  4  5  6  7  8  9  0  [  ]     Caps
 
          Tab        Q  I  O  U  '  "  D  N  L  Y  Z  -     /
-         Cap        P  H  E  A  ,  .  T  S  R  C  X        Enter
+         Back       P  H  E  A  ,  .  T  S  R  C  X        Enter
          Shift      B  J  K  G  (  )  M  F  W  V           Shift
 
          Ctrl  Fn  Cmd  Alt     Space     Alt  Ctrl       Arrows
@@ -57,11 +57,7 @@ to account for the persistence of memory.
 
 ## Comparison with other key layouts <a name="comparison">
 
-Despite the fact that the Engram layout was designed to reduce strain and discomfort, 
-not to reduce finger travel from the home row, 
-it scores higher than all other key layouts 
-(Colemak, Dvorak, QWERTY, etc.) I've tested using the online Keyboard Layout Analyzer, 
-for all of the examples of prose and tweet data I've tried, including the data sets below:
+Despite the fact that the Engram layout was designed to reduce strain and discomfort, not to reduce finger travel from the home row, it scores higher than all other key layouts (Colemak, Dvorak, QWERTY, etc.) I've tested using the online Keyboard Layout Analyzer, for all of the examples of prose and tweet data I've tried, including the data sets below:
 
 - [See the complete analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/x0WPtw3x)
 of __Alice in Wonderland__ provided by the Keyboard Layout Analyzer 
@@ -74,7 +70,7 @@ Go, A., Bhayani, R. and Huang, L., 2009. <br>
 Twitter sentiment classification using distant supervision. <br>
 CS224N Project Report, Stanford, 1(2009), p.12.
 
-According to the Keyboard Layout Analyzer:
+According to the [Keyboard Layout Analyzer](http://patorjk.com/keyboard-layout-analyzer/):
 
     "The optimal layout score is based on a weighted calculation that factors in 
     the distance your fingers moved (33%), 
@@ -82,22 +78,20 @@ According to the Keyboard Layout Analyzer:
     and how often you switch fingers and hands while typing (34%)."
     
 ## Factors used to compute the layout <a name="factors">
-  - **N-gram letter frequencies** (based on Google's book scanning project)
-  - **Flow factors** (affecting transitions between ordered key pairs) <br>
-    These factors are influenced by Dvorak's 11 criteria (1936)  
-    that can be summarized as follows:
+  - **N-gram letter frequencies** <br>
+    
+    [Peter Norvig's analysis](http://www.norvig.com/mayzner.html) of data from Google's book scanning project
+  - **Flow factors** (transitions between ordered key pairs) <br>
+    These factors are influenced by Dvorak's 11 criteria (1936) that can be summarized as follows:
       - Alternate between hands and balance finger loads.
       - Avoid using the same finger.
       - Avoid the upper and lower rows.
       - Avoid skipping over the home row ("hurdling").
       - Avoid tapping adjacent rows ("reaching") with (same or) adjacent fingers.
-  - **Finger strengths** (peak keyboard reaction forces, in newtons) <br>
-      Based on  from <br>
-      "Keyboard Reaction Force and Finger Flexor Electromyograms during Computer Keyboard Work" <br>
-      BJ Martin, TJ Armstrong, JA Foulke, S Natarajan, Human Factors,1996,38(4),654-664.
-  - **Speed** (unordered interkey stroke times in milliseconds) <br>
-      "Estimation of digraph costs for keyboard layout optimization", <br>
-      A Iseri, Ma Eksioglu, International Journal of Industrial Ergonomics, 48, 127-138, 2015. <br>
+  - **Finger strengths** (peak keyboard reaction forces) <br>
+      "Keyboard Reaction Force and Finger Flexor Electromyograms during Computer Keyboard Work", BJ Martin, TJ Armstrong, JA Foulke, S Natarajan, Human Factors,1996,38(4),654-664.
+  - **Speed** (unordered interkey stroke times) <br>
+      "Estimation of digraph costs for keyboard layout optimization", A Iseri, Ma Eksioglu, International Journal of Industrial Ergonomics, 48, 127-138, 2015. <br>
       _NOTE: Speed data were only used for exploration of early key layouts._
 
 ## Guiding criteria   <a name="criteria">
@@ -117,47 +111,45 @@ According to the Keyboard Layout Analyzer:
   
 ## Summary of steps and results  <a name="summary">
 
-    - Step 1: Optimize arrangement of the 12 most frequent letters across left and right sides
-    - Step 2: Arrange the most common command shortcut characters on the right side
-    - Step 3: Optimize arrangement of all remaining letters
-    - Step 4: Add punctuation marks and characters above similar-looking numbers
+- Step 1: Optimize arrangement of the 12 most frequent letters across left and right sides
+- Step 2: Arrange the most common command shortcut characters on the right side
+- Step 3: Optimize arrangement of all remaining letters
+- Step 4: Add punctuation marks and characters above similar-looking numbers
     
 ### 1. Optimize arrangement of the 12 most frequent letters across left and right sides
 
-Select the 12 most frequent letters in the English language <br>
-(excluding C, which we group with other common command shortcut characters):
+I selected 12 of the strongest key locations for the 12 most frequent letters in the English language (excluding C, which we group with other common command shortcut characters):
 
 **E, T, A, O, I, N, S, R, H, L, D**, C, **U**, M, F, P, G, W, (Y), B, (V), K, (X), J, Q, (Z)
 
-Set an initial key position for E and T, the most common letters in English. <br>
-Compute all 3,628,800 permutations of the remaining 10 letters, <br>
-and optimize the arrangement of 6 letters on each side according to our criteria: <br>
+I set an initial location for E and T, the most common letters, with E on the left side and T on the right side, to encourage a balance of typing across left and right hands, and to reduce the number of permutations to compute (3,628,800 for 10 letters). Each permutation corresponds to a unique arrangement of letters, and we score each arrangement by the average of the scores for all possible pair of letters (bigrams) in this arrangement. The score for each bigram is a product of the frequency of occurrence of that bigram and the following factors: 
 
-**Speed** (optional, not used for the resulting layout)
-Interkey stroke times in milliseconds from Table 3 of <br>
-"Estimation of digraph costs for keyboard layout optimization", <br>
-A Iseri, Ma Eksioglu, International Journal of Industrial Ergonomics, 48, 127-138, 2015. <br>
-Here they are made symmetric to compensate for right-handedness of participants in the study.
+**Flow**: measure of ease of a finger transition from the first in a pair of letters to the second
+
+Flow factors to _penalize_ difficult key transitions include:
     
-**Strength**
-Finger strengths are based on peak keyboard reaction forces (in newtons) from Table 4 of <br>
-"Keyboard Reaction Force and Finger Flexor Electromyograms during Computer Keyboard Work" <br>
-BJ Martin, TJ Armstrong, JA Foulke, S Natarajan, Human Factors,1996,38(4),654-664.
+- roll out from index to little finger
+- either index or little finger on top row
+- either middle or ring finger on bottom row
+- index above middle, or little above ring 
+- index above ring, or little above middle
+- index above little, or little above index
+- ring above middle
+- use same finger twice
+- at least one key not on home row
+- one key on top row, the other on bottom row
 
-**Flow** (finger transitions between letter pairs (bigrams)
-Flow factors to penalize difficult key transitions include:
+**Strength**: measure of the average strength of the finger(s) used to type the two letters
+
+Finger strengths are based on peak keyboard reaction forces (in newtons) from "Keyboard Reaction Force and Finger Flexor Electromyograms during Computer Keyboard Work", BJ Martin, TJ Armstrong, JA Foulke, S Natarajan, Human Factors,1996, 38(4), 654-664.
+
+**Speed**: normalized interkey stroke times
+
+These are left-right averaged versions derived from the study data below, to compensate for right-handedness of participants in the study:
+
+"Estimation of digraph costs for keyboard layout optimization", 
+A Iseri, Ma Eksioglu, International Journal of Industrial Ergonomics, 48, 127-138, 2015. 
     
-    - roll out from index to little finger
-    - either index or little finger on top row
-    - either middle or ring finger on bottom row
-    - index above middle, or little above ring 
-    - index above ring, or little above middle
-    - index above little, or little above index
-    - ring above middle
-    - use same finger twice
-    - at least one key not on home row
-    - one key on top row, the other on bottom row
-
 The resulting arrangement led to all vowels and H on the left:
 
                    -  I  O  U        D  N  L  -  - 
@@ -170,12 +162,12 @@ The resulting arrangement led to all vowels and H on the left:
                    -  H  E  A        T  S  R  C  X 
                    -  -  -  -        -  -  -  V
 
-  - Z is the least frequent letter and is placed in the worst position
-  - Undo (Z) & Redo (Y), and Cut (X) & Copy (C) pair well together
-  - Common bigrams with Y and C (LY, CT, NC, SC, CR) are easy to type
-  - Moving common command shortcuts to the right enforces two-handed Ctrl/Cmd operations
+  - Typing a command shortcut is usually done by holding the Command/Control key with the left little finger, potentially the weakest, while simultaneously stretching and tapping the shortcut letter with the same hand. By placing the command shortcut key on the far right side, this encourages one to type the Command/Control key with the left hand and the shortcut with the right hand.
+  - Z is the least frequent letter and is placed in the worst position.
+  - Undo (Z) & Redo (Y), and Cut (X) & Copy (C) pair well together. Y is to the left of Z and C to the left of X because they are more frequent letters.
+  - Common bigrams with Y and C (LY, CT, NC, SC, CR) are easy to type.
 
-### 3. Optimize arrangement of all remaining letters (as in Step1)
+### 3. Optimize arrangement of all remaining letters (as in Step 1)
 
 E, T, A, O, I, N, S, R, H, L, D, C, U, **M, F, P, G, W**, (Y), **B**, (V), **K**, (X), **J, Q**, (Z)   
 
