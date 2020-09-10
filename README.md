@@ -122,7 +122,16 @@ I selected 12 of the strongest key locations for the 12 most frequent letters in
 
 **E, T, A, O, I, N, S, R, H, L, D**, C, **U**, M, F, P, G, W, (Y), B, (V), K, (X), J, Q, (Z)
 
-I set an initial location for E and T, the most common letters, with E on the left side and T on the right side, to encourage a balance of typing across left and right hands, and to reduce the number of permutations to compute (3,628,800 for 10 letters). Each permutation corresponds to a unique arrangement of letters, and we score each arrangement by the average of the scores for all possible pair of letters (bigrams) in this arrangement. The score for each bigram is a product of the frequency of occurrence of that bigram and the following factors: 
+The 12 letters are split across left and right sides by an optimization algorithm, which is then used to optimize the arrangement of the 6 letters on each side.
+
+The resulting arrangement led to all vowels on the left and the most common consonants on the right (except for H):
+
+                   -  I  O  U        D  N  L  -  - 
+                   -  H  E  A        T  S  R  -  -
+                   -  -  -  -        -  -  -  -
+
+#### **Details** <br>
+I set an initial location for E and T, the most common letters, with E on the left side and T on the right side, to encourage a balance of typing across left and right hands, and to reduce the number of permutations to compute (3,628,800 for 10 letters). Each permutation corresponds to a unique arrangement of letters, and we score each arrangement by the average of the scores for all possible pair of letters (bigrams) in this arrangement. The score for each bigram is a product of the frequency of occurrence of that bigram and the factors Flow, Strength, and Speed: 
 
 **Flow**: measure of ease of a finger transition from the first in a pair of letters to the second
 
@@ -150,12 +159,6 @@ These are left-right averaged versions derived from the study data below, to com
 "Estimation of digraph costs for keyboard layout optimization", 
 A Iseri, Ma Eksioglu, International Journal of Industrial Ergonomics, 48, 127-138, 2015. 
     
-The resulting arrangement led to all vowels and H on the left:
-
-                   -  I  O  U        D  N  L  -  - 
-                   -  H  E  A        T  S  R  -  -
-                   -  -  -  -        -  -  -  -
-
 ### 2. Arrange the most common command shortcut characters on the right side
     
                    -  I  O  U        D  N  L  Y  Z
