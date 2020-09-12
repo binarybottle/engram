@@ -42,18 +42,14 @@ Swapping the Backspace and Caps lock keys completes the layout:
 In the future, I hope to include an engaging rationale for why I took on this challenge.
 Suffice to say that I have battled repetitive strain injury since I worked
 on an old DEC workstation at the MIT Media Lab while composing my thesis back in the mid-90s.
-Ever since then I have experimented with different key layouts (Dvorak, Colemak, my own, etc.),
-which place too much stress on tendons, with lateral extension of the index and little fingers,
+Ever since then I have used different key layouts (Dvorak, Colemak, my own, etc.),
+and have primarily used Colemak for almost 10 years.  I find that they all place too much stress on tendons, with lateral extension of the index and little fingers,
 and on uniform distribution of finger use, which has damaged my little fingers.
 I have also experimented with a wide variety of human interface technologies
-(voice dictation, one-handed keyboard, keyless keyboard, foot mouse, and ergonomic keyboards
-like the Kinesis Advantage. I recently got an Ergodox that I am looking forward
-to trying out with the Engram layout.
+(voice dictation, one-handed keyboard, keyless keyboard, foot mouse, and ergonomic keyboards like the Kinesis Advantage. I recently got an Ergodox that I am looking forward to trying out with the Engram layout.
 
 **"Engram"?** <br>
-The name is a pun, referring both to "n-gram", letter permutations used to compute
-this layout, and "engram", or memory trace, the postulated change in neural tissue
-to account for the persistence of memory.
+The name is a pun, referring both to "n-gram", letter permutations used to compute this layout, and "engram", or memory trace, the postulated change in neural tissue to account for the persistence of memory.
 
 ## Comparison with other key layouts <a name="comparison">
 
