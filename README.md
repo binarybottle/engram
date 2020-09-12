@@ -118,29 +118,28 @@ I selected 12 of the strongest key locations for the 12 most frequent letters in
 
 **E, T, A, O, I, N, S, R, H, L, D**, C, **U**, M, F, P, G, W, (Y), B, (V), K, (X), J, Q, (Z)
 
-The 12 letters are split across left and right sides by an optimization algorithm, which is then used to optimize the arrangement of the 6 letters on each side.
+An optimization algorithm splits the 12 letters across left and right sides, and then arranges the 6 letters on each side.
 
-The resulting arrangement led to all vowels on the left and the most common consonants on the right (except for H):
+The resulting arrangement has all vowels on the left and the most common consonants on the right (except for H):
 
                    -  I  O  U        D  N  L  -  - 
                    -  H  E  A        T  S  R  -  -
                    -  -  -  -        -  -  -  -
 
 #### **Details** <br>
-I set an initial location for E and T, the most common letters, with E on the left side and T on the right side, to encourage a balance of typing across left and right hands, and to reduce the number of permutations to compute (3,628,800 for 10 letters). Each permutation corresponds to a unique arrangement of letters, and we score each arrangement by the average of the scores for all possible pair of letters (bigrams) in this arrangement. The score for each bigram is a product of the frequency of occurrence of that bigram and the factors Flow, Strength, and Speed: 
+I set an initial location for E and T, the most common letters, with E on the left side and T on the right side, to encourage a balance of typing across left and right hands, and to reduce the number of permutations to compute (3,628,800 for 10 letters). Each permutation corresponds to a unique arrangement of letters, and its score is the average of the scores for all possible pairs of letters (bigrams) in this arrangement. The score for each bigram is a product of the frequency of occurrence of that bigram and the factors Flow, Strength, and Speed: 
 
 **Flow**: measure of ease of a finger transition from the first in a pair of letters to the second
 
 Flow factors to _penalize_ difficult key transitions include:
     
 - roll out from index to little finger
-- either index or little finger on top row
-- either middle or ring finger on bottom row
+- index or little finger on top row
+- middle or ring finger on bottom row
 - index above middle, or little above ring 
 - index above ring, or little above middle
-- index above little, or little above index
 - ring above middle
-- use same finger twice
+- use same finger twice for a non-repeating letter
 - at least one key not on home row
 - one key on top row, the other on bottom row
 
