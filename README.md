@@ -1,11 +1,10 @@
 # Arno's Engram key layout
 
-The [Engram layout](https://github.com/binarybottle/engram-layout) is an optimal keyboard layout for touch typing in English created by [Arno Klein](https://binarybottle.com),  with open source code.
+The [Engram layout](https://github.com/binarybottle/engram-layout) is a keyboard layout optimized for comfortable touch typing in English created by [Arno Klein](https://binarybottle.com), with open source code to create other optimized key layouts.
 
-
-                   Q  I  O  U        D  N  L  Y  Z  
-                   P  H  E  A        T  S  R  C  X 
-                   B  J  K  G        M  F  W  V
+                   J  U  O  Y        W  S  M  Q  Z
+                   H  I  E  A        T  N  R  C  X 
+                   P  K  G  D        L  F  B  V
 
 The Shift key accesses characters (top) that look similar to the numbers:
 
@@ -20,21 +19,14 @@ and accesses related but less common punctuation (top):
 Swapping the Backspace and Caps lock keys completes the layout:
 
 
-           ~        !  =  ?  +  $  @  ^  &  %  *  <  >
-           #        1  2  3  4  5  6  7  8  9  0  [  ]     Caps
+          ~        !  =  ?  +  $  @  ^  &  %  *  <  >
+          #        1  2  3  4  5  6  7  8  9  0  [  ]     Caps
 
-         Tab        Q  I  O  U  '  "  D  N  L  Y  Z  -     /
-         Back       P  H  E  A  ,  .  T  S  R  C  X        Enter
-         Shift      B  J  K  G  (  )  M  F  W  V           Shift
+        Tab        J  U  O  Y  '  "  W  S  M  Q  Z  -     /
+        Back       H  I  E  A  ,  .  T  N  R  C  X        Enter
+        Shift      P  K  G  D  (  )  L  F  B  V           Shift
 
-         Ctrl  Fn  Cmd  Alt     Space     Alt  Ctrl       Arrows
-
-# Contents
-1. [Rationale](#rationale)
-2. [Comparison with other key layouts](#comparison)
-3. [Factors used to compute the layout](#factors)
-4. [Guiding criteria](#criteria)
-5. [Summary of steps and results](#summary)
+        Ctrl  Fn  Cmd  Alt  Space   Alt  Ctrl       Arrows
 
 ## Rationale <a name="rationale">
 
@@ -68,11 +60,8 @@ CS224N Project Report, Stanford, 1(2009), p.12.
 
 According to the [Keyboard Layout Analyzer](http://patorjk.com/keyboard-layout-analyzer/):
 
-    "The optimal layout score is based on a weighted calculation that factors in 
-    the distance your fingers moved (33%), 
-    how often you use particular fingers (33%),
-    and how often you switch fingers and hands while typing (34%)."
-    
+"The optimal layout score is based on a weighted calculation that factors in the distance your fingers moved (33%), how often you use particular fingers (33%), and how often you switch fingers and hands while typing (34%)."
+
 ## Factors used to compute the layout <a name="factors">
   - **N-gram letter frequencies** <br>
     
@@ -89,45 +78,51 @@ According to the [Keyboard Layout Analyzer](http://patorjk.com/keyboard-layout-a
   - **Speed** (unordered interkey stroke times) <br>
       "Estimation of digraph costs for keyboard layout optimization", A Iseri, Ma Eksioglu, International Journal of Industrial Ergonomics, 48, 127-138, 2015. <br>
       _NOTE: Speed data were only used for exploration of early key layouts._
-
+      
 ## Guiding criteria   <a name="criteria">
 
-  1.  Assign 24 letters to keys that don't require lateral extension of index or little fingers.
-  2.  Group letters for common command shortcut keys (F,C,Z,Y,X,V) close together.
-  3.  Assign punctuation to keys that require lateral extension of index or little fingers.
-  4.  Assign easier-to-remember characters to the shift-number keys.
-  5.  Arrange letters so that more frequent bigrams are faster and easier to type.
-  6.  Balance finger loads according to their relative strength.
-  7.  Promote alternating between hands over typing with the same hand.
-  8.  Promote little-to-index-finger roll-ins over index-to-little-finger roll_outs.
-  9.  Avoid extending nearer, shorter fingers to upper rows.
-  10. Avoid using the same finger.
-  11. Avoid the upper and lower rows.
-  12. Avoid skipping over the home row.
-  
+1.  Assign 24 letters to keys that don't require lateral extension of index or little fingers.
+2.  Group letters for common command shortcut keys (F,C,Z,Y,X,V) close together.
+3.  Assign punctuation to keys that require lateral extension of index or little fingers.
+4.  Assign easier-to-remember characters to the shift-number keys.
+5.  Arrange letters so that more frequent bigrams are faster and easier to type.
+6.  Balance finger loads according to their relative strength.
+7.  Promote alternating between hands over typing with the same hand.
+8.  Promote little-to-index-finger roll-ins over index-to-little-finger roll_outs.
+9.  Avoid extending nearer, shorter fingers to upper rows.
+10. Avoid using the same finger.
+11. Avoid the upper and lower rows.
+12. Avoid skipping over the home row.
+
 ## Summary of steps and results  <a name="summary">
 
-- Step 1: Optimize arrangement of the 12 most frequent letters across left and right sides
-- Step 2: Arrange the most common command shortcut characters on the right side
-- Step 3: Optimize arrangement of all remaining letters
-- Step 4: Add punctuation marks and characters above similar-looking numbers
+- Step 1: Distribute the 8 most frequent letters (4 vowels, 4 consonants) to the left and right
+- Step 2: Add command shortcut characters on the left or right
+- Step 3: Distribute 8 of the remaining letters to the left and right
+- Step 4: Optimize arrangement of all letters on the left and right 
+- Step 5: Arrange punctuation marks and characters in easy-to-remember places
     
-### 1. Optimize arrangement of the 12 most frequent letters across left and right sides
+### 1. Distribute the 8 most frequent letters (4 vowels, 4 consonants) to the left and right
 
-I selected 12 of the strongest key locations for the 12 most frequent letters in the English language (excluding C, which we group with other common command shortcut characters):
+**E, T, A, O, I, N, S, R**, H, L, D, C, U, M, F, P, G, W, Y, B, V, K, X, J, Q, Z
 
-**E, T, A, O, I, N, S, R, H, L, D**, C, **U**, M, F, P, G, W, (Y), B, (V), K, (X), J, Q, (Z)
+My goal was to arrange 24 of the 26 letters in finger-column keys (requiring no lateral movements) with 2 columns reserved for punctuation between the left and right sides. Our optimization algorithm splits the 8 most frequent letters across left and right sides:
 
-An optimization algorithm splits the 12 letters across left and right sides, and then arranges the 6 letters on each side.
-
-The resulting arrangement has all vowels on the left and the most common consonants on the right (except for H):
-
-                   -  I  O  U        D  N  L  -  - 
-                   -  H  E  A        T  S  R  -  -
+                   -  -  O  -        -  S  -  - 
+                   -  I  E  A        T  N  R  -
                    -  -  -  -        -  -  -  -
 
+This algorithm also generates a mirror image of the above arrangement:
+
+                   -  -  S  -        -  O  -  -
+                   -  R  N  T        A  E  I  - 
+                   -  -  -  -        -  -  -  -
+
+In all of the following steps, we build a layout from both arrangements but only show the top arrangement for clarity.
+These initial arrangements are very reasonable, as they place letters of decreasing frequency in positions of decreasing finger strength, and roll in for most common bigrams: IO, EA, IE, NT, ST, RT (not TR or NS).
+    
 #### **Details** <br>
-I set an initial location for E and T, the most common letters, with E on the left side and T on the right side, to encourage a balance of typing across left and right hands, and to reduce the number of permutations to compute (3,628,800 for 10 letters). Each permutation corresponds to a unique arrangement of letters, and its score is the average of the scores for all possible pairs of letters (bigrams) in this arrangement. The score for each bigram is a product of the frequency of occurrence of that bigram and the factors Flow, Strength, and Speed: 
+The optimization algorithm finds every permutation of a given set of letters (40,320 for this intial set of 8), maps these letter permutations to a set of keys, and ranks these letter-key mappings according to a score reflecting ease of typing key pairs and frequency of letter pairs (bigrams). The score is the average of the scores for all possible bigrams in this arrangement. The score for each bigram is a product of the frequency of occurrence of that bigram and the factors Flow, Strength, and Speed: 
 
 **Flow**: measure of ease of a finger transition from the first in a pair of letters to the second
 
@@ -149,31 +144,56 @@ Finger strengths are based on peak keyboard reaction forces (in newtons) from "K
 
 **Speed**: normalized interkey stroke times
 
-These are left-right averaged versions derived from the study data below, to compensate for right-handedness of participants in the study:
+These are left-right averaged versions derived from the study data below, to compensate for right-handedness of participants in the study (we used this data for early experimentation):
 
 "Estimation of digraph costs for keyboard layout optimization", 
 A Iseri, Ma Eksioglu, International Journal of Industrial Ergonomics, 48, 127-138, 2015. 
     
-### 2. Arrange the most common command shortcut characters on the right side
+### 2. Add command shortcut characters on the left or right
+
+I experimented with common command characters (Z,X,C,V) on the left, a familiar location (with Q on the right):
+
+                   -  -  O  -        -  S  -  -  Q
+                   -  I  E  A        T  N  R  -  -
+                   Z  X  C  V        -  -  -  -
     
-                   -  I  O  U        D  N  L  Y  Z
-                   -  H  E  A        T  S  R  C  X 
+and with command characters on the right (with Q on the left):
+
+                   Q  -  O  -        -  S  -  Y  Z
+                   -  I  E  A        T  N  R  C  X 
                    -  -  -  -        -  -  -  V
 
-  - Typing a command shortcut is usually done by holding the Command/Control key with the left little finger, potentially the weakest, while simultaneously stretching and tapping the shortcut letter with the same hand. By placing the command shortcut key on the far right side, this encourages one to type the Command/Control key with the left hand and the shortcut with the right hand.
-  - Z is the least frequent letter and is placed in the worst position.
-  - Undo (Z) & Redo (Y), and Cut (X) & Copy (C) pair well together. Y is to the left of Z and C to the left of X because they are more frequent letters.
-  - Common bigrams with Y and C (LY, CT, NC, SC, CR) are easy to type.
+Rationale for placement on the right:
+    
+- Z is the least frequent letter and is placed in the hardest-to-reach position.
+- Z & Y (Undo & Redo), and X & C (Cut & Copy) pair well together. 
+- Moving command shortcuts to the right puts C & V (Copy & Paste) in closer proximity to a Ctrl key, or it enforces two-handed Ctrl operations when using the harder-to-reach left Ctrl key.
+- Q is the least frequent remaining letter, and is placed in the hardest-to-reach remaining key location.
+- Q is in the upper left key in the QWERTY layout, so will be easy to remember.
+    
+### 3. Distribute 8 of the remaining letters to the left and right
 
-### 3. Optimize arrangement of all remaining letters (as in Step 1)
+*E, T, A, O, I, N, S, R*, **H, L, D**, [C], **U, M, F, P, G**, W, [Y], B, [V], K, [X], J, *Q*, [Z] 
+    
+### 4. Optimize arrangement of all letters on the left and right 
+    
+I applied the same algorithm as in Steps 1 and 3, but to each side separately (to make it computationally tractable), then to the remaining letters, and finally to the command characters on the left side.    
 
-E, T, A, O, I, N, S, R, H, L, D, C, U, **M, F, P, G, W**, (Y), **B**, (V), **K**, (X), **J, Q**, (Z)   
+The top-scoring full layouts had vowels on the left side and command characters on either side:
+    
+                   J  U  O  Y        W  S  M  Q  Z    score: 0.04264
+                   H  I  E  A        T  N  R  C  X 
+                   P  K  G  D        L  F  B  V
 
-                   Q  I  O  U        D  N  L  Y  Z
-                   P  H  E  A        T  S  R  C  X 
-                   B  J  K  G        M  F  W  V
+                   Q  U  O  Y        W  S  M  J  Z    score: 0.04264
+                   H  I  E  A        T  N  R  C  X 
+                   P  K  G  D        L  F  B  V
 
-### 4. Add punctuation, and characters above the number keys
+                   K  U  O  Y        W  L  G  B  Q    score: 0.04263
+                   H  I  E  A        T  R  S  N  J 
+                   V  Z  X  C        D  M  F  P
+    
+### 5. Arrange punctuation marks and characters in easy-to-remember places
 
 **Frequency of punctuation** 
 
@@ -192,9 +212,9 @@ These sources helped guided our arrangement:
 
 Resulting in:
 
-                   Q  I  O  U  '  "  D  N  L  Y  Z
-                   P  H  E  A  ,  .  T  S  R  C  X 
-                   B  J  K  G  (  )  M  F  W  V
+                   J  U  O  Y  '  "  W  S  M  Q  Z
+                   H  I  E  A  ,  .  T  N  R  C  X 
+                   P  K  G  D  (  )  L  F  B  V
 
 Shift accesses similar-looking characters above the numbers:
 
