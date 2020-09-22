@@ -107,8 +107,9 @@ My goal was to arrange 24 of the 26 letters in 8 columns of keys requiring no la
 
 First, I select 5 keys on the left and right sides having the strongest finger positions, and assign to these keys the top-scoring arrangement of the 5 vowels and of the 5 most frequent consonants. In prior experiments, vowels on the left got consistently higher scores, so I continue with vowels on the left:
 
-#### **E**, T, **A, O, I**, N, S, R, H, L, D, C, **U**, M, F, P, G, W, Y, B, V, K, X, J, Q, Z
-#### E, **T**, A, O, I, **N, S, R, H**, L, D, C, U, M, F, P, G, W, Y, B, V, K, X, J, Q, Z
+**E**, T, **A, O, I**, N, S, R, H, L, D, C, **U**, M, F, P, G, W, Y, B, V, K, X, J, Q, Z
+
+E, **T**, A, O, I, **N, S, R, H**, L, D, C, U, M, F, P, G, W, Y, B, V, K, X, J, Q, Z
     
                       Left:            Right:
 
@@ -151,7 +152,7 @@ A Iseri, Ma Eksioglu, International Journal of Industrial Ergonomics, 48, 127-13
 
 I reserve the familiar location of the bottom left row for common command shortcut letters Z, X, C, and V, and place Q and J, the least common letters (after Z) in the hardest-to-reach locations:
     
-#### E, T, A, O, I, N, S, R, H, **L, D**, [C], U, **M, F, P, G, W, Y, B**, [V], **K**, [X], [J], [Q], [Z]
+E, T, A, O, I, N, S, R, H, **L, D**, [C], U, **M, F, P, G, W, Y, B**, [V], **K**, [X], [J], [Q], [Z]
 
                    -  -  U  -        -  R  -  -  [Q]
                    I  O  E  A        H  T  S  N  [J]
