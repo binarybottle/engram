@@ -4,7 +4,7 @@ The [Engram layout](https://github.com/binarybottle/engram-layout) is a keyboard
 
                    K  P  U  Y        G  R  D  W  Q
                    I  O  E  A        H  T  S  N  J
-                   V  Z  X  C        L  F  B  M
+                   V  Z  X  C        L  B  F  M
 
 The Shift key accesses characters (top) that look similar to the numbers:
 
@@ -24,7 +24,7 @@ Swapping the Backspace and Caps lock keys completes the layout:
 
         Tab        K  P  U  Y  '  "  G  R  D  W  Q  -     /
         Back       I  O  E  A  ,  .  H  T  S  N  J        Enter
-        Shift      V  Z  X  C  (  )  L  F  B  M           Shift
+        Shift      V  Z  X  C  (  )  L  B  F  M           Shift
 
         Ctrl  Fn  Cmd  Alt  Space   Alt  Ctrl       Arrows
 
@@ -43,7 +43,7 @@ I have also experimented with a wide variety of human interface technologies
 **"Engram"?** <br>
 The name is a pun, referring both to "n-gram", letter permutations used to compute this layout, and "engram", or memory trace, the postulated change in neural tissue to account for the persistence of memory.
 
-## Comparison with other key layouts <a name="comparison">
+## Comparison with other key layouts
 
 Despite the fact that the Engram layout was designed to reduce strain and discomfort, not to reduce finger travel from the home row, it scores higher than all other key layouts (Colemak, Dvorak, QWERTY, etc.) I've tested using the online Keyboard Layout Analyzer, for all of the examples of prose and tweet data I've tried, including the data sets below:
 
@@ -62,7 +62,7 @@ According to the [Keyboard Layout Analyzer](http://patorjk.com/keyboard-layout-a
 
 "The optimal layout score is based on a weighted calculation that factors in the distance your fingers moved (33%), how often you use particular fingers (33%), and how often you switch fingers and hands while typing (34%)."
 
-## Factors used to compute the layout <a name="factors">
+## Factors used to compute the layout
   - **N-gram letter frequencies** <br>
     
     [Peter Norvig's analysis](http://www.norvig.com/mayzner.html) of data from Google's book scanning project
@@ -79,7 +79,7 @@ According to the [Keyboard Layout Analyzer](http://patorjk.com/keyboard-layout-a
       "Estimation of digraph costs for keyboard layout optimization", A Iseri, Ma Eksioglu, International Journal of Industrial Ergonomics, 48, 127-138, 2015. <br>
       _NOTE: Speed data were only used for exploration of early key layouts._
       
-## Guiding criteria   <a name="criteria">
+## Guiding criteria
 
 1.  Assign 24 letters to keys that don't require lateral extension of index or little fingers.
 2.  Group letters for common command shortcut keys (F,C,Z,Y,X,V) close together.
@@ -94,11 +94,11 @@ According to the [Keyboard Layout Analyzer](http://patorjk.com/keyboard-layout-a
 11. Avoid the upper and lower rows.
 12. Avoid skipping over the home row.
 
-## Summary of steps and results  <a name="summary">
+## Summary of steps and results
 
 - Step 1: Arrange the most frequent vowels and consonants
-- Step 2: Add command shortcut characters
-- Step 3: Arrange the remaining letters 
+- Step 2: Arrange the remaining letters (except for command characters Z,X,C,V)
+- Step 3: Add command shortcut characters
 - Step 4: Arrange punctuation marks in easy-to-remember places
 
 ### Step 1: Arrange the most frequent vowels and consonants
@@ -115,12 +115,8 @@ First, I selected 5 keys on the left and right sides having the strongest finger
                    -  -  U  -        -  R  -  - 
                    I  O  E  A        H  T  S  N
                    -  -  -  -        -  -  -  -
-
-                   -  -  U  -        -  S  R  - 
-                   I  O  E  A        H  T  N  -
-                   -  -  -  -        -  -  -  -
                    
-These arrangements are very reasonable, as they place vowels of decreasing frequency in positions of decreasing strength, and the most common bigrams are easy to type.
+This arrangement is very reasonable, as it places vowels of decreasing frequency in positions of decreasing strength, and the most common bigrams are easy to type.
      
 #### Details
 The optimization algorithm finds every permutation of a given set of letters (40,320 for this intial set of 8), maps these letter permutations to a set of keys, and ranks these letter-key mappings according to a score reflecting ease of typing key pairs and frequency of letter pairs (bigrams). The score is the average of the scores for all possible bigrams in this arrangement. The score for each bigram is a product of the frequency of occurrence of that bigram and the factors Flow, Strength, and Speed: 
@@ -151,46 +147,25 @@ These are left-right averaged versions derived from the study data below, to com
 A Iseri, Ma Eksioglu, International Journal of Industrial Ergonomics, 48, 127-138, 2015. 
 
     
-### Step 2: Add command shortcut characters
+### Step 2: Arrange the remaining letters (except for command characters Z,X,C,V)
 
-**Left:**  common command characters (Z,X,C,V) on the left as per convention and Q on the right:
-
-                   -  -  U  -        -  R  -  -  Q
-                   I  O  E  A        H  T  S  N  J
-                   V  Z  X  C        -  -  -  -
+I reserve the familiar location of the bottom left row for common command shortcut letters Z, X, C, and V, and place Q and J, the least common letters (after Z) in the hardest-to-reach locations:
     
-- V,Z,X,C command characters are familiarly placed on the bottom left row.
-    
-**Right:**  common command characters (Y,Z,X,C,V) on the right and Q on the left:
-
-                   Q  -  U  -        -  S  R  Y  Z
-                   I  O  E  A        H  T  N  C  X
-                   -  -  -  -        -  -  -  V
-
-- Z is the least frequent letter and is placed in the hardest-to-reach position.
-- Z & Y (Undo & Redo), and X & C (Cut & Copy) pair well together. 
-- Command shortcuts on the right puts C & V in closer proximity to a Ctrl key.
-- Command shortcuts on the right enforces using both hands with the harder-to-reach left Ctrl key.
-- Q is the least frequent remaining letter, and is placed in the hardest-to-reach remaining key location.
-- Q is in the upper left key in the QWERTY layout, so will be easy to remember.
-    
-    
-### Step 3: Arrange the remaining letters
-
-#### Left shortcuts:
 #### E, T, A, O, I, N, S, R, H, **L, D**, [C], U, **M, F, P, G, W, Y, B**, [V], **K**, [X], [J], [Q], [Z]
 
-                   -  -  U  -        -  R  -  -  Q
-                   I  O  E  A        H  T  S  N  J
-                   V  Z  X  C        -  -  -  -
+                   -  -  U  -        -  R  -  -  [Q]
+                   I  O  E  A        H  T  S  N  [J]
+                   *  *  *  *        -  -  -  -
     
-#### Right shortcuts:
-#### E, T, A, O, I, N, S, R, H, **L, D**, [C], U, **M, F, P, G, W**, [Y], **B**, [V], **K**, [X], **J**, [Q], [Z]
+### Step 3: Add command shortcut characters
 
-                   Q  -  U  -        -  S  R  Y  Z
-                   I  O  E  A        H  T  N  C  X
-                   -  -  -  -        -  -  -  V
+Arrange the common command characters (Z,X,C,V) in the bottom left row:
+
+                   K  P  U  Y        G  R  D  W  [Q]
+                   I  O  E  A        H  T  S  N  [J]
+                   V  Z  X  C        L  B  F  M    
     
+I choose the sequence V,Z,X,C so that the more frequent letters V and C are accessible by folding the smaller fingers, repeated shortcuts V and Z (paste and undo) are closer to the Ctrl/Cmd key, and the sequence is close to the familiar Z,X,C,V (with V on the left side).
     
 ### Step 4. Arrange punctuation marks in easy-to-remember places
 
@@ -213,7 +188,7 @@ Resulting in:
 
                    K  P  U  Y  '  "  G  R  D  W  Q
                    I  O  E  A  ,  .  H  T  S  N  J
-                   V  Z  X  C  (  )  L  F  B  M
+                   V  Z  X  C  (  )  L  B  F  M    
 
 Shift accesses similar-looking characters above the numbers:
 
