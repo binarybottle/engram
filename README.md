@@ -94,7 +94,7 @@ According to the [Keyboard Layout Analyzer](http://patorjk.com/keyboard-layout-a
 11. Avoid the upper and lower rows.
 12. Avoid skipping over the home row.
 
-## Summary of steps and results
+## Summary of steps and results  <a name="summary">
 
 - Step 1: Arrange the most frequent vowels and consonants
 - Step 2: Arrange the remaining letters (except for command characters Z,X,C,V)
@@ -105,7 +105,7 @@ According to the [Keyboard Layout Analyzer](http://patorjk.com/keyboard-layout-a
 
 My goal was to arrange 24 of the 26 letters in 8 columns of keys requiring no lateral movements, with 2 middle columns reserved for punctuation.
 
-First, I selected 5 keys on the left and right sides having the strongest finger positions, and assigned to these keys the top-scoring arrangement of the 5 vowels and of the 5 most frequent consonants. In prior experiments, vowels on the left got consistently higher scores, so we will continue with vowels on the left:
+First, I select 5 keys on the left and right sides having the strongest finger positions, and assign to these keys the top-scoring arrangement of the 5 vowels and of the 5 most frequent consonants. In prior experiments, vowels on the left got consistently higher scores, so I continue with vowels on the left:
 
 #### **E**, T, **A, O, I**, N, S, R, H, L, D, C, **U**, M, F, P, G, W, Y, B, V, K, X, J, Q, Z
 #### E, **T**, A, O, I, **N, S, R, H**, L, D, C, U, M, F, P, G, W, Y, B, V, K, X, J, Q, Z
@@ -157,21 +157,19 @@ I reserve the familiar location of the bottom left row for common command shortc
                    I  O  E  A        H  T  S  N  [J]
                    *  *  *  *        -  -  -  -
     
-### Step 3: Add command shortcut characters
+### Step 3: Add command shortcut characters <a name="step3">
 
-Arrange the common command characters (Z,X,C,V) in the bottom left row:
+I arrange the common command characters (Z,X,C,V) in the bottom left row, and choose the sequence V,Z,X,C so that the more frequent letters V and C are accessible by folding the smaller fingers, repeated shortcuts V and Z (paste and undo) are closer to the Ctrl/Cmd key, and the sequence is close to the familiar Z,X,C,V (with V on the left side).
 
                    K  P  U  Y        G  R  D  W  [Q]
                    I  O  E  A        H  T  S  N  [J]
                    V  Z  X  C        L  B  F  M    
     
-I choose the sequence V,Z,X,C so that the more frequent letters V and C are accessible by folding the smaller fingers, repeated shortcuts V and Z (paste and undo) are closer to the Ctrl/Cmd key, and the sequence is close to the familiar Z,X,C,V (with V on the left side).
-    
 ### Step 4. Arrange punctuation marks in easy-to-remember places
 
 **Frequency of punctuation** 
 
-These sources helped guided our arrangement:
+These sources helped guide arrangement of punctuation keys:
     
   - "Punctuation Input on Touchscreen Keyboards: Analyzing Frequency of Use and Costs" <br>
     S Malik, L Findlater - College Park: The Human-Computer Interaction Lab. 2013 <br>
