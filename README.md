@@ -34,11 +34,6 @@ Swapping the Backspace and Caps lock keys completes the layout:
 3. [Factors used to compute the layout](#factors)
 4. [Guiding criteria](#criteria)
 5. [Summary of steps and results](#summary)
-    - [Step 1: Define the shape of the key layout to minimize lateral finger movements](#step1)
-    - [Step 2: Assign command shortcut letters to the bottom left row](#step2)
-    - [Step 3: Arrange the most frequent letters based on comfort and bigram frequencies](#step3)
-    - [Step 4: Optimize assignment of the remaining letters](#step4)
-    - [Step 5: Arrange non-letter characters in easy-to-remember places](#step5)
     
 
 ## Rationale <a name="rationale">
@@ -55,6 +50,7 @@ I have also experimented with a wide variety of human interface technologies
 
 **"Engram"?** <br>
 The name is a pun, referring both to "n-gram", letter permutations used to compute this layout, and "engram", or memory trace, the postulated change in neural tissue to account for the persistence of memory.
+
 
 ## Comparison with other key layouts <a name="comparison">
 
@@ -83,7 +79,8 @@ From the [Internet Letter Layout DB](https://www.keyboard-design.com/internet-le
     - [Colemak](https://www.keyboard-design.com/letterlayout.html?layout=colemak.en.ansi)
     - [Dvorak](https://www.keyboard-design.com/letterlayout.html?layout=dvorak.en.ansi)
     - [Qwerty](https://www.keyboard-design.com/letterlayout.html?layout=qwerty.en.ansi)
-    
+
+
 ## Factors used to compute the layout <a name="factors">
   - **N-gram letter frequencies** <br>
     
@@ -95,7 +92,8 @@ From the [Internet Letter Layout DB](https://www.keyboard-design.com/internet-le
   - **Speed** (unordered interkey stroke times) <br>
       "Estimation of digraph costs for keyboard layout optimization", A Iseri, Ma Eksioglu, International Journal of Industrial Ergonomics, 48, 127-138, 2015. <br>
       _NOTE: Speed data were only used for exploration of early key layouts._
-      
+
+
 ## Guiding criteria   <a name="criteria">
 
 1.  Assign 24 letters to columns of keys that don't require lateral finger movement.
@@ -113,11 +111,11 @@ From the [Internet Letter Layout DB](https://www.keyboard-design.com/internet-le
 
 ## Summary of steps and results  <a name="summary">
 
-- Step 1: Define the shape of the key layout to minimize lateral finger movements
-- Step 2: Assign command shortcut letters to the bottom left row
-- Step 3: Arrange the most frequent letters based on comfort and bigram frequencies
-- Step 4: Optimize assignment of the remaining letters
-- Step 5: Arrange non-letter characters in easy-to-remember places
+- [Step 1: Define the shape of the key layout to minimize lateral finger movements](#step1)
+- [Step 2: Assign command shortcut letters to the bottom left row](#step2)
+- [Step 3: Arrange the most frequent letters based on comfort and bigram frequencies](#step3)
+- [Step 4: Optimize assignment of the remaining letters](#step4)
+- [Step 5: Arrange non-letter characters in easy-to-remember places](#step5)
 
 ### 1: Define the shape of the key layout to minimize lateral finger movements <a name="step1">
 
