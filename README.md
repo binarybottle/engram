@@ -353,19 +353,16 @@ Shift accesses less common, but similar-meaning punctuation:
 **Rationale for shift-characters**
 
 **#** &nbsp;&nbsp; The pound/hash represents numbers, and sits to the left of the number keys. <br>
-**~** &nbsp;&nbsp; The tilde has several meanings, including "approximately equal to" <br>
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (here "similar-looking" to the numbers), and is in the standard location.
+**~** &nbsp;&nbsp; The tilde can mean "approximately equal to" (here "similar-looking" to the numbers).
 
 **'** &nbsp;&nbsp; Single quotation marks are used to quote text for 'emphasis', or to quote text within a quote. <br>
-**`** &nbsp;&nbsp; One use of the backquote is to quote computer code. It is used in an analogous manner as a single quote <br>
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; in a quote, to quote code within code for command substitution (to replace a command with output).
+**`** &nbsp;&nbsp; The backquote can quote computer code, or code within code for command substitution.
 
 **"** &nbsp;&nbsp; "Double quotation marks are used to quote direct speech?" <br>
-**\** &nbsp;&nbsp; The backslash is an escape character used to quote special characters in regular expressions.
+**\\** &nbsp;&nbsp; The backslash is an escape character used to quote special characters in regular expressions.
 
 **,** &nbsp;&nbsp; The comma is used to separate text, for example in lists, or to provide a pause. <br>
-**;** &nbsp;&nbsp; The semicolon provides a stronger separation or pause; it can be used in place <br>
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of the comma to separate items in a list, especially if those items contain commas. <br>
+**;** &nbsp;&nbsp; The semicolon can be used in place of the comma to separate items in a list.
    
 **.** &nbsp;&nbsp; The period ends a sentence. <br>
 **:** &nbsp;&nbsp; The colon similarly ends a statement but precedes something following: explanation, quotation, list, etc.
@@ -374,4 +371,4 @@ Shift accesses less common, but similar-meaning punctuation:
 **/** &nbsp;&nbsp; The slash connects conjunctions/disjunctions/alternatives, or locations such as file paths or urls.
 
 **-** &nbsp;&nbsp; The dash connects side-by-side words, or can surround a phrase for emphasis. <br>
-**_** &nbsp;&nbsp; The underscore connects strings within variable or file names, or can _underline a phrase_ for emphasis.
+**\_** &nbsp;&nbsp; The underscore connects strings within variable or file names, or can _underline a phrase_ for emphasis.
