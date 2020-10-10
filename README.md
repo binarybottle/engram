@@ -371,4 +371,4 @@ Shift accesses less common, but similar-meaning punctuation:
 **/** &nbsp;&nbsp; The slash connects conjunctions/disjunctions/alternatives, or locations such as file paths or urls.
 
 **-** &nbsp;&nbsp; The dash connects side-by-side words, or can surround a phrase for emphasis. <br>
-**\_** &nbsp;&nbsp; The underscore connects strings within variable or file names, or can _underline a phrase_ for emphasis.
+**\_** &nbsp;&nbsp; The underscore connects strings within variable or file names, or can \_underline a phrase\_ for emphasis.
