@@ -107,14 +107,6 @@ From the [Internet Letter Layout DB](https://www.keyboard-design.com/internet-le
 - [Step 4: Optimize assignment of the remaining letters](#step4)
 - [Step 5: Arrange non-letter characters in easy-to-remember places](#step5)
 
-## Summary of steps and results  <a name="summary">
-
-- Step 1: Define the shape of the key layout to minimize lateral finger movements
-- Step 2: Assign command shortcut letters to the bottom left row
-- Step 3: Arrange the most frequent letters based on comfort and bigram frequencies
-- Step 4: Optimize assignment of the remaining letters
-- Step 5: Arrange non-letter characters in easy-to-remember places
-
 ### 1: Define the shape of the key layout to minimize lateral finger movements
 
 We will assign 24 letters to 8 columns of keys separated by two middle columns reserved for punctuation. These 8 columns require no lateral finger movements when touch typing, since there is one column per finger. The most comfortable keys include the left and right home rows (keys 5-8 and 17-20), the top-center keys (2,3 and 14,15) that allow the longer middle and ring fingers to uncurl upwards, as well as the bottom corner keys (9,12 and 21,24) that allow the shorter fingers to curl downwards. We will reserve the bottom left row (keys 9-12) for common command shortcut letters (Z,X,C,V), and will reserve the two hardest-to-reach keys lying outside the 24-key columns in the upper right to the two least frequent remaining letters, Q and J:
