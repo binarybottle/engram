@@ -2,30 +2,20 @@
 
 The [Engram layout](https://github.com/binarybottle/engram-layout) is a keyboard layout optimized for comfortable touch typing in English created by [Arno Klein](https://binarybottle.com), with open source code to create other optimized key layouts.
 
-               Y  O  U  K        W  M  D  B
-               I  H  E  A        R  T  S  N
-               V  Z  X  C        L  G  F  P
+             Y  G  U  K            B  L  D  F
+             I  O  E  A            R  T  S  N
+             V  Z  X  C            H  W  P  M
 
-The Shift key accesses characters (top) that look similar to the numbers:
+The Shift (and Alt) key accesses (capital letters), less common punctuation, and characters that look similar to the numbers. Swapping the Backspace and Caps lock keys completes the layout:
 
-               !  =  ?  +  $  @  ^  &  %  *
-               1  2  3  4  5  6  7  8  9  0
+          ^  !  ?  <  +   $    @   >  &  %  *  ~  \
+          #  1  2  3  4   5    6   7  8  9  0  =  /    Caps
 
-and accesses related but less common punctuation (top):
+    Tab      Y  G  U  K  '-   "_   B  L  D  F  Q  #`  @|
+    Back     I  O  E  A  ,;   .:   R  T  S  N  J      Enter
+    Shift    V  Z  X  C  ([{  )]}  H  W  P  M         Shift
 
-            `    \    ;    :    {    }    |    _
-            '    "    ,    .    (    )    /    -
-
-Swapping the Backspace and Caps lock keys completes the layout:
-
-    ~          !  =  ?  +  $  @  ^  &  %  *  <  >
-    #          1  2  3  4  5  6  7  8  9  0  [  ]     Caps
-
-    Tab        Y  O  U  K  '  "  W  M  D  B  Q  -     /
-    Back       I  H  E  A  ,  .  R  T  S  N  J        Enter
-    Shift      V  Z  X  C  (  )  L  G  F  P           Shift
-
-    Ctrl   Fn  Cmd  Alt    Space     Alt  Ctrl       Arrows    
+    Ctrl  Fn  Cmd  Alt    Space     Alt   Ctrl       Arrows    
     
 
 # Contents
@@ -117,7 +107,15 @@ From the [Internet Letter Layout DB](https://www.keyboard-design.com/internet-le
 - [Step 4: Optimize assignment of the remaining letters](#step4)
 - [Step 5: Arrange non-letter characters in easy-to-remember places](#step5)
 
-### 1: Define the shape of the key layout to minimize lateral finger movements <a name="step1">
+## Summary of steps and results  <a name="summary">
+
+- Step 1: Define the shape of the key layout to minimize lateral finger movements
+- Step 2: Assign command shortcut letters to the bottom left row
+- Step 3: Arrange the most frequent letters based on comfort and bigram frequencies
+- Step 4: Optimize assignment of the remaining letters
+- Step 5: Arrange non-letter characters in easy-to-remember places
+
+### 1: Define the shape of the key layout to minimize lateral finger movements
 
 We will assign 24 letters to 8 columns of keys separated by two middle columns reserved for punctuation. These 8 columns require no lateral finger movements when touch typing, since there is one column per finger. The most comfortable keys include the left and right home rows (keys 5-8 and 17-20), the top-center keys (2,3 and 14,15) that allow the longer middle and ring fingers to uncurl upwards, as well as the bottom corner keys (9,12 and 21,24) that allow the shorter fingers to curl downwards. We will reserve the bottom left row (keys 9-12) for common command shortcut letters (Z,X,C,V), and will reserve the two hardest-to-reach keys lying outside the 24-key columns in the upper right to the two least frequent remaining letters, Q and J:
 
@@ -126,7 +124,7 @@ We will assign 24 letters to 8 columns of keys separated by two middle columns r
      5  6  7  8       17 18 19 20  J
     [9 10 11 12]      21 22 23 24
 
-### 2: Assign command shortcut letters to the bottom left row <a name="step2">
+### 2: Assign command shortcut letters to the bottom left row
 
 We begin by assigning the common command letters V,Z,X,C to the bottom left row. We place V and Z to the left of X and C, because V and Z are often repeated (to paste multiple times or to undo multiple mistakes) whereas C and X are not (the copy and cut buffers are overwritten), and should lie closer to the Ctrl/Cmd key for ease of access with one hand. V and C are assigned to the most comfortable of the four keys (as noted above) because they are more frequent letters in English than Z and X.
 
@@ -267,7 +265,7 @@ The resulting 6 arrangements of five vowels on the left and 10 arrangements of f
     68  YIOU --EA VZXC    ---- TSDN ----
     69  YIOU --EA VZXC    ---- TSDL ----
     
-### 4: Optimize assignment of the remaining letters <a name="step4">
+### 4: Optimize assignment of the remaining letters
 
 We will assign missing letters to the above layouts by scoring every possible arrangement of these 10 letters and selecting the top-scored arrangement. Since there are 3,628,800 (10 factorial) possible permutations for 10 letters, and we have 60 possible layouts each with 10 missing letters, we need to score and evaluate 217,728,000 permutations.  
     
@@ -306,7 +304,7 @@ These are left-right averaged versions derived from the study data below, to com
 "Estimation of digraph costs for keyboard layout optimization", 
 A Iseri, Ma Eksioglu, International Journal of Industrial Ergonomics, 48, 127-138, 2015. 
 
-### 5. Arrange non-letter characters in easy-to-remember places <a name="step5">
+### 5. Arrange non-letter characters in easy-to-remember places
 
 Now that we have all 26 letters accounted for, we turn our attention to non-letter characters, taking into account frequency of punctuation and ease of recall.
     
@@ -325,50 +323,44 @@ These sources helped guide our arrangement:
     Xah Lee. Date: 2013-05-23. Last updated: 2020-06-29. <br>
     http://xahlee.info/comp/computer_language_char_distribution.html
 
-#### Add punctuation keys and number keys
+**Add punctuation keys and number keys**
 
-Shift to access similar-looking characters above the numbers, and swap the Backspace and Caps lock keys:
+We will have the Shift-key access characters that look similar to the numbers:
 
+             !  ?  <  +  $  @  >  &  %  *
+             1  2  3  4  5  6  7  8  9  0
 
-    ~          !  =  ?  +  $  @  ^  &  %  *  <  >
-    #          1  2  3  4  5  6  7  8  9  0  [  ]     Caps
+We will place the most common punctuation in the middle columns (without moving the number keys):
 
-    Tab        Y  O  U  K  '  "  W  M  D  B  Q  -     /
-    Back       I  H  E  A  ,  .  R  T  S  N  J        Enter
-    Shift      V  Z  X  C  (  )  L  G  F  P           Shift
+             .  ,  ;  :  -  _  "  '  (  ) 
 
-    Ctrl   Fn  Cmd  Alt    Space     Alt  Ctrl       Arrows
+Finally, we will also swap the Backspace and Caps keys:
 
+          ^  !  ?  <  +   $    @   >  &  %  *  ~  \
+          #  1  2  3  4   5    6   7  8  9  0  =  /    Caps
 
-Shift accesses similar-looking characters above the numbers:
+    Tab      Y  G  U  K  '-   "_   B  L  D  F  Q  #`  @|
+    Back     I  O  E  A  ,;   .:   R  T  S  N  J      Enter
+    Shift    V  Z  X  C  ([{  )]}  H  W  P  M         Shift
 
-     !  =  ?  +  $  @  ^  &  %  *  [  ]
-     1  2  3  4  5  6  7  8  9  0  <  >
-
-Shift accesses less common, but similar-meaning punctuation:
-
-     `    \    ;    :    {    }    |    _
-     '    "    ,    .    (    )    /    -
-             
 **Rationale for shift-characters**
 
-**#** &nbsp;&nbsp; The pound/hash represents numbers, and sits to the left of the number keys. <br>
-**~** &nbsp;&nbsp; The tilde can mean "approximately equal to" (here "similar-looking" to the numbers).
+**# ^** &nbsp;&nbsp; The pound/hash represents numbers, and is set next the number keys, while the caret indicates a superscript for characters accessible by the Shift-key.
 
-**'** &nbsp;&nbsp; Single quotation marks are used to quote text for 'emphasis', or to quote text within a quote. <br>
-**`** &nbsp;&nbsp; The backquote can quote computer code, or code within code for command substitution.
+**= ~** &nbsp;&nbsp; The equal sign means "equal to" and the tilde can mean "approximately equal to" (here "similar-looking" to the numbers).
 
-**"** &nbsp;&nbsp; "Double quotation marks are used to quote direct speech?" <br>
-**\\** &nbsp;&nbsp; The backslash is an escape character used to quote special characters in regular expressions.
+**/ \\** &nbsp;&nbsp; The slash and backslash are a natural pair.
 
-**,** &nbsp;&nbsp; The comma is used to separate text, for example in lists, or to provide a pause. <br>
-**;** &nbsp;&nbsp; The semicolon can be used in place of the comma to separate items in a list.
-   
-**.** &nbsp;&nbsp; The period ends a sentence. <br>
-**:** &nbsp;&nbsp; The colon similarly ends a statement but precedes something following: explanation, quotation, list, etc.
+**' -** &nbsp;&nbsp; The apostrophe joins words as contractions while the hyphen joins words as compounds. As a single quotation mark and a spaced en dash, respectively, each can also set off a phrase for emphasis or as a parenthetical.
 
-**|** &nbsp;&nbsp; The pipe connects commands in computer code. <br>
-**/** &nbsp;&nbsp; The slash connects conjunctions/disjunctions/alternatives, or locations such as file paths or urls.
+**" \_** &nbsp;&nbsp; "Double quotation marks can set off a quotation or phrase or title, and the underscore can \_underline a phrase\_ for emphasis or as a title.
 
-**-** &nbsp;&nbsp; The dash connects side-by-side words, or can surround a phrase for emphasis. <br>
-**\_** &nbsp;&nbsp; The underscore connects strings within variable or file names, or can \_underline a phrase\_ for emphasis.
+**, ;** &nbsp;&nbsp; The comma is used to separate text, for example in lists; the semicolon can be used in place of the comma to separate items in a list.
+
+**. :** &nbsp;&nbsp; The period ends a sentence. The colon similarly ends a statement but precedes something following: explanation, quotation, list, etc.
+
+**([{ )]}** &nbsp;&nbsp; The different brackets naturally go together. Parentheses are more frequently used than square brackets, and the Alt-key can access curly brackets, which are commonly used by programmers.  
+
+**# \`** &nbsp;&nbsp; The hashtag (repeat of the pound/hash sign above) is a metadata tag used in social networks to process/find message strings, while the backtick can be used to process/evaluate a string as part of a general command.
+
+**@ |** &nbsp;&nbsp; The "at sign" (duplicate from the "6" key for ease of access) can be used as a handle in social media to direct the flow of information, and a vertical line or "pipe" can be used to direct the output of a computer command.
