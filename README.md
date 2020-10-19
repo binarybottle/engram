@@ -1,3 +1,104 @@
+# Arno's Engram key layout
+
+The [Engram layout](https://github.com/binarybottle/engram-layout) is a keyboard layout optimized for comfortable touch typing in English created by [Arno Klein](https://binarybottle.com), with open source code to create other optimized key layouts.
+
+             Y  G  U  K            B  L  D  F
+             I  O  E  A            R  T  S  N
+             V  Z  X  C            H  W  P  M
+
+The Shift (and Alt) key accesses (capital letters), less common punctuation, and characters that look similar to the numbers. Swapping the Backspace and Caps lock keys completes the layout:
+
+          ^  !  ?  <  +   $    @   >  &  %  *  ~  \
+          #  1  2  3  4   5    6   7  8  9  0  =  /    Caps
+
+    Tab      Y  G  U  K  '-   "_   B  L  D  F  Q  #`  @|
+    Back     I  O  E  A  ,;   .:   R  T  S  N  J      Enter
+    Shift    V  Z  X  C  ([{  )]}  H  W  P  M         Shift
+
+    Ctrl  Fn  Cmd  Alt    Space     Alt   Ctrl       Arrows    
+    
+
+# Contents
+1. [Rationale](#rationale)
+2. [Comparison with other key layouts](#comparison)
+3. [Factors used to compute the layout](#factors)
+4. [Guiding criteria](#criteria)
+5. [Summary of steps and results](#summary)
+    
+
+## Rationale <a name="rationale">
+
+**Why?** <br>
+In the future, I hope to include an engaging rationale for why I took on this challenge.
+Suffice to say that I have battled repetitive strain injury since I worked
+on an old DEC workstation at the MIT Media Lab while composing my thesis back in the mid-90s.
+Ever since then I have used different key layouts (Dvorak, Colemak, my own, etc.),
+and have primarily used Colemak for almost 10 years.  I find that they all place too much stress on tendons, with lateral extension of the index and little fingers,
+and on uniform distribution of finger use, which has damaged my little fingers.
+I have also experimented with a wide variety of human interface technologies
+(voice dictation, one-handed keyboard, keyless keyboard, foot mouse, and ergonomic keyboards like the Kinesis Advantage. I recently got an Ergodox that I am looking forward to trying out with the Engram layout.
+
+**"Engram"?** <br>
+The name is a pun, referring both to "n-gram", letter permutations used to compute this layout, and "engram", or memory trace, the postulated change in neural tissue to account for the persistence of memory.
+
+
+## Comparison with other key layouts <a name="comparison">
+
+Despite the fact that the Engram layout was designed to reduce strain and discomfort, not to reduce finger travel from the home row, it scores higher than all other key layouts (Colemak, Dvorak, QWERTY, etc.) I've tested using the online Keyboard Layout Analyzer, for all of the examples of prose and tweet data I've tried, including the data sets below:
+
+- [See the complete analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/x0WPtw3x)
+of __Alice in Wonderland__ provided by the Keyboard Layout Analyzer 
+
+- All __20,000 tweets__ from [Gender Classifier Data](https://www.kaggle.com/crowdflower/twitter-user-gender-classification) <br>
+Added: November 15, 2015 by CrowdFlower
+
+- The first __100,000 tweets__ from: [Sentiment140 dataset](https://data.world/data-society/twitter-user-data) training data <br>
+Go, A., Bhayani, R. and Huang, L., 2009. <br>
+Twitter sentiment classification using distant supervision. <br>
+CS224N Project Report, Stanford, 1(2009), p.12.
+
+According to the [Keyboard Layout Analyzer](http://patorjk.com/keyboard-layout-analyzer/):
+
+"The optimal layout score is based on a weighted calculation that factors in the distance your fingers moved (33%), how often you use particular fingers (33%), and how often you switch fingers and hands while typing (34%)."
+    
+From the [Internet Letter Layout DB](https://www.keyboard-design.com/internet-letter-layout-db.html) for ANSI/ISO layouts:
+
+    - [Halmak](https://www.keyboard-design.com/letterlayout.html?layout=halmak-2-2.en.ansi)
+    - [Workman](https://www.keyboard-design.com/letterlayout.html?layout=workman.en.ansi)
+    - [Norman](https://www.keyboard-design.com/letterlayout.html?layout=norman.en.ansi)
+    - [Colemak](https://www.keyboard-design.com/letterlayout.html?layout=colemak.en.ansi)
+    - [Dvorak](https://www.keyboard-design.com/letterlayout.html?layout=dvorak.en.ansi)
+    - [Qwerty](https://www.keyboard-design.com/letterlayout.html?layout=qwerty.en.ansi)
+
+
+## Factors used to compute the layout <a name="factors">
+  - **N-gram letter frequencies** <br>
+    
+    [Peter Norvig's analysis](http://www.norvig.com/mayzner.html) of data from Google's book scanning project
+  - **Flow factors** (transitions between ordered key pairs) <br>
+    These factors are influenced by Dvorak's 11 criteria (1936).
+  - **Finger strengths** (peak keyboard reaction forces) <br>
+      "Keyboard Reaction Force and Finger Flexor Electromyograms during Computer Keyboard Work", BJ Martin, TJ Armstrong, JA Foulke, S Natarajan, Human Factors,1996,38(4),654-664.
+  - **Speed** (unordered interkey stroke times) <br>
+      "Estimation of digraph costs for keyboard layout optimization", A Iseri, Ma Eksioglu, International Journal of Industrial Ergonomics, 48, 127-138, 2015. <br>
+      _NOTE: Speed data were only used for exploration of early key layouts._
+
+
+## Guiding criteria   <a name="criteria">
+
+1.  Assign 24 letters to columns of keys that don't require lateral finger movement.
+2.  Assign common punctuation to keys in the middle columns of the keyboard.
+3.  Assign easier-to-remember characters to the shift-number keys.
+4.  Group letters for common command shortcuts close together.
+5.  Arrange letters so that more frequent bigrams are faster and easier to type.
+6.  Balance finger loads according to their relative strength.
+7.  Promote alternating between hands over uncomfortable transitions with the same hand.
+8.  Promote little-to-index-finger roll-ins over index-to-little-finger roll_outs.
+9.  Avoid stretching shorter fingers up and longer fingers down.
+10. Avoid using the same finger.
+11. Avoid the upper and lower rows.
+12. Avoid skipping over the home row.
+
 ## Summary of steps and results  <a name="summary">
 
 - [Step 1: Define the shape of the key layout to minimize lateral finger movements](#step1)
