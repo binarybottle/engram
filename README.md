@@ -134,23 +134,23 @@ In prior experiments using the methods below, all vowels automatically clustered
 
 We will assign the four most frequent vowels (E,A,O,I) to the most comfortable keys in the left home and upper rows (keys 5-8 and 2-3), with the letter E, the most frequent in the English language, assigned to either of the strongest keys (7 and 8, the middle and index fingers on the left home row). The letter U may also take the less comfortable key 4. We will arrange the vowels such that any top-frequency bigram (more than 1 billion instances in Peter Norvig's analysis of Google data) reads from left to right (ex: TH, not HT) for ease of typing (roll-in from little to index finger vs. roll-out from index to little finger). These constraints lead to comfortable and efficient layouts:
     
-    (1)  Y  O  U  -
-         I  -  E  A    
+    Y  O  U  -
+    I  -  E  A    
 
-    (2)  Y  -  U  - 
-         I  O  E  A      
+    Y  -  U  - 
+    I  O  E  A      
 
-    (3)  Y  -  -  U 
-         I  O  E  A      
+    Y  -  -  U 
+    I  O  E  A      
 
-    (4)  Y  -  O  U   
-         I  -  E  A    
+    Y  -  O  U   
+    I  -  E  A    
 
-    (5)  Y  -  O  U   
-         -  I  E  A    
+    Y  -  O  U   
+    -  I  E  A    
 
-    (6)  Y  I  O  U    
-         -  -  E  A     
+    Y  I  O  U    
+    -  -  E  A     
 
 #### Consonants
 
@@ -176,86 +176,74 @@ To maximize the number of bigrams we can comfortably type, we select 4-consonant
     L  D  S  T    
     
 When reordered from right-to-left for ease of typing with the right hand, we have 10 consonant sequences:
-    
-    (0) RTSN
-    (1) RTLN
-    (2) RTSD
-    (3) HTSN
-    (4) HTLN
-    (5) HTSL
-    (6) HTSD
-    (7) TSLN
-    (8) TSDN
-    (9) TSDL
-    
-The resulting 6 arrangements of five vowels on the left and 10 arrangements of four consonants on the right gives us 60 possible layouts, each with 10 unassigned keys:
+RTSN, RTLN, RTSD, HTSN, HTLN, HTSL, HTSD, TSLN, TSDN, TSDL. The resulting 6 arrangements of five vowels on the left and 10 arrangements of four consonants on the right gives us 60 possible layouts, each with 10 unassigned keys:
 
-          Left hand         Right hand
-    10  YOU- I-EA VZXC    ---- RTSN ----
-    11  YOU- I-EA VZXC    ---- RTLN ----
-    12  YOU- I-EA VZXC    ---- RTSD ----
-    13  YOU- I-EA VZXC    ---- HTSN ----
-    14  YOU- I-EA VZXC    ---- HTLN ----
-    15  YOU- I-EA VZXC    ---- HTSL ----
-    16  YOU- I-EA VZXC    ---- HTSD ----
-    17  YOU- I-EA VZXC    ---- TSLN ----
-    18  YOU- I-EA VZXC    ---- TSDN ----
-    19  YOU- I-EA VZXC    ---- TSDL ----
+      Left hand         Right hand
+    YOU- I-EA VZXC    ---- RTSN ----
+    YOU- I-EA VZXC    ---- RTLN ----
+    YOU- I-EA VZXC    ---- RTSD ----
+    YOU- I-EA VZXC    ---- HTSN ----
+    YOU- I-EA VZXC    ---- HTLN ----
+    YOU- I-EA VZXC    ---- HTSL ----
+    YOU- I-EA VZXC    ---- HTSD ----
+    YOU- I-EA VZXC    ---- TSLN ----
+    YOU- I-EA VZXC    ---- TSDN ----
+    YOU- I-EA VZXC    ---- TSDL ----
 
-    20  Y-U- IOEA VZXC    ---- RTSN ----
-    21  Y-U- IOEA VZXC    ---- RTLN ----
-    22  Y-U- IOEA VZXC    ---- RTSD ----
-    23  Y-U- IOEA VZXC    ---- HTSN ----
-    24  Y-U- IOEA VZXC    ---- HTLN ----
-    25  Y-U- IOEA VZXC    ---- HTSL ----
-    26  Y-U- IOEA VZXC    ---- HTSD ----
-    27  Y-U- IOEA VZXC    ---- TSLN ----
-    28  Y-U- IOEA VZXC    ---- TSDN ----
-    29  Y-U- IOEA VZXC    ---- TSDL ----
+    Y-U- IOEA VZXC    ---- RTSN ----
+    Y-U- IOEA VZXC    ---- RTLN ----
+    Y-U- IOEA VZXC    ---- RTSD ----
+    Y-U- IOEA VZXC    ---- HTSN ----
+    Y-U- IOEA VZXC    ---- HTLN ----
+    Y-U- IOEA VZXC    ---- HTSL ----
+    Y-U- IOEA VZXC    ---- HTSD ----
+    Y-U- IOEA VZXC    ---- TSLN ----
+    Y-U- IOEA VZXC    ---- TSDN ----
+    Y-U- IOEA VZXC    ---- TSDL ----
 
-    30  Y--U IOEA VZXC    ---- RTSN ----
-    31  Y--U IOEA VZXC    ---- RTLN ----
-    32  Y--U IOEA VZXC    ---- RTSD ----
-    33  Y--U IOEA VZXC    ---- HTSN ----
-    34  Y--U IOEA VZXC    ---- HTLN ----
-    35  Y--U IOEA VZXC    ---- HTSL ----
-    36  Y--U IOEA VZXC    ---- HTSD ----
-    37  Y--U IOEA VZXC    ---- TSLN ----
-    38  Y--U IOEA VZXC    ---- TSDN ----
-    39  Y--U IOEA VZXC    ---- TSDL ----
+    Y--U IOEA VZXC    ---- RTSN ----
+    Y--U IOEA VZXC    ---- RTLN ----
+    Y--U IOEA VZXC    ---- RTSD ----
+    Y--U IOEA VZXC    ---- HTSN ----
+    Y--U IOEA VZXC    ---- HTLN ----
+    Y--U IOEA VZXC    ---- HTSL ----
+    Y--U IOEA VZXC    ---- HTSD ----
+    Y--U IOEA VZXC    ---- TSLN ----
+    Y--U IOEA VZXC    ---- TSDN ----
+    Y--U IOEA VZXC    ---- TSDL ----
     
-    40  Y-OU I-EA VZXC    ---- RTSN ----
-    41  Y-OU I-EA VZXC    ---- RTLN ----
-    42  Y-OU I-EA VZXC    ---- RTSD ----
-    43  Y-OU I-EA VZXC    ---- HTSN ----
-    44  Y-OU I-EA VZXC    ---- HTLN ----
-    45  Y-OU I-EA VZXC    ---- HTSL ----
-    46  Y-OU I-EA VZXC    ---- HTSD ----
-    47  Y-OU I-EA VZXC    ---- TSLN ----
-    48  Y-OU I-EA VZXC    ---- TSDN ----
-    49  Y-OU I-EA VZXC    ---- TSDL ----
+    Y-OU I-EA VZXC    ---- RTSN ----
+    Y-OU I-EA VZXC    ---- RTLN ----
+    Y-OU I-EA VZXC    ---- RTSD ----
+    Y-OU I-EA VZXC    ---- HTSN ----
+    Y-OU I-EA VZXC    ---- HTLN ----
+    Y-OU I-EA VZXC    ---- HTSL ----
+    Y-OU I-EA VZXC    ---- HTSD ----
+    Y-OU I-EA VZXC    ---- TSLN ----
+    Y-OU I-EA VZXC    ---- TSDN ----
+    Y-OU I-EA VZXC    ---- TSDL ----
 
-    50  Y-OU -IEA VZXC    ---- RTSN ----
-    51  Y-OU -IEA VZXC    ---- RTLN ----
-    52  Y-OU -IEA VZXC    ---- RTSD ----
-    53  Y-OU -IEA VZXC    ---- HTSN ----
-    54  Y-OU -IEA VZXC    ---- HTLN ----
-    55  Y-OU -IEA VZXC    ---- HTSL ----
-    56  Y-OU -IEA VZXC    ---- HTSD ----
-    57  Y-OU -IEA VZXC    ---- TSLN ----
-    58  Y-OU -IEA VZXC    ---- TSDN ----
-    59  Y-OU -IEA VZXC    ---- TSDL ----
+    Y-OU -IEA VZXC    ---- RTSN ----
+    Y-OU -IEA VZXC    ---- RTLN ----
+    Y-OU -IEA VZXC    ---- RTSD ----
+    Y-OU -IEA VZXC    ---- HTSN ----
+    Y-OU -IEA VZXC    ---- HTLN ----
+    Y-OU -IEA VZXC    ---- HTSL ----
+    Y-OU -IEA VZXC    ---- HTSD ----
+    Y-OU -IEA VZXC    ---- TSLN ----
+    Y-OU -IEA VZXC    ---- TSDN ----
+    Y-OU -IEA VZXC    ---- TSDL ----
     
-    60  YIOU --EA VZXC    ---- RTSN ----
-    61  YIOU --EA VZXC    ---- RTLN ----
-    62  YIOU --EA VZXC    ---- RTSD ----
-    63  YIOU --EA VZXC    ---- HTSN ----
-    64  YIOU --EA VZXC    ---- HTLN ----
-    65  YIOU --EA VZXC    ---- HTSL ----
-    66  YIOU --EA VZXC    ---- HTSD ----
-    67  YIOU --EA VZXC    ---- TSLN ----
-    68  YIOU --EA VZXC    ---- TSDN ----
-    69  YIOU --EA VZXC    ---- TSDL ----
+    YIOU --EA VZXC    ---- RTSN ----
+    YIOU --EA VZXC    ---- RTLN ----
+    YIOU --EA VZXC    ---- RTSD ----
+    YIOU --EA VZXC    ---- HTSN ----
+    YIOU --EA VZXC    ---- HTLN ----
+    YIOU --EA VZXC    ---- HTSL ----
+    YIOU --EA VZXC    ---- HTSD ----
+    YIOU --EA VZXC    ---- TSLN ----
+    YIOU --EA VZXC    ---- TSDN ----
+    YIOU --EA VZXC    ---- TSDL ----
     
 ### 4: Optimize assignment of the remaining letters  <a name="step4">
 
@@ -291,11 +279,54 @@ Finger strengths are based on peak keyboard reaction forces (in newtons) from "K
 
 **Speed**: normalized interkey stroke times
 
-These are left-right averaged versions derived from the study data below, to compensate for right-handedness of participants in the study (we used this data for early experimentation):
+These are left-right averaged versions derived from the study data below, to compensate for right-handedness of participants in the study (we used this data for early experimentation and validation):
 
 "Estimation of digraph costs for keyboard layout optimization", 
 A Iseri, Ma Eksioglu, International Journal of Industrial Ergonomics, 48, 127-138, 2015. 
 
+#### **Scoring results**
+
+We obtain 60 layouts, where each represents the top-scoring layout for one of the 60 vowel/consonant initializations above, and are the result of computing scores for 217,728,000 letter permutations. 
+    
+Top 10 layouts as lists:
+
+    L: upper L: home  L:lower  R: upper R: home  R:lower
+    Y,G,U,K, I,O,E,A, V,Z,X,C, B,L,D,F, R,T,S,N, H,W,P,M
+    Y,O,U,K, I,H,E,A, V,Z,X,C, W,D,G,F, R,T,S,N, L,B,P,M
+    Y,P,O,U, H,I,E,A, V,Z,X,C, W,D,G,K, R,T,S,N, L,B,F,M
+    Y,G,U,K, I,O,E,A, V,Z,X,C, B,L,D,W, H,T,S,N, R,F,P,M
+    Y,P,O,U, I,H,E,A, V,Z,X,C, W,D,G,K, R,T,S,N, L,B,F,M
+    Y,O,U,K, I,H,E,A, V,Z,X,C, G,D,R,F, T,S,L,N, M,B,W,P
+    Y,G,P,U, I,O,E,A, V,Z,X,C, K,D,L,B, R,T,S,N, H,W,F,M
+    Y,P,O,U, H,I,E,A, V,Z,X,C, G,D,R,B, T,S,L,N, M,K,W,F
+    Y,O,U,K, I,H,E,A, V,Z,X,C, G,D,M,B, R,T,L,N, S,W,F,P
+    Y,O,U,K, I,H,E,A, V,Z,X,C, G,R,P,F, T,S,D,N, L,W,B,M
+    
+  - Vacancies in the left upper row were filled with G or P for center fingers and K for the index finger.
+  - Every winner's left home row that had to fill a vacancy did so with an H.
+  - Of the winners' right home rows, all have T and N, all but one have T, S, and N, and half are identical (R,T,S,N), including for 1st, 2nd, and 3rd places.
+    
+We then test the robustness of order of the scores for the top 10 layouts:
+    
+Test set 1: Ignore Strength, Flow, and/or Speed matrices:
+
+  - Flow and Strength (not Speed) matrices
+  - Flow and Speed (not Strength) matrices
+  - Only Speed matrix
+  - Only Flow matrix
+
+Test set 2: Reset parameters and rescore:
+    
+  - Set all parameters equal
+  - Set all parameters equal and include the Speed matrix
+  - Strongly penalize same-finger bigrams or home-row skips
+
+It is clear from the results of all of the tests above that the 1st place layout consistently scores at the top, and we will accept this as the winning layout:
+
+    Y  G  U  K        B  L  D  F
+    I  O  E  A        R  T  S  N
+    V  Z  X  C        H  W  P  M
+    
 ### 5. Arrange non-letter characters in easy-to-remember places  <a name="step5">
 
 Now that we have all 26 letters accounted for, we turn our attention to non-letter characters, taking into account frequency of punctuation and ease of recall.
