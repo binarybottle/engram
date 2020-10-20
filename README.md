@@ -44,32 +44,86 @@ The name is a pun, referring both to "n-gram", letter permutations used to compu
 
 ## Comparison with other key layouts <a name="comparison">
 
-Despite the fact that the Engram layout was designed to reduce strain and discomfort, not to reduce finger travel from the home row, it scores higher than all other key layouts (Colemak, Dvorak, QWERTY, etc.) I've tested using the online Keyboard Layout Analyzer, for all of the examples of prose and tweet data I've tried, including the data sets below:
+Despite the fact that the Engram layout was designed to reduce strain and discomfort, not specifically to increase speed or reduce finger travel from the home row, it scores higher than all other key layouts (Colemak, Dvorak, QWERTY, etc.) for some large, representative, publicly available data, according to the online [Keyboard Layout Analyzer](http://patorjk.com/keyboard-layout-analyzer/):
 
-- [See the complete analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/x0WPtw3x)
-of __Alice in Wonderland__ provided by the Keyboard Layout Analyzer 
+> The optimal layout score is based on a weighted calculation that factors in the distance your fingers moved (33%), how often you use particular fingers (33%), and how often you switch fingers and hands while typing (34%).
 
-- All __20,000 tweets__ from [Gender Classifier Data](https://www.kaggle.com/crowdflower/twitter-user-gender-classification) <br>
-Added: November 15, 2015 by CrowdFlower
+[Analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/mN0CTbZ3) 
+    of the first chapter of __Alice in Wonderland__, a standard text used for comparing layouts:
+    
+    #1 Engram 67.51
+    #2 Programmer Dvorak 66.11
+    #3 Simplified Dvorak 65.86
+    #4 Colemak 65.83
+    #5 Personalized 56.01
+    #6 AZERTY 49.54
 
-- The first __100,000 tweets__ from: [Sentiment140 dataset](https://data.world/data-society/twitter-user-data) training data <br>
+The first __100,000 tweets__ from: [Sentiment140 dataset](https://data.world/data-society/twitter-user-data) training data <br>
 Go, A., Bhayani, R. and Huang, L., 2009. <br>
 Twitter sentiment classification using distant supervision. <br>
 CS224N Project Report, Stanford, 1(2009), p.12.
 
-According to the [Keyboard Layout Analyzer](http://patorjk.com/keyboard-layout-analyzer/):
+    #1 Engram 61.20
+    #2 Programmer Dvorak 61.11
+    #3 Simplified Dvorak 60.93
+    #4 Colemak 60.67
+    #5 Personalized 56.60
+    #6 AZERTY 46.26
 
-"The optimal layout score is based on a weighted calculation that factors in the distance your fingers moved (33%), how often you use particular fingers (33%), and how often you switch fingers and hands while typing (34%)."
+All __20,000 tweets__ from [Gender Classifier Data](https://www.kaggle.com/crowdflower/twitter-user-gender-classification) <br>
+Added: November 15, 2015 by CrowdFlower
+
+    #1 Simplified Dvorak 55.56
+    #2 Engram 55.18
+    #3 Programmer Dvorak 55.08
+    #4 Colemak 54.97
+    #5 Personalized 49.02
+    #6 AZERTY 42.35
+
+[Analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/fv3Cj2zQ) of [MASC](http://www.anc.org/data/masc/corpus/) tweets (cleaned of html markup):
+
+    #1 Engram 57.10
+    #2 Colemak 57.04
+    #3 Simplified Dvorak 56.59
+    #4 Programmer Dvorak 56.24
+    #5 Personalized 49.74
+    #6 AZERTY 42.43
     
-From the [Internet Letter Layout DB](https://www.keyboard-design.com/internet-letter-layout-db.html) for ANSI/ISO layouts:
+[Analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/CvHXTg7n) of [MASC](http://www.anc.org/data/masc/corpus/) spoken transcripts (phone and face-to-face: 25,783 words):
 
-    - [Halmak](https://www.keyboard-design.com/letterlayout.html?layout=halmak-2-2.en.ansi)
-    - [Workman](https://www.keyboard-design.com/letterlayout.html?layout=workman.en.ansi)
-    - [Norman](https://www.keyboard-design.com/letterlayout.html?layout=norman.en.ansi)
-    - [Colemak](https://www.keyboard-design.com/letterlayout.html?layout=colemak.en.ansi)
-    - [Dvorak](https://www.keyboard-design.com/letterlayout.html?layout=dvorak.en.ansi)
-    - [Qwerty](https://www.keyboard-design.com/letterlayout.html?layout=qwerty.en.ansi)
+    #1 Simplified Dvorak 62.75
+    #2 Programmer Dvorak 62.72
+    #3 Colemak 61.36
+    #4 Engram 61.13
+    #5 Personalized 57.05
+    #6 AZERTY 48.26
 
+[Analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/fv3Cj2zQ) of [Corpus of Contemporary American English](https://www.english-corpora.org/coca/) [blog samples](https://www.corpusdata.org/) with hundreds of thousands of words (cleaned of html markup):
+    
+    #1 Engram 57.10
+    #2 Colemak 57.04
+    #3 Simplified Dvorak 56.59
+    #4 Programmer Dvorak 56.24
+    #5 Personalized 49.74
+    #6 AZERTY 42.43
+
+[Analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/CtwvHjM5) of the [Google home page](google.com) (accessed 10/20/2020): 
+
+    #1 Engram 34.39
+    #2 Programmer Dvorak 32.95
+    #3 AZERTY 31.71
+    #4 Colemak 31.48
+    #5 Simplified Dvorak 28.85
+    #6 Personalized 27.80
+
+[Analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/szdpfS3K) of the "Tower of Hanoi" (programming languages A-Z compiled from [Rosetta Code](https://rosettacode.org/wiki/Towers_of_Hanoi) in [SteveP's fork of Patrick's Keyboard Layout Analyzer](https://stevep99.github.io/keyboard-layout-analyzer/#/main)):
+
+    #1 Colemak 48.65
+    #2 Programmer Dvorak 47.10
+    #3 Engram 45.91
+    #4 Simplified Dvorak 45.55
+    #5 Personalized 44.58
+    #6 AZERTY 36.27
 
 ## Factors used to compute the layout <a name="factors">
   - **N-gram letter frequencies** <br>
