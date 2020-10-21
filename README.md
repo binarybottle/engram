@@ -60,7 +60,7 @@ and have primarily relied on Colemak for the last 10 years.
 
 While I used ergonomic principles outlined below and the accompanying code to help generate the Engram layout,
 I also relied on massive bigram frequency data for the English language. 
-if one were to use a different set of bigram frequencies for another language or text corpus,
+if one were to follow the procedure below and use a different set of bigram frequencies for another language or text corpus,
 they could create a variant of the Engram layout, say "Engram-French", better suited to the French language.
     
 **Why "Engram"?** <br>
