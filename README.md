@@ -30,8 +30,6 @@ The Shift (and Alt) key accesses (capital letters), less common punctuation, and
 
 ## Why a new key layout? <a name="why">
 
-## Why a new key layout? <a name="why">
-
 **Personal history** <br>
 In the future, I hope to include an engaging rationale for why I took on this challenge.
 Suffice to say that I have battled repetitive strain injury ever since I worked
