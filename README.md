@@ -26,8 +26,6 @@ The Shift (and Alt) key accesses (capital letters), less common punctuation, and
 5. [Summary of steps and results](#summary)
     
 
-## Rationale <a name="rationale">
-
 ## Why a new key layout? <a name="why">
 
 **Personal history** <br>
