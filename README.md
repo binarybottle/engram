@@ -63,9 +63,7 @@ I also relied on massive bigram frequency data for the English language.
 if one were to use a different set of bigram frequencies for another language or text corpus,
 they could create a variant of the Engram layout, say "Engram-French", better suited to the French language.
     
-**"Engram"?** <br>
-The name is a pun, referring both to "n-gram", letter permutations and their frequencies that are used to compute the Engram layout, and "engram", or memory trace, the postulated change in neural tissue to account for the persistence of memory.
-**"Engram"?** <br>
+**Why "Engram"?** <br>
 The name is a pun, referring both to "n-gram", letter permutations used to compute this layout, and "engram", or memory trace, the postulated change in neural tissue to account for the persistence of memory.
 
 ## How does Engram compare with other key layouts? <a name="scores">
