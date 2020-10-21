@@ -30,17 +30,43 @@ The Shift (and Alt) key accesses (capital letters), less common punctuation, and
 
 ## Why a new key layout? <a name="why">
 
-**Why?** <br>
-In the future, I hope to include an engaging rationale for why I took on this challenge.
-Suffice to say that I have battled repetitive strain injury since I worked
-on an old DEC workstation at the MIT Media Lab while composing my thesis back in the mid-90s.
-Ever since then I have used different key layouts (Qwerty, Dvorak, Colemak, my own, etc.),
-and have primarily used Colemak for almost 10 years.  I find that they all place too much stress on tendons, with lateral extension of the index and little fingers,
-and on uniform distribution of finger use, which has injured my little fingers.
-I have also experimented with a wide variety of human interface technologies --
-voice dictation, one-handed keyboard, keyless keyboard, foot mouse, and ergonomic keyboards like the Kinesis Advantage. 
-I recently got an Ergodox that I am looking forward to trying out with the Engram layout.
+## Why a new key layout? <a name="why">
 
+**Personal history** <br>
+In the future, I hope to include an engaging rationale for why I took on this challenge.
+Suffice to say that I have battled repetitive strain injury ever since I worked
+on an old DEC workstation at the MIT Media Lab while composing my thesis back in the mid-90s.
+I have experimented with a wide variety of human interface technologies over the years --
+voice dictation, one-handed keyboard, keyless keyboard, foot mouse, and ergonomic keyboards 
+like the Kinesis Advantage and Ergodox keyboards with different key switches.
+While these technologies can significantly improve comfort and reduce strain, 
+an optimized key layout can only help when typing on ergonomic or standard keyboards. 
+
+I have used different key layouts (Qwerty, Dvorak, Colemak, etc.)
+for communications and for writing and programming projects,
+and have primarily relied on Colemak for the last 10 years. 
+**I find that most to all of these key layouts:**
+
+- Demand too much strain on tendons
+    - *lateral extension of the index and little fingers*
+- Ignore the ergonomics of the human hand
+    - *different finger lengths*
+    - *natural roundedness of the hand*
+    - *ease of little-to-index finger rolls vs. reverse*
+- Emphasize alternation between hands over same-hand, different-finger transitions
+    - *same-row, adjacent finger transitions*
+    - *little-to-index finger rolls*
+- Under- or over-emphasize differences in finger strength
+    - *home row easier than upper row for shorter fingers*
+    - *home row easier than lower row for longer fingers*
+
+While I used ergonomic principles outlined below and the accompanying code to help generate the Engram layout,
+I also relied on massive bigram frequency data for the English language. 
+if one were to use a different set of bigram frequencies for another language or text corpus,
+they could create a variant of the Engram layout, say "Engram-French", better suited to the French language.
+    
+**"Engram"?** <br>
+The name is a pun, referring both to "n-gram", letter permutations and their frequencies that are used to compute the Engram layout, and "engram", or memory trace, the postulated change in neural tissue to account for the persistence of memory.
 **"Engram"?** <br>
 The name is a pun, referring both to "n-gram", letter permutations used to compute this layout, and "engram", or memory trace, the postulated change in neural tissue to account for the persistence of memory.
 
@@ -300,7 +326,7 @@ The 10 missing letters in each layout are among those in bold below:
 
 E, T, A, O, I, N, **S, R, H, L, D**, C, U, **M, F, P, G, W**, Y, **B**, V, **K**, X, J, Q, Z    
 
-#### **Scoring details**
+#### **Engram Scoring Model**
     
 The optimization algorithm finds every permutation of a given set of letters, maps these letter permutations to a set of keys, and ranks these letter-key mappings according to a score reflecting ease of typing key pairs and frequency of letter pairs (bigrams). The score is the average of the scores for all possible bigrams in this arrangement. The score for each bigram is a product of the frequency of occurrence of that bigram and the factors Flow, Strength, and Speed: 
 
