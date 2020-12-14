@@ -78,16 +78,15 @@ Despite the fact that the Engram layout was designed to reduce strain and discom
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Engram | 0.02483 | 0.01933 | 0.03281 | 0.02958 | 0.02770 | 0.01829 | 0.02468 | 0.04331 | 0.02718 |
 | Halmak2.2 | 0.02465 | 0.01924 | 0.03282 | 0.02951 | 0.02765 | 0.01826 | 0.02455 | 0.04342 | 0.02705 |
-| Anderson | 0.02424 | 0.01873 | 0.03213 | 0.02884 | 0.02718 | 0.01777 | 0.02406 | 0.04261 | 0.02676 |
 | Norman | 0.02416 | 0.01899 | 0.03224 | 0.02892 | 0.02709 | 0.01798 | 0.02409 | 0.04201 | 0.02653 |
 | MTGAP Shifted | 0.02426 | 0.01899 | 0.03219 | 0.02886 | 0.02722 | 0.01794 | 0.02419 | 0.04130 | 0.02624 |
 | Workman | 0.02445 | 0.01906 | 0.03251 | 0.02924 | 0.02742 | 0.01804 | 0.02431 | 0.04277 | 0.02687 |
 | QGMLWB | 0.02324 | 0.01830 | 0.03116 | 0.02811 | 0.02601 | 0.01738 | 0.02320 | 0.04094 | 0.02545 |
 | Colemak Mod-DH | 0.02421 | 0.01876 | 0.03213 | 0.02876 | 0.02713 | 0.01783 | 0.02407 | 0.04216 | 0.02674 |
 | Colemak | 0.02431 | 0.01881 | 0.03229 | 0.02888 | 0.02724 | 0.01790 | 0.02418 | 0.04221 | 0.02703 |
+| ASSET | 0.02371 | 0.01831 | 0.03170 | 0.02836 | 0.02676 | 0.01743 | 0.02365 | 0.04188 | 0.02652 |
 | Capewell-Dvorak | 0.02383 | 0.01860 | 0.03177 | 0.02844 | 0.02670 | 0.01768 | 0.02374 | 0.04141 | 0.02620 |
 | Dvorak | 0.02363 | 0.01847 | 0.03148 | 0.02831 | 0.02640 | 0.01760 | 0.02355 | 0.04101 | 0.02596 |
-| ASSET | 0.02371 | 0.01831 | 0.03170 | 0.02836 | 0.02676 | 0.01743 | 0.02365 | 0.04188 | 0.02652 |
 | QWERTY | 0.02133 | 0.01684 | 0.02879 | 0.02580 | 0.02404 | 0.01581 | 0.02133 | 0.03793 | 0.02401 |
 
 #### Keyboard Layout Analyzer scores for existing layouts based on publicly available text data
@@ -96,7 +95,6 @@ Despite the fact that the Engram layout was designed to reduce strain and discom
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Engram | 67.51 | 61.20 | 55.18 | 57.10 | 61.13 | 57.10 | 34.39 | 45.91 |
 | Halmak2.2 | - | - | --- | --- | --- | --- | --- | --- |
-| Anderson | - | - | --- | --- | --- | --- | --- | --- | 
 | Norman | 62.76 | - | --- | --- | --- | --- | --- | --- |
 | MTGAP Shifted | 69.73 | - | --- | --- | --- | --- | --- | --- | 
 | Workman | 64.78 | - | --- | --- | --- | --- | --- | --- | 
@@ -121,13 +119,10 @@ Despite the fact that the Engram layout was designed to reduce strain and discom
 | "Google" | [KLA analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/CtwvHjM5) of the [Google home page](https://google.com) (accessed 10/20/2020) |
 | "Code" | [KLA analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/szdpfS3K) of the "Tower of Hanoi" (programming languages A-Z compiled from [Rosetta Code](https://rosettacode.org/wiki/Towers_of_Hanoi)) |
 
----
- 
 | Layout | Year | Website |
 | --- | --- | --- |
 | Engram | 2020 | https://engram.dev |
 | Halmak2.2 | 2016 | https://github.com/MadRabbit/halmak |
-| Anderson | ? | https://www.keyboard-design.com/letterlayout.html?layout=light-anderson-mod-Ian-2.en.ansi, [Best Computer Keyboard Layouts Interactive Explorer](https://www.keyboard-design.com/best-layouts-interactive-explorer.html) (Accessed 10/20/2020) | 
 | Norman | 2013 | https://normanlayout.info/ |
 | MTGAP Shifted | 2012 | https://mathematicalmulticore.wordpress.com/category/keyboards/ |
 | Workman | 2010 | https://workmanlayout.org/ | 
@@ -138,7 +133,6 @@ Despite the fact that the Engram layout was designed to reduce strain and discom
 | Dvorak | 1936 | https://en.wikipedia.org/wiki/Dvorak_keyboard_layout | 
 | ASSET | 2006 | http://millikeys.sourceforge.net/asset/ | 
 | QWERTY | 1873 | https://en.wikipedia.org/wiki/QWERTY |
-
 
 ## Factors used to compute the layout <a name="factors">
   - **N-gram letter frequencies** <br>
