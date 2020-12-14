@@ -437,7 +437,7 @@ Finally, we will also swap the Backspace and Caps keys:
 
 **Rationale for shift-characters**
 
-**# &nbsp;&nbsp; ^** &nbsp;&nbsp; The pound/hash represents numbers, and is set next the number keys, while the caret indicates a superscript for characters accessible by the Shift-key.
+**# &nbsp;&nbsp; ^** &nbsp;&nbsp; The pound/hash represents numbers, and is set next to the number keys; the caret indicates a superscript for characters accessible by the Shift-key.
 
 **= &nbsp;&nbsp; \~** &nbsp;&nbsp; The equal sign means "equal to" and the tilde can mean "approximately equal to" (here "similar-looking" to the numbers).
 
@@ -445,11 +445,11 @@ Finally, we will also swap the Backspace and Caps keys:
 
 **' &nbsp;&nbsp; -** &nbsp;&nbsp; The apostrophe joins words as contractions while the hyphen joins words as compounds. As a single quotation mark and a spaced en dash, respectively, each can also set off a phrase for emphasis or as a parenthetical.
 
-**" &nbsp;&nbsp; \_** &nbsp;&nbsp; "Double quotation marks can set off a quotation or phrase or title, and the underscore can \_underline a phrase\_ for emphasis or as a title.
+**" &nbsp;&nbsp; \_** &nbsp;&nbsp; Double quotation marks set off a quotation, phrase, or title; the underscore sets off a \_title\_ or phrase for emphasis.
 
-**, &nbsp;&nbsp; ;** &nbsp;&nbsp; The comma is used to separate text, for example in lists; the semicolon can be used in place of the comma to separate items in a list.
+**, &nbsp;&nbsp; ;** &nbsp;&nbsp; The comma separates text, for example in lists; the semicolon can also separate items in a list.
 
-**. &nbsp;&nbsp; :** &nbsp;&nbsp; The period ends a sentence. The colon similarly ends a statement but precedes something following: explanation, quotation, list, etc.
+**. &nbsp;&nbsp; :** &nbsp;&nbsp; The period ends a sentence. The colon ends a statement but precedes something: explanation, quotation, list, etc.
 
 **([{ &nbsp;&nbsp; )]}** &nbsp;&nbsp; The different brackets naturally go together. Parentheses are more frequently used than square brackets, and the Alt-key can access curly brackets, which are commonly used by programmers.  
 
