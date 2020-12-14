@@ -455,6 +455,4 @@ Finally, we will also swap the Backspace and Caps keys:
 
 **# \`** &nbsp;&nbsp; The hashtag (repeat of the pound/hash sign above) is a metadata tag used in social networks to process/find message strings, while the backtick can be used to process/evaluate a string as part of a general command.
 
-**@ |** &nbsp;&nbsp; The "at sign" (duplicate from the "6" key for ease of access) can be used as a handle in social media to direct the flow of information, and a vertical line or "pipe" can be used to direct the output of a computer command.
-
-**@ |** &nbsp;&nbsp; The "at sign" (duplicate from the "6" key for ease of access) can be used as a handle in social media to direct the flow of information, and a vertical line or "pipe" can be used to direct the output of a computer command.
+**@ \|** &nbsp;&nbsp; The "at sign" (duplicate from the "6" key for ease of access) can be used as a handle in social media to direct the flow of information, and a vertical line or "pipe" can be used to direct the output of a computer command.
