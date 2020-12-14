@@ -437,22 +437,22 @@ Finally, we will also swap the Backspace and Caps keys:
 
 **Rationale for shift-characters**
 
-**# ^** &nbsp;&nbsp; The pound/hash represents numbers, and is set next the number keys, while the caret indicates a superscript for characters accessible by the Shift-key.
+**# &nbsp;&nbsp; ^** &nbsp;&nbsp; The pound/hash represents numbers, and is set next the number keys, while the caret indicates a superscript for characters accessible by the Shift-key.
 
 **= &nbsp;&nbsp; \~** &nbsp;&nbsp; The equal sign means "equal to" and the tilde can mean "approximately equal to" (here "similar-looking" to the numbers).
 
-**/ \\** &nbsp;&nbsp; The slash and backslash are a natural pair.
+**/ &nbsp;&nbsp; \\** &nbsp;&nbsp; The slash and backslash are a natural pair.
 
-**' -** &nbsp;&nbsp; The apostrophe joins words as contractions while the hyphen joins words as compounds. As a single quotation mark and a spaced en dash, respectively, each can also set off a phrase for emphasis or as a parenthetical.
+**' &nbsp;&nbsp; -** &nbsp;&nbsp; The apostrophe joins words as contractions while the hyphen joins words as compounds. As a single quotation mark and a spaced en dash, respectively, each can also set off a phrase for emphasis or as a parenthetical.
 
-**" \_** &nbsp;&nbsp; "Double quotation marks can set off a quotation or phrase or title, and the underscore can \_underline a phrase\_ for emphasis or as a title.
+**" &nbsp;&nbsp; \_** &nbsp;&nbsp; "Double quotation marks can set off a quotation or phrase or title, and the underscore can \_underline a phrase\_ for emphasis or as a title.
 
-**, ;** &nbsp;&nbsp; The comma is used to separate text, for example in lists; the semicolon can be used in place of the comma to separate items in a list.
+**, &nbsp;&nbsp; ;** &nbsp;&nbsp; The comma is used to separate text, for example in lists; the semicolon can be used in place of the comma to separate items in a list.
 
-**. :** &nbsp;&nbsp; The period ends a sentence. The colon similarly ends a statement but precedes something following: explanation, quotation, list, etc.
+**. &nbsp;&nbsp; :** &nbsp;&nbsp; The period ends a sentence. The colon similarly ends a statement but precedes something following: explanation, quotation, list, etc.
 
-**([{ )]}** &nbsp;&nbsp; The different brackets naturally go together. Parentheses are more frequently used than square brackets, and the Alt-key can access curly brackets, which are commonly used by programmers.  
+**([{ &nbsp;&nbsp; )]}** &nbsp;&nbsp; The different brackets naturally go together. Parentheses are more frequently used than square brackets, and the Alt-key can access curly brackets, which are commonly used by programmers.  
 
-**# \`** &nbsp;&nbsp; The hashtag (repeat of the pound/hash sign above) is a metadata tag used in social networks to process/find message strings, while the backtick can be used to process/evaluate a string as part of a general command.
+**# &nbsp;&nbsp; \`** &nbsp;&nbsp; The hashtag (repeat of the pound/hash sign above) is a metadata tag used in social networks to process/find message strings, while the backtick can be used to process/evaluate a string as part of a general command.
 
-**@ \|** &nbsp;&nbsp; The "at sign" (duplicate from the "6" key for ease of access) can be used as a handle in social media to direct the flow of information, and a vertical line or "pipe" can be used to direct the output of a computer command.
+**@ &nbsp;&nbsp; \|** &nbsp;&nbsp; The "at sign" (duplicate from the "6" key for ease of access) can be used as a handle in social media to direct the flow of information, and a vertical line or "pipe" can be used to direct the output of a computer command.
