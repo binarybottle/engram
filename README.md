@@ -101,9 +101,9 @@ Despite the fact that the Engram layout was designed to reduce strain and discom
 | QGMLWB | - | - | --- | --- | --- | --- | --- | --- | 
 | Colemak Mod-DH | - | - | --- | --- | --- | --- | --- | --- | 
 | Colemak | 65.83 | 60.67 | 54.97 | 57.04 | 61.36 | 57.04 | 31.48 | 48.65 | 
+| ASSET | 64.60 | - | --- | --- | --- | --- | --- | --- | 
 | Capewell-Dvorak | 63.40 | - | --- | --- | --- | --- | --- | --- | 
 | Dvorak | 65.86 | 60.93 | 55.56 | 56.59 | 62.75 | 56.59 | 28.85 | 45.55 | 
-| ASSET | 64.60 | - | --- | --- | --- | --- | --- | --- | 
 | QWERTY | 53.06 | - | --- | --- | --- | --- | --- | --- | 
 
 ---
@@ -129,10 +129,11 @@ Despite the fact that the Engram layout was designed to reduce strain and discom
 | QGMLWB | 2009 | http://mkweb.bcgsc.ca/carpalx/?full_optimization | 
 | Colemak Mod-DH | 2017 | https://colemakmods.github.io/mod-dh/ | 
 | Colemak | 2006 | https://colemak.com/ | 
+| ASSET | 2006 | http://millikeys.sourceforge.net/asset/ | 
 | Capewell-Dvorak | 2004 | http://michaelcapewell.com/projects/keyboard/layout_capewell-dvorak.htm |
 | Dvorak | 1936 | https://en.wikipedia.org/wiki/Dvorak_keyboard_layout | 
-| ASSET | 2006 | http://millikeys.sourceforge.net/asset/ | 
 | QWERTY | 1873 | https://en.wikipedia.org/wiki/QWERTY |
+
 
 ## Factors used to compute the layout <a name="factors">
   - **N-gram letter frequencies** <br>
