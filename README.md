@@ -439,7 +439,7 @@ Finally, we will also swap the Backspace and Caps keys:
 
 **# ^** &nbsp;&nbsp; The pound/hash represents numbers, and is set next the number keys, while the caret indicates a superscript for characters accessible by the Shift-key.
 
-**= ~** &nbsp;&nbsp; The equal sign means "equal to" and the tilde can mean "approximately equal to" (here "similar-looking" to the numbers).
+**\= ~** &nbsp;&nbsp; The equal sign means "equal to" and the tilde can mean "approximately equal to" (here "similar-looking" to the numbers).
 
 **/ \\** &nbsp;&nbsp; The slash and backslash are a natural pair.
 
