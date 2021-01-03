@@ -472,40 +472,43 @@ We will use the Shift and Ctrl keys to group similar punctuation marks:
              I  O  E  A  ,;?  .:!  R  T  S  N  J      
              V  Z  X  C  ([{  )]}  H  W  P  M             
     
-**' - /** &nbsp;&nbsp; Joining characters: the apostrophe joins words as contractions; the hyphen joins words as compounds; the slash joins paths in computer operating systems and joins numbers as fractions.
+    ' - /  
+    Joining characters: the apostrophe joins words as contractions; the hyphen joins words as compounds; the slash joins paths in computer operating systems and joins numbers as fractions.
 
-**" \_ \\** &nbsp;&nbsp; "Quoting characters: double quotation marks are for quotations or titles; the underscore can indicate a title or \_underline for emphasis\_; the backslash quotes ("escapes") special characters.
+    " _ \
+    Quoting characters: double quotation marks are for quotations or titles; the underscore can indicate a title or \_underline for emphasis\_; the backslash quotes ("escapes") special characters.
 
-**, ; ?** &nbsp;&nbsp; Separating characters: the comma separates text, for example in lists; the semicolon can be used in place of the comma to separate items in a list; the question mark  (in addition to its common use at the end of an English sentence) can occur at the end of a clause or phrase to replace the comma: "Is it good in form? style? meaning?."
+    , ; ?  
+    Separating characters: the comma separates text, for example in lists; the semicolon can be used in place of the comma to separate items in a list; the question mark  (in addition to its common use at the end of an English sentence) can occur at the end of a clause or phrase to replace the comma: "Is it good in form? style? meaning?."
 
-**. : !** &nbsp;&nbsp; Ending characters: the period ends a sentence; the colon ends a statement but precedes something following: explanation, quotation, list, etc.; the exclamation mark emphatically ends a statement!
+    . : !  
+    Ending characters: the period ends a sentence; the colon ends a statement but precedes something following: explanation, quotation, list, etc.; the exclamation mark emphatically ends a statement!
 
-**([{ )]}** &nbsp;&nbsp; Bracketing characters: parentheses, square brackets, curly brackets.  
+    ([{ )]}  
+    Bracketing characters: parentheses, square brackets, curly brackets.  
 
 For the number keys, we will have the Shift key access similar-looking characters:
     
           ~  |  =  <  +  $  @  >  &  %  *  `
           #  1  2  3  4  5  6  7  8  9  0  ^
 
-**# ~** &nbsp;&nbsp; Left of the numbers: the pound/hash represents numbers, and is set next the number keys; the tilde means "approximately equal to" (here "similar-looking" to the numbers).
+    # ~  
+    Left of the numbers: the pound/hash represents numbers, and is set next the number keys; the tilde means "approximately equal to" (here "similar-looking" to the numbers).
 
-**^ \`** &nbsp;&nbsp; Right of the numbers: the caret indicates a superscript (here for special characters accessible by the Shift key); the back quote can be used to indicate special characters in comments, such as code.
+    ^ ` 
+    Right of the numbers: the caret indicates a superscript (here for special characters accessible by the Shift key); the back quote can be used to indicate special characters in comments, such as code.
 
 
-Use of the Shift and Control keys enables easy access to the most common punctuation marks in the middle rows, and it also frees up the three remaining keys in many common keyboards (flanking the Delete key in the upper right hand corner). Those keys excessively stretch the right little finger, and are displaced in special ergonomic keyboards, such as the Kinesis Advantage and Ergodox. So for these three keys, we will simply repeat the use of six punctuation marks:
+Use of the Shift and Control keys enables easy access to the most common punctuation marks in the middle rows, and it also frees up the three remaining keys in many common keyboards (flanking the upper right hand corner key). Those keys excessively stretch the right little finger, and are displaced in special ergonomic keyboards, such as the Kinesis Advantage and Ergodox. So for these three keys, we will simply repeat the use of six punctuation marks:
 
-          ~  |  =  <  +   $    @   >  &  %  *  `  \
-          #  1  2  3  4   5    6   7  8  9  0  ^  /   
+    / \\ 
+    Slashes: the forward slash and backslash are a natural pair.
 
-             Y  G  U  K  '-/  "_\  B  L  D  F  Q  |`  -_
-             I  O  E  A  ,;?  .:!  R  T  S  N  J      
-             V  Z  X  C  ([{  )]}  H  W  P  M             
-    
-**/ \\** &nbsp;&nbsp; Slashes: the forward slash and backslash are a natural pair.
+    | \` 
+    Command marks: the vertical line or "pipe" directs the output of a computer command; the back quote processes a string as part of a computer command.
 
-**| \`** &nbsp;&nbsp; Command marks: the vertical line or "pipe" directs the output of a computer command; the back quote processes a string as part of a computer command.
-
-**- _** &nbsp;&nbsp; Horizontal marks: hyphen/dash; underscore.
+    - _  
+    Horizontal marks: hyphen/dash; underscore.
     
 
 Finally, we will also swap the Backspace and Caps keys:
