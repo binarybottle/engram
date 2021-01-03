@@ -1,39 +1,48 @@
 # Arno's Engram key layout
 
-![Engram](/engram.png "Arno's Engram key layout")
-
 The [Engram layout](https://github.com/binarybottle/engram-layout) is a keyboard layout optimized for comfortable touch typing in English created by [Arno Klein](https://binarybottle.com), with open source code to create other optimized key layouts.
 
              Y  G  U  K            B  L  D  F
              I  O  E  A            R  T  S  N
              V  Z  X  C            H  W  P  M
 
-The Shift (and Alt) key accesses (capital letters), less common punctuation, and characters that look similar to the numbers. Swapping the Backspace and Caps lock keys completes the layout:
+For the letter keys, the Shift key accesses capitals, and for the number keys, the Shift key access similar-looking characters. The remaining keys group similiar punctuation marks, accessed by the Shift and Ctrl keys:
 
-          ^  !  ?  <  +   $    @   >  &  %  *  ~  \
-          #  1  2  3  4   5    6   7  8  9  0  =  /    Caps
+          ~  |  =  <  +   $    @   >  &  %  *  `  \
+          #  1  2  3  4   5    6   7  8  9  0  ^  /   Caps
 
-    Tab      Y  G  U  K  '-   "_   B  L  D  F  Q  #`  @|
-    Back     I  O  E  A  ,;   .:   R  T  S  N  J      Enter
-    Shift    V  Z  X  C  ([{  )]}  H  W  P  M         Shift
-
-    Ctrl  Fn  Cmd  Alt    Space     Alt   Ctrl       Arrows    
+    Tab      Y  G  U  K  '-/  "_\  B  L  D  F  Q  |`  -_
+    Back     I  O  E  A  ,;?  .:!  R  T  S  N  J      Enter
+    Shift    V  Z  X  C  ([{  )]}  H  W  P  M         Shift    
+   
     
-
 # Contents
 1. [Why a new key layout?](#why)
 2. [How does Engram compare with other key layouts?](#scores)
 3. [Factors used to compute the Engram layout](#factors)
 4. [Guiding criteria](#criteria)
 5. [Summary of steps and results](#summary)
-    
+6. Setup:
+    - [Dependencies and functions](#import)
+    - [Speed matrix](#speed)
+    - [Strength matrix](#strength)
+    - [Flow matrix](#flow)
+7. Steps:
+    - [Step 1: Define the shape of the key layout to minimize lateral finger movements](#step1)
+    - [Step 2: Assign command shortcut letters to the bottom left row](#step2)
+    - [Step 3: Arrange the most frequent letters based on comfort and bigram frequencies](#step3)
+    - [Step 4: Optimize assignment of the remaining letters](#step4)
+    - [Step 5: Arrange non-letter characters in easy-to-remember places](#step5)
+8. [Full comparison with other common key layouts](#comparison)
+
 
 ## Why a new key layout? <a name="why">
 
 **Personal history** <br>
 In the future, I hope to include an engaging rationale for why I took on this challenge.
-Suffice to say that I have battled repetitive strain injury ever since I worked
-on an old DEC workstation at the MIT Media Lab while composing my thesis back in the mid-90s.
+Suffice to say I love solving problems, and I have battled repetitive strain injury 
+ever since I worked on an old DEC workstation at the MIT Media Lab while composing 
+my thesis back in the 1990s.
 I have experimented with a wide variety of human interface technologies over the years --
 voice dictation, one-handed keyboard, keyless keyboard, foot mouse, and ergonomic keyboards 
 like the Kinesis Advantage and Ergodox keyboards with different key switches.
@@ -46,17 +55,17 @@ and have primarily relied on Colemak for the last 10 years.
 **I find that most to all of these key layouts:**
 
 - Demand too much strain on tendons
-    - *lateral extension of the index and little fingers*
+    - *strenuous lateral extension of the index and little fingers*
 - Ignore the ergonomics of the human hand
+    - *different finger strengths*
     - *different finger lengths*
     - *natural roundedness of the hand*
-    - *ease of little-to-index finger rolls vs. reverse*
-- Emphasize alternation between hands over same-hand, different-finger transitions
-    - *same-row, adjacent finger transitions*
-    - *little-to-index finger rolls*
-- Under- or over-emphasize differences in finger strength
     - *home row easier than upper row for shorter fingers*
     - *home row easier than lower row for longer fingers*
+    - *ease of little-to-index finger rolls vs. reverse*
+- Over-emphasize alternation between hands and under-emphasize same-hand, different-finger transitions
+    - *same-row, adjacent finger transitions are easy and comfortable*
+    - *little-to-index finger rolls are easy and comfortable*
 
 While I used ergonomic principles outlined below and the accompanying code to help generate the Engram layout,
 I also relied on massive bigram frequency data for the English language. 
@@ -64,13 +73,16 @@ if one were to follow the procedure below and use a different set of bigram freq
 they could create a variant of the Engram layout, say "Engram-French", better suited to the French language.
     
 **Why "Engram"?** <br>
+The name is a pun, referring both to "n-gram", letter permutations and their frequencies that are used to compute the Engram layout, and "engram", or memory trace, the postulated change in neural tissue to account for the persistence of memory, as a nod to my attempt to make this layout easy to remember.
+    
+**Why "Engram"?** <br>
 The name is a pun, referring both to "n-gram", letter permutations used to compute this layout, and "engram", or memory trace, the postulated change in neural tissue to account for the persistence of memory.
+
 
 ## How does Engram compare with other key layouts? <a name="scores">
 
 Despite the fact that the Engram layout was designed to reduce strain and discomfort, not specifically to increase speed or reduce finger travel from the home row, it scores higher than all other key layouts (Colemak, Dvorak, QWERTY, etc.) for some large, representative, publicly available data (all text sources are listed below and available on [GitHub](https://github.com/binarybottle/text_data)). Below are tables of different prominent key layouts scored using the Engram Scoring Model (detailed below), and generated by the online [Keyboard Layout Analyzer](http://patorjk.com/keyboard-layout-analyzer/):
 > The optimal layout score is based on a weighted calculation that factors in the distance your fingers moved (33%), how often you use particular fingers (33%), and how often you switch fingers and hands while typing (34%).
- 
 
 #### Engram Scoring Model scores for existing layouts based on publicly available text data
     
@@ -135,7 +147,7 @@ Despite the fact that the Engram layout was designed to reduce strain and discom
 | QWERTY | 1873 | https://en.wikipedia.org/wiki/QWERTY |
 
 
-## Factors used to compute the layout <a name="factors">
+## Factors used to compute the Engram layout <a name="factors">
   - **N-gram letter frequencies** <br>
     
     [Peter Norvig's analysis](http://www.norvig.com/mayzner.html) of data from Google's book scanning project
@@ -146,7 +158,7 @@ Despite the fact that the Engram layout was designed to reduce strain and discom
   - **Speed** (unordered interkey stroke times) <br>
       "Estimation of digraph costs for keyboard layout optimization", A Iseri, Ma Eksioglu, International Journal of Industrial Ergonomics, 48, 127-138, 2015. <br>
       _NOTE: Speed data were only used for exploration of early key layouts._
-
+      
 
 ## Guiding criteria   <a name="criteria">
 
@@ -162,6 +174,7 @@ Despite the fact that the Engram layout was designed to reduce strain and discom
 10. Avoid using the same finger.
 11. Avoid the upper and lower rows.
 12. Avoid skipping over the home row.
+
 
 ## Summary of steps and results  <a name="summary">
 
@@ -410,44 +423,96 @@ These sources helped guide our arrangement:
     Xah Lee. Date: 2013-05-23. Last updated: 2020-06-29. <br>
     http://xahlee.info/comp/computer_language_char_distribution.html
 
-**Add punctuation keys and number keys**
+Frequency: 
 
-We will have the Shift-key access characters that look similar to the numbers:
+      Google:    Cook:            Xah:
+        %        /1000      All%  JS%   Py%
 
-             !  ?  <  +  $  @  >  &  %  *
-             1  2  3  4  5  6  7  8  9  0
+    "  2.284      26.7       3.9   1.6   6.2
+    .  1.151      65.3       6.6   9.4  10.3
+    ,             61.6       5.8   8.9   7.5
+    -  0.217      15.3       4.1   1.9   3.0
+    '  0.200      24.3       4.4   4.0   8.6
+    () 0.140                 7.4   9.8   8.1
+    ;  0.096       3.2       3.8   8.6
+    z  0.09         -         -
+    :  0.087       3.4       3.5   2.8   4.7
+    ?  0.032       5.6       0.3
+    /  0.019                 4.0   4.9   1.1
+    !  0.013       3.3       0.4
+    _                       11.0   2.9  10.5
+    =                        4.4  10.7   5.4
+    *                        3.6   2.1
+    >                        3.0         1.4
+    $                        2.7   1.6
+    #                        2.2         3.2
+    {}                       1.9   4.2
+    <                        1.3
+    &                        1.3
+    \                        1.2         1.1
+    []                       0.9   1.9   1.2
+    @                        0.8
+    |                        0.6
+    +                        0.6   1.9
+    %                        0.4
+    
 
-We will place the most common punctuation in the middle columns (without moving the number keys):
+**Add punctuation**
 
-             .  ,  ;  :  -  _  "  '  (  ) 
+We will place the most common punctuation marks in the middle columns: 
+**( ,  .  '  "  ;  :  -  _ )** 
+
+             Y  G  U  K  '    "    B  L  D  F  Q 
+             I  O  E  A  ,    .    R  T  S  N  J      
+             V  Z  X  C  (    )    H  W  P  M             
+
+We will use the Shift and Ctrl keys to group similar punctuation marks:
+
+             Y  G  U  K  '-/  "_\  B  L  D  F  Q
+             I  O  E  A  ,;?  .:!  R  T  S  N  J      
+             V  Z  X  C  ([{  )]}  H  W  P  M             
+    
+**' - /** &nbsp;&nbsp; Joining characters: the apostrophe joins words as contractions; the hyphen joins words as compounds; the slash joins paths in computer operating systems and joins numbers as fractions.
+
+**" \_ \\** &nbsp;&nbsp; "Quoting characters: double quotation marks are for quotations or titles; the underscore can indicate a title or \_underline for emphasis\_; the backslash quotes ("escapes") special characters.
+
+**, ; ?** &nbsp;&nbsp; Separating characters: the comma separates text, for example in lists; the semicolon can be used in place of the comma to separate items in a list; the question mark  (in addition to its common use at the end of an English sentence) can occur at the end of a clause or phrase to replace the comma: "Is it good in form? style? meaning?."
+
+**. : !** &nbsp;&nbsp; Ending characters: the period ends a sentence; the colon ends a statement but precedes something following: explanation, quotation, list, etc.; the exclamation mark emphatically ends a statement!
+
+**([{ )]}** &nbsp;&nbsp; Bracketing characters: parentheses, square brackets, curly brackets.  
+
+For the number keys, we will have the Shift key access similar-looking characters:
+    
+          ~  |  =  <  +  $  @  >  &  %  *  `
+          #  1  2  3  4  5  6  7  8  9  0  ^
+
+**# ~** &nbsp;&nbsp; Left of the numbers: the pound/hash represents numbers, and is set next the number keys; the tilde means "approximately equal to" (here "similar-looking" to the numbers).
+
+**^ \`** &nbsp;&nbsp; Right of the numbers: the caret indicates a superscript (here for special characters accessible by the Shift key); the back quote can be used to indicate special characters in comments, such as code.
+
+
+Use of the Shift and Control keys enables easy access to the most common punctuation marks in the middle rows, and it also frees up the three remaining keys in many common keyboards (flanking the Delete key in the upper right hand corner). Those keys excessively stretch the right little finger, and are displaced in special ergonomic keyboards, such as the Kinesis Advantage and Ergodox. So for these three keys, we will simply repeat the use of six punctuation marks:
+
+          ~  |  =  <  +   $    @   >  &  %  *  `  \
+          #  1  2  3  4   5    6   7  8  9  0  ^  /   
+
+             Y  G  U  K  '-/  "_\  B  L  D  F  Q  |`  -_
+             I  O  E  A  ,;?  .:!  R  T  S  N  J      
+             V  Z  X  C  ([{  )]}  H  W  P  M             
+    
+**/ \\** &nbsp;&nbsp; Slashes: the forward slash and backslash are a natural pair.
+
+**| \`** &nbsp;&nbsp; Command marks: the vertical line or "pipe" directs the output of a computer command; the back quote processes a string as part of a computer command.
+
+**- _** &nbsp;&nbsp; Horizontal marks: hyphen/dash; underscore.
+    
 
 Finally, we will also swap the Backspace and Caps keys:
 
-          ^  !  ?  <  +   $    @   >  &  %  *  ~  \
-          #  1  2  3  4   5    6   7  8  9  0  =  /    Caps
+          ~  |  =  <  +   $    @   >  &  %  *  `  \
+          #  1  2  3  4   5    6   7  8  9  0  ^  /   Caps
 
-    Tab      Y  G  U  K  '-   "_   B  L  D  F  Q  #`  @|
-    Back     I  O  E  A  ,;   .:   R  T  S  N  J      Enter
-    Shift    V  Z  X  C  ([{  )]}  H  W  P  M         Shift
-
-**Rationale for shift-characters**
-
-**# &nbsp;&nbsp; ^** &nbsp;&nbsp; The pound/hash represents numbers, and is set next to the number keys; the caret indicates a superscript for characters accessible by the Shift-key.
-
-**= &nbsp;&nbsp; \~** &nbsp;&nbsp; The equal sign means "equal to" and the tilde can mean "approximately equal to" (here "similar-looking" to the numbers).
-
-**/ &nbsp;&nbsp; \\** &nbsp;&nbsp; The slash and backslash are a natural pair.
-
-**' &nbsp;&nbsp; -** &nbsp;&nbsp; The apostrophe joins words as contractions while the hyphen joins words as compounds. As a single quotation mark and a spaced en dash, respectively, each can also set off a phrase for emphasis or as a parenthetical.
-
-**" &nbsp;&nbsp; \_** &nbsp;&nbsp; Double quotation marks set off a quotation, phrase, or title; the underscore sets off a \_title\_ or phrase for emphasis.
-
-**, &nbsp;&nbsp; ;** &nbsp;&nbsp; The comma separates text, for example in lists; the semicolon can also separate items in a list.
-
-**. &nbsp;&nbsp; :** &nbsp;&nbsp; The period ends a sentence. The colon ends a statement but precedes something: explanation, quotation, list, etc.
-
-**([{ &nbsp;&nbsp; )]}** &nbsp;&nbsp; The different brackets naturally go together. Parentheses are more frequently used than square brackets, and the Alt-key can access curly brackets, which are commonly used by programmers.  
-
-**# &nbsp;&nbsp; \`** &nbsp;&nbsp; The hashtag (repeat of the pound/hash sign above) is a metadata tag used in social networks to process/find message strings, while the backtick can be used to process/evaluate a string as part of a general command.
-
-**@ &nbsp;&nbsp; \|** &nbsp;&nbsp; The "at sign" (duplicate from the "6" key for ease of access) can be used as a handle in social media to direct the flow of information, and a vertical line or "pipe" can be used to direct the output of a computer command.
+    Tab      Y  G  U  K  '-/  "_\  B  L  D  F  Q  |`  -_
+    Back     I  O  E  A  ,;?  .:!  R  T  S  N  J      Enter
+    Shift    V  Z  X  C  ([{  )]}  H  W  P  M         Shift    
