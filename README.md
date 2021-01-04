@@ -9,12 +9,11 @@ The [Engram layout](https://github.com/binarybottle/engram-layout) is a keyboard
 For the letter keys, the Shift key accesses capitals, and for the number keys, the Shift key access similar-looking characters. The remaining keys group similiar punctuation marks, accessed by the Shift and Ctrl keys:
 
           ~  |  =  <  +   $    @   >  &  %  *  `  \
-          #  1  2  3  4   5    6   7  8  9  0  ^  /   Caps
+          #  1  2  3  4   5    6   7  8  9  0  ^  /   
 
-    Tab      Y  G  U  K  '-/  "_\  B  L  D  F  Q  |`  -_
-    Back     I  O  E  A  ,;?  .:!  R  T  S  N  J      Enter
-    Shift    V  Z  X  C  ([{  )]}  H  W  P  M         Shift    
-   
+             Y  G  U  K  '-/  "_\  B  L  D  F  Q  |` -_
+             I  O  E  A  ,;?  .:!  R  T  S  N  J      
+             V  Z  X  C  ([{  )]}  H  W  P  M                
     
 # Contents
 1. [Why a new key layout?](#why)
@@ -520,11 +519,11 @@ Command marks: the vertical line or "pipe" directs the output of a computer comm
 Horizontal marks: hyphen/dash; underscore.
     
 
-Finally, we will also swap the Backspace and Caps keys:
+The resulting Engram layout:
 
           ~  |  =  <  +   $    @   >  &  %  *  `  \
-          #  1  2  3  4   5    6   7  8  9  0  ^  /   Caps
+          #  1  2  3  4   5    6   7  8  9  0  ^  /   
 
-    Tab      Y  G  U  K  '-/  "_\  B  L  D  F  Q  |`  -_
-    Back     I  O  E  A  ,;?  .:!  R  T  S  N  J      Enter
-    Shift    V  Z  X  C  ([{  )]}  H  W  P  M         Shift    
+             Y  G  U  K  '-/  "_\  B  L  D  F  Q  |` -_
+             I  O  E  A  ,;?  .:!  R  T  S  N  J      
+             V  Z  X  C  ([{  )]}  H  W  P  M             
