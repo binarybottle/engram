@@ -74,9 +74,6 @@ they could create a variant of the Engram layout, say "Engram-French", better su
     
 **Why "Engram"?** <br>
 The name is a pun, referring both to "n-gram", letter permutations and their frequencies that are used to compute the Engram layout, and "engram", or memory trace, the postulated change in neural tissue to account for the persistence of memory, as a nod to my attempt to make this layout easy to remember.
-    
-**Why "Engram"?** <br>
-The name is a pun, referring both to "n-gram", letter permutations used to compute this layout, and "engram", or memory trace, the postulated change in neural tissue to account for the persistence of memory.
 
 
 ## How does Engram compare with other key layouts? <a name="scores">
