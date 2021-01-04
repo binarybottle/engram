@@ -6,14 +6,14 @@ The [Engram layout](https://github.com/binarybottle/engram-layout) is a keyboard
              I  O  E  A            R  T  S  N
              V  Z  X  C            H  W  P  M
 
-For the letter keys, the Shift key accesses capitals, and for the number keys, the Shift key access similar-looking characters. The remaining keys group similiar punctuation marks, accessed by the Shift and Ctrl keys:
+For the letter keys, the Shift key accesses capitals, and for the number keys, the Shift key access similar-looking characters. The remaining keys group similiar punctuation marks, accessed by the Shift and Ctrl keys (expendable keys with duplicate characters are on the right):
 
-          ~  |  =  <  +   $    @   >  &  %  *  `  \
-          #  1  2  3  4   5    6   7  8  9  0  ^  /   
+          ~  |  =  <  +   $    @   >  &  %  *  `        \
+          #  1  2  3  4   5    6   7  8  9  0  ^        /   
 
-             Y  G  U  K  '-/  "_\  B  L  D  F  Q  |` -_
+             Y  G  U  K  '-/  "_\  B  L  D  F  Q        |` -_
              I  O  E  A  ,;?  .:!  R  T  S  N  J      
-             V  Z  X  C  ([{  )]}  H  W  P  M                
+             V  Z  X  C  ([{  )]}  H  W  P  M             
     
 # Contents
 1. [Why a new key layout?](#why)
@@ -519,11 +519,11 @@ Command marks: the vertical line or "pipe" directs the output of a computer comm
 Horizontal marks: hyphen/dash; underscore.
     
 
-The resulting Engram layout:
+The resulting Engram layout (expendable keys with duplicate characters on the right):
 
-          ~  |  =  <  +   $    @   >  &  %  *  `  \
-          #  1  2  3  4   5    6   7  8  9  0  ^  /   
+          ~  |  =  <  +   $    @   >  &  %  *  `        \
+          #  1  2  3  4   5    6   7  8  9  0  ^        /   
 
-             Y  G  U  K  '-/  "_\  B  L  D  F  Q  |` -_
+             Y  G  U  K  '-/  "_\  B  L  D  F  Q        |` -_
              I  O  E  A  ,;?  .:!  R  T  S  N  J      
              V  Z  X  C  ([{  )]}  H  W  P  M             
