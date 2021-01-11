@@ -15,7 +15,18 @@ Letters are optimally arranged to reduce lateral finger movements, following erg
              I  O  E  A  ,;?  .:!  R  T  S  N  J      
              V  Z  X  C  ([{  )]}  H  W  P  M             
 
-See below for a full description and comparisons with other key layouts.    
+See below for a full description and comparisons with other key layouts.
+
+(c) 2021 Arno Klein, MIT license
+
+### Default (unshifted)
+Default (unshifted) state
+![Default (unshifted) state](https://github.com/binarybottle/engram/blob/master/assets/engram-base-layer.png?raw=true)
+### Shift
+![Shift state](https://github.com/binarybottle/engram/blob/master/assets/engram-shift-layer.png?raw=true)
+### Ctrl
+![Ctrl state](https://github.com/binarybottle/engram/blob/master/assets/engram-ctrl-layer.png?raw=true)
+
 # Contents
 1. [Why a new key layout?](#why)
 2. [How does Engram compare with other key layouts?](#scores)
