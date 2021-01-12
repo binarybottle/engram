@@ -15,6 +15,10 @@ Letters are optimally arranged to reduce lateral finger movements, following erg
              I  O  E  A  ,;?  .:!  R  T  S  N  J      
              V  Z  X  C  ([{  )]}  H  W  P  M             
 
+
+The Engram key layout is available for Windows, macOS, or Linux 
+and comes with [Keyman](https://keyman.com/desktop/) (also on [GitHub](https://github.com/keymanapp/keyboards/tree/master/release/e/engram)).
+
 See below for a full description and comparisons with other key layouts.
 
 (c) 2021 Arno Klein, MIT license
@@ -25,6 +29,9 @@ See below for a full description and comparisons with other key layouts.
 ![Shift state](https://github.com/binarybottle/engram/blob/master/assets/engram-shift-layer.png?raw=true)
 ### Ctrl
 ![Ctrl state](https://github.com/binarybottle/engram/blob/master/assets/engram-ctrl-layer.png?raw=true)
+[Keyboard images care of [Keyman Developer](https://keyman.com/developer/).]
+
+----------------
 
 # Contents
 1. [Why a new key layout?](#why)
