@@ -20,7 +20,6 @@ See below for a full description and comparisons with other key layouts.
 (c) 2021 Arno Klein, MIT license
 
 ### Default (unshifted)
-Default (unshifted) state
 ![Default (unshifted) state](https://github.com/binarybottle/engram/blob/master/assets/engram-base-layer.png?raw=true)
 ### Shift
 ![Shift state](https://github.com/binarybottle/engram/blob/master/assets/engram-shift-layer.png?raw=true)
