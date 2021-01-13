@@ -1,8 +1,10 @@
 # Arno's Engram key layout
 
-The [Engram layout](https://github.com/binarybottle/engram-layout) is a keyboard layout optimized for comfortable and efficient touch typing in English created by [Arno Klein](https://binarybottle.com), with open source code to create other optimized key layouts.
-The Engram key layout is available for Windows, macOS, or Linux 
-and comes with [Keyman](https://keyman.com/desktop/) (also on [GitHub](https://github.com/keymanapp/keyboards/tree/master/release/e/engram)).
+Engram is a key layout optimized for comfortable and efficient touch typing in English 
+created by [Arno Klein](https://binarybottle.com), 
+with [open source code](https://github.com/binarybottle/engram) to create other optimized key layouts.
+You can install the Engram layout on [Windows, macOS, and Linux](https://keyman.com/keyboards/engram)
+or [try it out online](https://keymanweb.com/#en,Keyboard_engram).
 
              Y  G  U  K            B  L  D  F  Q 
              I  O  E  A            R  T  S  N  J
