@@ -6,11 +6,13 @@ with [open source code](https://github.com/binarybottle/engram) to create other 
 You can install the Engram layout on [Windows, macOS, and Linux](https://keyman.com/keyboards/engram)
 or [try it out online](https://keymanweb.com/#en,Keyboard_engram).
 
+Letters are optimally arranged according to a scoring model that reflects ergonomic factors that promote reduction of lateral finger movements and increase in efficient typing of high-frequency letter pairs. This arrangement received the highest score of over 217 million different key-letter combinations: 
+
              Y  G  U  K            B  L  D  F  Q 
              I  O  E  A            R  T  S  N  J
              V  Z  X  C            H  W  P  M
 
-Letters are optimally arranged to reduce lateral finger movements, following ergonomic principles, and facilitating high-frequency letter pairs. Punctuation marks are grouped together in the middle columns (accessed by the Shift and Ctrl keys) and numbers are paired with symbols that resemble them (accessed by the Shift Key):
+Punctuation marks are logically grouped together in the middle columns (accessed by the Shift and Ctrl keys) and numbers are paired with symbols that resemble them (accessed by the Shift Key):
 
           ~  |  =  <  +   $    @   >  &  %  *  `
           #  1  2  3  4   5    6   7  8  9  0  ^
