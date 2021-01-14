@@ -14,12 +14,12 @@ Letters are optimally arranged according to a scoring model that reflects ergono
 
 Punctuation marks are logically grouped together in the middle columns (accessed by the Shift and Ctrl keys) and numbers are paired with symbols that resemble them (accessed by the Shift Key):
 
-          ~  |  =  <  +   $    @   >  &  %  *  `
-          #  1  2  3  4   5    6   7  8  9  0  ^
+          $  -  =  ~  +   <    >   /  &  %  *  ^  `
+          #  1  2  3  4   5    6   7  8  9  0  |  \
 
-             Y  G  U  K  '-/  "_\  B  L  D  F  Q
-             I  O  E  A  ,;?  .:!  R  T  S  N  J      
-             V  Z  X  C  ([{  )]}  H  W  P  M             
+             Y  G  U  K  ([{  )]}  B  L  D  F  Q
+             I  O  E  A  ,;:  .?!  R  T  S  N  J      
+             V  Z  X  C  "#@  '-_  H  W  P  M             
 
 See below for a full description and comparisons with other key layouts.
 
@@ -538,9 +538,9 @@ Horizontal marks: hyphen/dash; underscore.
 
 The resulting Engram layout (expendable keys with duplicate characters on the right):
 
-          ~  |  =  <  +   $    @   >  &  %  *  `        \
-          #  1  2  3  4   5    6   7  8  9  0  ^        /   
+          $  -  =  ~  +   <    >   /  &  %  *  ^  `
+          #  1  2  3  4   5    6   7  8  9  0  |  \
 
-             Y  G  U  K  '-/  "_\  B  L  D  F  Q        |` -_
-             I  O  E  A  ,;?  .:!  R  T  S  N  J      
-             V  Z  X  C  ([{  )]}  H  W  P  M             
+             Y  G  U  K  ([{  )]}  B  L  D  F  Q
+             I  O  E  A  ,;:  .?!  R  T  S  N  J      
+             V  Z  X  C  "#@  '-_  H  W  P  M             
