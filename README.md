@@ -533,7 +533,7 @@ The pound/hash (duplicate) represents numbers and is set next to the number keys
 &nbsp;&nbsp;&nbsp;&nbsp;
 The vertical bar or "pipe" represents the logical OR operator; the caret represents the logical XOR operator, as well as exponentiation.
 
-Use of the Shift and R-Alt keys enables easy access to the most common punctuation marks in the middle columns, and it also frees up the three remaining keys in many common keyboards (flanking the upper right hand corner Backspace key). These three keys excessively stretch the right little finger, and are displaced in special ergonomic keyboards, such as the Kinesis Advantage and Ergodox. So for two of these keys, we will simply repeat the use of four of punctuation marks that are accessed in the middle columns by the R-Alt key (@ : and _ !). For the final (top rightmost) key, we will assign to it the two remaining symbols, used primarily by computer programmers:
+Use of the Shift and R-Alt keys enables easy access to the most common punctuation marks in the middle columns, and it also frees up the three remaining keys in many common keyboards (flanking the upper right hand corner Backspace key). These three keys excessively stretch the right little finger, and are displaced in special ergonomic keyboards, such as the Kinesis Advantage and Ergodox. So for two of these keys, we will simply repeat the use of four of punctuation marks that are accessed in the middle columns by the R-Alt key (: ! and @ _). For the final (top rightmost) key, we will assign to it the two remaining symbols, used primarily by computer programmers:
 
 \\ \` 
 &nbsp;&nbsp;&nbsp;&nbsp;
