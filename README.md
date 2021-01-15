@@ -12,7 +12,7 @@ Letters are optimally arranged according to a scoring model that reflects ergono
              I  O  E  A            R  T  S  N  J
              V  Z  X  C            H  W  P  M
 
-Punctuation marks are logically grouped together in the middle columns (accessed by the Shift and R-Alt keys) and numbers are paired with mathematical and logic symbols (accessed by the Shift Key):
+Punctuation marks are logically grouped together in the middle columns (accessed by the Shift and Crl+Alt keys) and numbers are paired with mathematical and logic symbols (accessed by the Shift Key):
 
           $  -  =  ~  +   <    >   /  &  %  *  ^  `
           #  1  2  3  4   5    6   7  8  9  0  |  \
@@ -482,7 +482,7 @@ We will place the most common punctuation marks in the middle columns:
              I  O  E  A  ,    .    R  T  S  N  J      
              V  Z  X  C  '    "    H  W  P  M             
 
-We will use the Shift and R-Alt keys to group similar punctuation marks:
+We will use the Shift and Crl+Alt keys to group similar punctuation marks:
 
              Y  G  U  K  ([{  )]}  B  L  D  F  Q
              I  O  E  A  ,;:  .?!  R  T  S  N  J      
@@ -533,7 +533,7 @@ The pound/hash (duplicate) represents numbers and is set next to the number keys
 &nbsp;&nbsp;&nbsp;&nbsp;
 The vertical bar or "pipe" represents the logical OR operator; the caret represents the logical XOR operator, as well as exponentiation.
 
-Use of the Shift and R-Alt keys enables easy access to the most common punctuation marks in the middle columns, and it also frees up the three remaining keys in many common keyboards (flanking the upper right hand corner Backspace key). These three keys excessively stretch the right little finger, and are displaced in special ergonomic keyboards, such as the Kinesis Advantage and Ergodox. So for two of these keys, we will simply repeat the use of four of punctuation marks that are accessed in the middle columns by the R-Alt key (: ! and @ _). For the final (top rightmost) key, we will assign to it the two remaining symbols, used primarily by computer programmers:
+Use of the Shift and Crl+Alt keys enables easy access to the most common punctuation marks in the middle columns, and it also frees up the three remaining keys in many common keyboards (flanking the upper right hand corner Backspace key). These three keys excessively stretch the right little finger, and are displaced in special ergonomic keyboards, such as the Kinesis Advantage and Ergodox. So for two of these keys, we will simply repeat the use of four of punctuation marks that are accessed in the middle columns by the Crl+Alt key (: ! and @ _). For the final (top rightmost) key, we will assign to it the two remaining symbols, used primarily by computer programmers:
 
 \\ \` 
 &nbsp;&nbsp;&nbsp;&nbsp;
