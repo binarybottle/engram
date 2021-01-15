@@ -473,70 +473,73 @@ Frequency:
     %                        0.4
     
 
-**Add punctuation**
+### Add punctuation keys and number keys
 
 We will place the most common punctuation marks in the middle columns: 
 **( ,  .  '  "  ;  :  -  _ )** 
 
-             Y  G  U  K  '    "    B  L  D  F  Q 
+             Y  G  U  K  (    )    B  L  D  F  Q 
              I  O  E  A  ,    .    R  T  S  N  J      
-             V  Z  X  C  (    )    H  W  P  M             
+             V  Z  X  C  '    "    H  W  P  M             
 
-We will use the Shift and Ctrl keys to group similar punctuation marks:
+We will use the Shift and R-Alt keys to group similar punctuation marks:
 
-             Y  G  U  K  '-/  "_\  B  L  D  F  Q
-             I  O  E  A  ,;?  .:!  R  T  S  N  J      
-             V  Z  X  C  ([{  )]}  H  W  P  M             
+             Y  G  U  K  ([{  )]}  B  L  D  F  Q
+             I  O  E  A  ,;:  .?!  R  T  S  N  J      
+             V  Z  X  C  "#@  '-_  H  W  P  M             
     
-' - / 
-&nbsp;&nbsp;&nbsp;&nbsp;
-Joining characters: the apostrophe joins words as contractions; the hyphen joins words as compounds; the slash joins paths in computer operating systems and joins numbers as fractions.
-
-" _ \ 
-&nbsp;&nbsp;&nbsp;&nbsp;
-Quoting characters: double quotation marks are for quotations or titles; the underscore can indicate a title or \_underline for emphasis\_; the backslash quotes ("escapes") special characters.
-
-, ; ? 
-&nbsp;&nbsp;&nbsp;&nbsp;
-Separating characters: the comma separates text, for example in lists; the semicolon can be used in place of the comma to separate items in a list; the question mark  (in addition to its common use at the end of an English sentence) can occur at the end of a clause or phrase to replace the comma: "Is it good in form? style? meaning?."
-
-. : ! 
-&nbsp;&nbsp;&nbsp;&nbsp;
-Ending characters: the period ends a sentence; the colon ends a statement but precedes something following: explanation, quotation, list, etc.; the exclamation mark emphatically ends a statement!
-
 ([{ )]} 
 &nbsp;&nbsp;&nbsp;&nbsp;
-Bracketing characters: parentheses, square brackets, curly brackets.  
+Brackets: parentheses, square brackets, curly brackets (angle brackets are placed in the two number keys directly above).  
 
-For the number keys, we will have the Shift key access similar-looking characters:
+, ; : 
+&nbsp;&nbsp;&nbsp;&nbsp;
+Separating marks: the comma separates text, for example in lists; the semicolon can be used in place of the comma to separate items in a list (especially if these items contain commas); the colon ends one statement but precedes the following: an explanation, quotation, list, etc. 
+
+. ? ! 
+&nbsp;&nbsp;&nbsp;&nbsp;
+Ending marks: the period, question mark, and exclamation mark end a sentence.
+
+" # @ 
+&nbsp;&nbsp;&nbsp;&nbsp;
+Identifying characters: double quotation marks are for direct quotations from an identified source; the hashtag is a popular modern use of the pound/hash sign to identify digital content on a specific topic; the "at sign" identifies a location or affiliation (such as in email addresses), and acts as a "handle" to identify users in popular social media platforms and online forums.   
+
+' - _ 
+&nbsp;&nbsp;&nbsp;&nbsp;
+Joining characters: the apostrophe joins words as contractions; the hyphen joins words as compounds; the underscore joins words in cases where whitespace characters are not permitted (such as in variables or file names). 
+
+For the number keys, we will have the Shift key access mathematical and logic symbols:
     
-          ~  |  =  <  +  $  @  >  &  %  *  `
-          #  1  2  3  4  5  6  7  8  9  0  ^
+          $  -  =  ~  +   <    >   /  &  %  *  ^
+          #  1  2  3  4   5    6   7  8  9  0  |
 
-\# ~ 
+\# $ 
 &nbsp;&nbsp;&nbsp;&nbsp;
-Left of the numbers: the pound/hash represents numbers, and is set next the number keys; the tilde means "approximately equal to" (here "similar-looking" to the numbers).
+The pound/hash (duplicate) represents numbers and is set next to the number keys; the dollar sign signifies additional symbols ("S").
 
-^ ` 
+\-  =  ~  +   <    >   \/  &  %  * &nbsp;&nbsp;&nbsp;&nbsp; 
+
+    1: - (minus/hyphen: 1 stroke, like the Chinese character for "1")
+    2: = (equal: 2 strokes, like the Chinese character for "2")
+    3: ~ (tilde: "almost equal", often written with 3 strokes, like the Chinese character for "3")
+    4: + (plus: has four quadrants; resembles "4")
+    5 & 6: < > ("less/greater than"; these angle brackets are directly above the other bracket keys)
+    7: / (forward slash: for division; resembles "7")
+    8: & (ampersand: logical AND operator; resembles "8")
+    9: % (percent: related to division; resembles "9")
+    0: * (asterisk: for multiplication; resembles "0")
+
+| ^
 &nbsp;&nbsp;&nbsp;&nbsp;
-Right of the numbers: the caret indicates a superscript (here for special characters accessible by the Shift key); the back quote can be used to indicate special characters in comments, such as code.
+The vertical bar or "pipe" represents the logical OR operator; the caret represents the logical XOR operator, as well as exponentiation.
 
-Use of the Shift and Control keys enables easy access to the most common punctuation marks in the middle rows, and it also frees up the three remaining keys in many common keyboards (flanking the upper right hand corner key). Those keys excessively stretch the right little finger, and are displaced in special ergonomic keyboards, such as the Kinesis Advantage and Ergodox. So for these three keys, we will simply repeat the use of six punctuation marks:
+Use of the Shift and R-Alt keys enables easy access to the most common punctuation marks in the middle columns, and it also frees up the three remaining keys in many common keyboards (flanking the upper right hand corner Backspace key). These three keys excessively stretch the right little finger, and are displaced in special ergonomic keyboards, such as the Kinesis Advantage and Ergodox. So for two of these keys, we will simply repeat the use of four of punctuation marks that are accessed in the middle columns by the R-Alt key (@ : and _ !). For the final (top rightmost) key, we will assign to it the two remaining symbols, used primarily by computer programmers:
 
-/ \\ 
+\\ \` 
 &nbsp;&nbsp;&nbsp;&nbsp;
-Slashes: the forward slash and backslash are a natural pair.
+The backslash is often used as an escape character or to enclose regular expressions to process text; the backtick processes an enclosed string as part of a computer command (command substitution) or indicates code in comments.
 
-| \` 
-&nbsp;&nbsp;&nbsp;&nbsp;
-Command marks: the vertical line or "pipe" directs the output of a computer command; the back quote processes a string as part of a computer command.
-
-\- _ 
-&nbsp;&nbsp;&nbsp;&nbsp;
-Horizontal marks: hyphen/dash; underscore.
-    
-
-The resulting Engram layout (expendable keys with duplicate characters on the right):
+The resulting Engram layout:
 
           $  -  =  ~  +   <    >   /  &  %  *  ^  `
           #  1  2  3  4   5    6   7  8  9  0  |  \
