@@ -1,31 +1,39 @@
 # Arno's Engram key layout
 
-The [Engram layout](https://github.com/binarybottle/engram-layout) is a keyboard layout optimized for comfortable and efficient touch typing in English created by [Arno Klein](https://binarybottle.com), with open source code to create other optimized key layouts.
+Engram is a key layout optimized for comfortable and efficient touch typing in English 
+created by [Arno Klein](https://binarybottle.com), 
+with [open source code](https://github.com/binarybottle/engram) to create other optimized key layouts.
+You can install the Engram layout on [Windows, macOS, and Linux](https://keyman.com/keyboards/engram)
+or [try it out online](https://keymanweb.com/#en,Keyboard_engram).
+
+Letters are optimally arranged according to a scoring model that reflects ergonomic factors that promote reduction of lateral finger movements and increase in efficient typing of high-frequency letter pairs. This arrangement received the highest score of over 217 million different key-letter combinations: 
 
              Y  G  U  K            B  L  D  F  Q 
              I  O  E  A            R  T  S  N  J
              V  Z  X  C            H  W  P  M
 
-Letters are optimally arranged to reduce lateral finger movements, following ergonomic principles, and facilitating high-frequency letter pairs. Punctuation marks are grouped together in the middle columns (accessed by the Shift and Ctrl keys) and numbers are paired with symbols that resemble them (accessed by the Shift Key):
+Punctuation marks are logically grouped together in the middle columns (accessed by the Shift and Ctrl keys) and numbers are paired with symbols that resemble them (accessed by the Shift Key):
 
-          ~  |  =  <  +   $    @   >  &  %  *  `
-          #  1  2  3  4   5    6   7  8  9  0  ^
+          $  -  =  ~  +   <    >   /  &  %  *  ^  `
+          #  1  2  3  4   5    6   7  8  9  0  |  \
 
-             Y  G  U  K  '-/  "_\  B  L  D  F  Q
-             I  O  E  A  ,;?  .:!  R  T  S  N  J      
-             V  Z  X  C  ([{  )]}  H  W  P  M             
+             Y  G  U  K  ([{  )]}  B  L  D  F  Q
+             I  O  E  A  ,;:  .?!  R  T  S  N  J      
+             V  Z  X  C  "#@  '-_  H  W  P  M             
 
 See below for a full description and comparisons with other key layouts.
 
 (c) 2021 Arno Klein, MIT license
 
 ### Default (unshifted)
-Default (unshifted) state
 ![Default (unshifted) state](https://github.com/binarybottle/engram/blob/master/assets/engram-base-layer.png?raw=true)
 ### Shift
 ![Shift state](https://github.com/binarybottle/engram/blob/master/assets/engram-shift-layer.png?raw=true)
 ### Ctrl
 ![Ctrl state](https://github.com/binarybottle/engram/blob/master/assets/engram-ctrl-layer.png?raw=true)
+[Keyboard images care of [Keyman Developer](https://keyman.com/developer/).]
+
+----------------
 
 # Contents
 1. [Why a new key layout?](#why)
@@ -530,9 +538,9 @@ Horizontal marks: hyphen/dash; underscore.
 
 The resulting Engram layout (expendable keys with duplicate characters on the right):
 
-          ~  |  =  <  +   $    @   >  &  %  *  `        \
-          #  1  2  3  4   5    6   7  8  9  0  ^        /   
+          $  -  =  ~  +   <    >   /  &  %  *  ^  `
+          #  1  2  3  4   5    6   7  8  9  0  |  \
 
-             Y  G  U  K  '-/  "_\  B  L  D  F  Q        |` -_
-             I  O  E  A  ,;?  .:!  R  T  S  N  J      
-             V  Z  X  C  ([{  )]}  H  W  P  M             
+             Y  G  U  K  ([{  )]}  B  L  D  F  Q
+             I  O  E  A  ,;:  .?!  R  T  S  N  J      
+             V  Z  X  C  "#@  '-_  H  W  P  M             
