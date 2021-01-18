@@ -6,7 +6,7 @@ with [open source code](https://github.com/binarybottle/engram) to create other 
 You can install the Engram layout on [Windows, macOS, and Linux](https://keyman.com/keyboards/engram)
 or [try it out online](https://keymanweb.com/#en,Keyboard_engram).
 
-Letters are optimally arranged according to a scoring model that reflects ergonomic factors that promote reduction of lateral finger movements and increase in efficient typing of high-frequency letter pairs. This arrangement received the highest score of over 200 million different key-letter combinations: 
+Letters are optimally arranged according to a scoring model that reflects ergonomic factors that promote reduction of lateral finger movements and increase in efficient typing of high-frequency letter pairs: 
 
              Y  O  U  X            W  D  C  V  Q 
              I  H  E  A            R  T  S  N  Z      
@@ -32,16 +32,6 @@ See below for a full description and comparisons with other key layouts.
 [Keyboard images care of [Keyman Developer](https://keyman.com/developer/).]
 
 (c) 2021 Arno Klein, MIT license
-
-----------------
-
-### Default (unshifted)
-![Default (unshifted) state](https://github.com/binarybottle/engram/blob/master/assets/engram-base-layer.png?raw=true)
-### Shift
-![Shift state](https://github.com/binarybottle/engram/blob/master/assets/engram-shift-layer.png?raw=true)
-### Ctrl
-![Ctrl state](https://github.com/binarybottle/engram/blob/master/assets/engram-ctrl-layer.png?raw=true)
-[Keyboard images care of [Keyman Developer](https://keyman.com/developer/).]
 
 ----------------
 
