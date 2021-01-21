@@ -181,13 +181,7 @@ Despite the fact that the Engram layout was designed to reduce strain and discom
 
 ## Summary of steps and results  <a name="summary">
 
-- [Step 1: Define the shape of the key layout to minimize lateral finger movements](#step1)
-- [Step 2: Arrange the most frequent letters based on comfort and bigram frequencies](#step2)
-- [Step 3: Optimize assignment of the remaining letters](#step3)
-- [Step 4: Stability tests](#step4)
-- [Step 5: Arrange non-letter characters in easy-to-remember places](#step5)
-
-### Step 1: Define the shape of the key layout to minimize lateral finger movements  <a name="step1">
+### Step 1: Define the shape of the key layout to minimize lateral finger movements
 
 We will assign 24 letters to 8 columns of keys separated by two middle columns reserved for punctuation. These 8 columns require no lateral finger movements when touch typing, since there is one column per finger. The most comfortable keys include the left and right home rows (keys 5-8 and 17-20), the top-center keys (2,3 and 14,15) that allow the longer middle and ring fingers to uncurl upwards, as well as the bottom corner keys (9,12 and 21,24) that allow the shorter fingers to curl downwards. We will assign the two least frequent letters, Z and Q, to the two hardest-to-reach keys lying outside the 24-key columns in the upper right:
 
@@ -196,7 +190,7 @@ We will assign 24 letters to 8 columns of keys separated by two middle columns r
      5  6  7  8       17 18 19 20  Z/Q
      9 10 11 12       21 22 23 24
 
-### Step 2: Arrange the most frequent letters based on comfort and bigram frequencies  <a name="step2">
+### Step 2: Arrange the most frequent letters based on comfort and bigram frequencies
 
 We will assign letters to keys by choosing the arrangement with the highest score according to our scoring model. However, there are over four hundred septillion, or four hundred trillion trillion (26! = 403,291,461,126,605,635,584,000,000, or 4.032914611 E+26) possible arrangements of 26 letters (24! = 6.204484017 E+23), so we will arrange the letters in stages, based on ergonomic principles.
     
@@ -243,7 +237,7 @@ The resulting 2 arrangements of five vowels on the left and 4 arrangements of fo
     --U- IOEA ----    ---- HTCN ----
     --U- IOEA ----    ---- RTCN ----    
 
-### Step 3: Optimize assignment of the remaining letters <a name="step3">
+### Step 3: Optimize assignment of the remaining letters
     
 We want to assign the 15 missing letters to the unassigned keys in each of the above 8 layouts based on our scoring model. That would mean scoring all possible arrangements for each layout and choosing the arrangement with the highest score, but since there are over 1.3 trillion possible ways of arranging 15 letters (15! = 1,307,674,368,000), we will need to break up the assignment into two stages: first for the most frequent remaining letters, and second for the least frequent remaining letters. 
     
@@ -304,7 +298,7 @@ These are left-right averaged versions derived from the study data below, to com
 A Iseri, Ma Eksioglu, International Journal of Industrial Ergonomics, 48, 127-138, 2015. 
 
     
-### Step 4: Stability Tests <a name="step4">
+### Step 4: Stability Tests
     
 We will run three types of stability tests on the 8 winning layouts:
     1. Exchange letters in rows
@@ -319,7 +313,7 @@ It is clear from the results of all of the tests above that one layout consisten
     
 Our arrangement of letters is complete!
     
-### Step 5. Arrange non-letter characters in easy-to-remember places  <a name="step5">
+### Step 5. Arrange non-letter characters in easy-to-remember places
 
 Now that we have all 26 letters accounted for, we turn our attention to non-letter characters, taking into account frequency of punctuation and ease of recall.
     
