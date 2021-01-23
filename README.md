@@ -93,7 +93,7 @@ Despite the fact that the Engram layout was designed to reduce strain and discom
  
 #### Engram Scoring Model scores for existing layouts based on publicly available text data
     
-| Layout | Google bigrams | Alice in Wonderland | Romeo & Juliet | Bhaghavad Gita | Memento screenplay | 100K tweets | 20K tweets | MASC tweets | MASC spoken | COCA blogs | Google website | Sofware languages |
+| Layout | Google bigrams | Alice in Wonderland | Romeo/Juliet | Bhaghavad Gita | Memento screenplay | 100K tweets | 20K tweets | MASC tweets | MASC spoken | COCA blogs | Google website | Sofware languages |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Engram | 0.02497 | 0.01941 | 0.02095 | 0.01935 | 0.02592 | 0.03297 | 0.02976 | 0.02789 | 0.01835 | 0.02481 | 0.04379 | 0.02735 |
 | Halmak | 0.02465 | 0.01924 | 0.02078 | 0.01915 | 0.02579 | 0.03282 | 0.02951 | 0.02765 | 0.01826 | 0.02455 | 0.04342 | 0.02705 |
@@ -109,7 +109,7 @@ Despite the fact that the Engram layout was designed to reduce strain and discom
 
 #### Keyboard Layout Analyzer scores for existing layouts based on publicly available text data
     
-| Layout | Alice in Wonderland | Romeo & Juliet | Bhaghavad Gita | Memento screenplay | 100K tweets | 20K tweets | MASC tweets | MASC spoken | COCA blogs | Google website | Software languages |
+| Layout | Alice in Wonderland | Romeo/Juliet | Bhaghavad Gita | Memento screenplay | 100K tweets | 20K tweets | MASC tweets | MASC spoken | COCA blogs | Google website | Software languages |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Engram | 67.20 | 57.66 | 57.82 | 54.85 | 60.52 | 55.87 | 56.99 | 61.15 | 66.94 | 34.26 | 45.58 |
 | Halmak | 66.25 | 57.02 | 57.45 | 55.03 | 60.86 | 55.53 | 57.13 | 62.32 | 67.29 | 30.41 | 47.60 |
