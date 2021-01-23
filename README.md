@@ -23,14 +23,14 @@ Punctuation marks are logically grouped together in the middle columns (accessed
 
 See below for a full description and comparisons with other key layouts.
 
-<!-- ### Default
-![Default state](https://github.com/binarybottle/engram/blob/master/assets/FIXengram-base-layer.png?raw=true)
+### Default
+![Default (unshifted) state](https://github.com/binarybottle/engram/blob/master/assets/engram-base-layer.png?raw=true)
 ### Shift
-![Shift state](https://github.com/binarybottle/engram/blob/master/assets/FIXengram-shift-layer.png?raw=true)
-### Ctrl
-![R-Alt state](https://github.com/binarybottle/engram/blob/master/assets/FIXengram-ralt-layer.png?raw=true)
+![Shift state](https://github.com/binarybottle/engram/blob/master/assets/engram-shift-layer.png?raw=true)
+### R-Alt
+![R-Alt state](https://github.com/binarybottle/engram/blob/master/assets/engram-ralt-layer.png?raw=true)
 [Keyboard images care of [Keyman Developer](https://keyman.com/developer/).]
--->
+
 
 (c) 2021 Arno Klein, MIT license
 
