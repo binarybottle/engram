@@ -23,14 +23,17 @@ Punctuation marks are logically grouped together in the middle columns (accessed
 
 See below for a full description and comparisons with other key layouts.
 
-### Default
-![Default (unshifted) state](https://github.com/binarybottle/engram/blob/master/assets/engram-base-layer-800px.png?raw=true)
-### Shift
-![Shift state](https://github.com/binarybottle/engram/blob/master/assets/engram-shift-layer-800px.png?raw=true)
-### R-Alt
-![R-Alt state](https://github.com/binarybottle/engram/blob/master/assets/engram-ralt-layer-800px.png?raw=true)
-[Keyboard images care of [Keyman](https://keyman.com).]
+### Default layer
+![Default (unshifted) state](https://github.com/binarybottle/engram/blob/master/assets/engram-base-layer.png?raw=true)
+### Shift layer
+![Shift state](https://github.com/binarybottle/engram/blob/master/assets/engram-shift-layer.png?raw=true)
+### R-Alt layer
+![R-Alt state](https://github.com/binarybottle/engram/blob/master/assets/engram-ralt-layer.png?raw=true)
+[Standard keyboard images care of [Keyman](https://keyman.com).]
 
+### Ergonomic keyboard
+![Default (unshifted) state](https://github.com/binarybottle/engram/blob/master/assets/engram-ergodox.png?raw=true)
+[Ergonomic keyboard images care of [Ergodox](https://configure.ergodox-ez.com/ergodox-ez/layouts/APXBR/latest/0).]
 
 (c) 2021 Arno Klein, MIT license
 
@@ -90,7 +93,7 @@ Despite the fact that the Engram layout was designed to reduce strain and discom
  
 #### Engram Scoring Model scores for existing layouts based on publicly available text data
     
-| Layout | Google bigrams | Alice | Romeo | Gita | Memento | 100K tweets | 20K tweets | MASC tweets | MASC spoken | COCA blogs | Google | Code |
+| Layout | Google bigrams | Alice in Wonderland | Romeo & Juliet | Bhaghavad Gita | Memento screenplay | 100K tweets | 20K tweets | MASC tweets | MASC spoken | COCA blogs | Google website | Sofware languages |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Engram | 0.02497 | 0.01941 | 0.02095 | 0.01935 | 0.02592 | 0.03297 | 0.02976 | 0.02789 | 0.01835 | 0.02481 | 0.04379 | 0.02735 |
 | Halmak | 0.02465 | 0.01924 | 0.02078 | 0.01915 | 0.02579 | 0.03282 | 0.02951 | 0.02765 | 0.01826 | 0.02455 | 0.04342 | 0.02705 |
@@ -106,7 +109,7 @@ Despite the fact that the Engram layout was designed to reduce strain and discom
 
 #### Keyboard Layout Analyzer scores for existing layouts based on publicly available text data
     
-| Layout | Alice in Wonderland | Romeo and Juliet | Bhaghavad Gita | Memento screenplay | 100K tweets | 20K tweets | MASC tweets | MASC spoken | COCA blogs | Google website | Software |
+| Layout | Alice in Wonderland | Romeo & Juliet | Bhaghavad Gita | Memento screenplay | 100K tweets | 20K tweets | MASC tweets | MASC spoken | COCA blogs | Google website | Software languages |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Engram | 67.20 | 57.66 | 57.82 | 54.85 | 60.52 | 55.87 | 56.99 | 61.15 | 66.94 | 34.26 | 45.58 |
 | Halmak | 66.25 | 57.02 | 57.45 | 55.03 | 60.86 | 55.53 | 57.13 | 62.32 | 67.29 | 30.41 | 47.60 |
