@@ -29,7 +29,7 @@ See below for a full description and comparisons with other key layouts.
 ![Shift state](https://github.com/binarybottle/engram/blob/master/assets/engram-shift-layer.png?raw=true)
 ### R-Alt
 ![R-Alt state](https://github.com/binarybottle/engram/blob/master/assets/engram-ralt-layer.png?raw=true)
-[Keyboard images care of [Keyman Developer](https://keyman.com/developer/).]
+[Keyboard images care of [Keyman](https://keyman.com).]
 
 
 (c) 2021 Arno Klein, MIT license
