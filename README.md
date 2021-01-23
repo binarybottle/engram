@@ -6,7 +6,7 @@ with [open source code](https://github.com/binarybottle/engram) to create other 
 You can install the Engram layout on [Windows, macOS, and Linux](https://keyman.com/keyboards/engram)
 or [try it out online](https://keymanweb.com/#en,Keyboard_engram).
 
-Letters are optimally arranged according to a scoring model that reflects ergonomic factors that promote reduction of lateral finger movements and increase in efficient typing of high-frequency letter pairs: 
+Letters are optimally arranged according to ergonomic factors that promote reduction of lateral finger movements and more efficient typing of high-frequency letter pairs: 
 
              Y  O  U  X            W  D  C  V  Q 
              I  H  E  A            R  T  S  N  Z      
