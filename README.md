@@ -23,6 +23,7 @@ The most common punctuation marks are logically grouped together in the middle c
 
 See below for a full description and comparisons with other key layouts.
 
+<!--
 ### Default layer
 ![Default (unshifted) state](https://github.com/binarybottle/engram/blob/master/assets/engram-base-layer.png?raw=true)
 ### Shift layer
@@ -31,6 +32,7 @@ See below for a full description and comparisons with other key layouts.
 ### Ergonomic keyboard
 ![Ergonomic keyboard](https://github.com/binarybottle/engram/blob/master/assets/engram-ergodox.png?raw=true)
 [Ergonomic keyboard images care of [Ergodox](https://configure.ergodox-ez.com/ergodox-ez/layouts/APXBR/latest/0).]
+-->
 
 (c) 2021 Arno Klein, MIT license
 
