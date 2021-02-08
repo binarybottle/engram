@@ -12,7 +12,7 @@ Letters are optimally arranged according to ergonomic factors that promote reduc
              I  H  E  A            R  T  S  N  Z      
              P  K  J  G            L  B  F  M             
 
-The most common punctuation marks are logically grouped together in the middle columns (accessed normally and by the Shift key) and numbers are paired with mathematical and logic symbols (accessed by the Shift Key):
+The most common punctuation marks are logically grouped together in the middle columns (accessed directly and by the Shift key) and numbers are paired with mathematical and logic symbols (accessed by the Shift Key):
 
           {  |  =  ~  +    <   >    ^  &  %  *  }  \
           [  1  2  3  4    5   6    7  8  9  0  ]  /
