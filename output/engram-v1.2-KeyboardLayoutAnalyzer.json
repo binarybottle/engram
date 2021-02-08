@@ -1,8 +1,5 @@
 {
     "label": "Engram",
-    "author": "Arno Klein",
-    "moreInfoUrl": "https://engram.dev",
-    "moreInfoText": "Optimized English touch typing key layout",
     "fingerStart": {
         "1": 29,
         "2": 30,
@@ -18,10 +15,14 @@
         "false": -1
     },
     "keyboardType": "standard",
+    "author": "Arno Klein",
+    "authorUrl": "",
+    "moreInfoUrl": "https://engram.dev",
+    "moreInfoText": "Optimized English touch typing key layout",
     "keys": [
         {
-            "primary": 35,
-            "shift": 36,
+            "primary": 91,
+            "shift": 123,
             "finger": 1,
             "id": 0,
             "altGr": -1,
@@ -29,7 +30,7 @@
         },
         {
             "primary": 49,
-            "shift": 45,
+            "shift": 124,
             "finger": 1,
             "id": 1,
             "altGr": -1,
@@ -77,7 +78,7 @@
         },
         {
             "primary": 55,
-            "shift": 47,
+            "shift": 94,
             "finger": 7,
             "id": 7,
             "altGr": -1,
@@ -108,16 +109,16 @@
             "shiftAltGr": -1
         },
         {
-            "primary": 124,
-            "shift": 94,
+            "primary": 93,
+            "shift": 125,
             "finger": 10,
             "id": 11,
             "altGr": -1,
             "shiftAltGr": -1
         },
         {
-            "primary": 92,
-            "shift": 96,
+            "primary": 47,
+            "shift": 92,
             "finger": 10,
             "id": 12,
             "altGr": -1,
@@ -166,19 +167,19 @@
             "shiftAltGr": -1
         },
         {
-            "primary": 40,
-            "shift": 91,
+            "primary": 39,
+            "shift": 40,
             "finger": 4,
             "id": 19,
-            "altGr": 123,
+            "altGr": -1,
             "shiftAltGr": -1
         },
         {
-            "primary": 41,
-            "shift": 93,
+            "primary": 34,
+            "shift": 41,
             "finger": 7,
             "id": 20,
-            "altGr": 125,
+            "altGr": -1,
             "shiftAltGr": -1
         },
         {
@@ -222,8 +223,8 @@
             "shiftAltGr": -1
         },
         {
-            "primary": 58,
-            "shift": 33,
+            "primary": 35,
+            "shift": 36,
             "finger": 10,
             "id": 26,
             "altGr": -1,
@@ -231,7 +232,7 @@
         },
         {
             "primary": 64,
-            "shift": 95,
+            "shift": 96,
             "finger": 10,
             "id": 27,
             "altGr": -1,
@@ -279,15 +280,15 @@
             "shift": 59,
             "finger": 4,
             "id": 33,
-            "altGr": 58,
+            "altGr": -1,
             "shiftAltGr": -1
         },
         {
             "primary": 46,
-            "shift": 63,
+            "shift": 58,
             "finger": 7,
             "id": 34,
-            "altGr": 33,
+            "altGr": -1,
             "shiftAltGr": -1
         },
         {
@@ -373,19 +374,19 @@
             "shiftAltGr": -1
         },
         {
-            "primary": 34,
-            "shift": 35,
+            "primary": 45,
+            "shift": 95,
             "finger": 4,
             "id": 46,
-            "altGr": 64,
+            "altGr": -1,
             "shiftAltGr": -1
         },
         {
-            "primary": 39,
-            "shift": 45,
+            "primary": 63,
+            "shift": 33,
             "finger": 7,
             "id": 47,
-            "altGr": 95,
+            "altGr": -1,
             "shiftAltGr": -1
         },
         {
