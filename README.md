@@ -30,6 +30,9 @@ See below for a full description and comparisons with other key layouts.
 ![Shift layer](https://github.com/binarybottle/engram/blob/master/assets/engram-shift-layer.png?raw=true)
 -->
 
+### Finger layout
+![Finger layout](https://github.com/binarybottle/engram/blob/master/assets/engram-keyboard-layout-analyzer.png?raw=true)
+
 ### Default layer (ergonomic keyboard)
 ![Ergonomic keyboard default layer](https://github.com/binarybottle/engram/blob/master/assets/engram-base-layer-ergodox.png?raw=true)
 ### Shift layer (ergonomic keyboard)
@@ -112,7 +115,7 @@ Despite the fact that the Engram layout was designed to reduce strain and discom
     
 | Layout | Alice in Wonderland | Romeo Juliet | Bhaghavad Gita | Memento screenplay | 100K tweets | 20K tweets | MASC tweets | MASC spoken | COCA blogs | Google website | Software languages |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Engram | 67.20 | 57.66 | 57.82 | 54.85 | 60.52 | 55.87 | 56.99 | 61.15 | 66.94 | 34.26 | 45.58 |
+| Engram | 67.52 | 58.75 | 58.60 | 55.32 | 61.09 | 56.41 | 56.82 | 62.41 | 67.32 | 34.21 | 45.38 |
 | Halmak | 66.25 | 57.02 | 57.45 | 55.03 | 60.86 | 55.53 | 57.13 | 62.32 | 67.29 | 30.41 | 47.60 |
 | Norman | 62.76 | 53.21 | 53.44 | 52.33 | 57.43 | 53.24 | 53.90 | 59.97 | 62.80 | 28.29 | 46.01 |
 | Workman | 64.78 | 56.67 | 56.97 | 54.29 | 59.98 | 55.81 | 56.25 | 61.34 | 65.27 | 29.28 | 47.76 | 
@@ -128,17 +131,17 @@ Despite the fact that the Engram layout was designed to reduce strain and discom
     
 | Text source | Information |
 | --- | --- |
-| "Alice in Wonderland" | [KLA analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/mN0CTbZ3) of Alice in Wonderland (Ch.1), a standard text used for comparing layouts |
-| "Romeo and Juliet" | [KLA analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/FVBfzMB5) of [Romeo and Juliet](https://www.fulltextarchive.com/page/Romeo-and-Juliet1/) |
-| "Bhaghavad Gita" | [KLA analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/w4xFG5HG) of [Bhaghavad Gita](https://www.gutenberg.org/files/2388/2388-h/2388-h.htm) |
-| "Memento screenplay" | [KLA analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/WblX3l9d) of the screenplay for [Memento](https://www.dailyscript.com/scripts/memento.html) |
+| "Alice in Wonderland" | [KLA analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/hm32fh0T) of Alice in Wonderland (Ch.1), a standard text used for comparing layouts |
+| "Romeo and Juliet" | [KLA analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/HfMrXLdJ) of [Romeo and Juliet](https://www.fulltextarchive.com/page/Romeo-and-Juliet1/) |
+| "Bhaghavad Gita" | [KLA analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/0MdR0v4d) of [Bhaghavad Gita](https://www.gutenberg.org/files/2388/2388-h/2388-h.htm) |
+| "Memento screenplay" | [KLA analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/KJntKxWh) of the screenplay for [Memento](https://www.dailyscript.com/scripts/memento.html) |
 | "100K tweets" | 100,000 tweets from: [Sentiment140 dataset](https://data.world/data-society/twitter-user-data) training data |
 | "20K tweets" | 20,000 tweets from [Gender Classifier Data](https://www.kaggle.com/crowdflower/twitter-user-gender-classification) |
-| "MASC tweets" | [KLA analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/fv3Cj2zQ) of [MASC](http://www.anc.org/data/masc/corpus/) tweets (cleaned of html markup) |
-| "MASC spoken" | [KLA analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/CvHXTg7n) of [MASC](http://www.anc.org/data/masc/corpus/) spoken transcripts (phone and face-to-face: 25,783 words) |
-| "COCA blogs" | [KLA analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/fv3Cj2zQ) of [Corpus of Contemporary American English](https://www.english-corpora.org/coca/) [blog samples](https://www.corpusdata.org/) |
-| "Google website" | [KLA analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/CtwvHjM5) of the [Google home page](https://google.com) (accessed 10/20/2020) |
-| "Software languages" | [KLA analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/szdpfS3K) of the "Tower of Hanoi" (programming languages A-Z from [Rosetta Code](https://rosettacode.org/wiki/Towers_of_Hanoi)) |
+| "MASC tweets" | [KLA analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/NF7tLFZB) of [MASC](http://www.anc.org/data/masc/corpus/) tweets (cleaned of html markup) |
+| "MASC spoken" | [KLA analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/pPLWtm0W) of [MASC](http://www.anc.org/data/masc/corpus/) spoken transcripts (phone and face-to-face: 25,783 words) |
+| "COCA blogs" | [Corpus of Contemporary American English](https://www.english-corpora.org/coca/) [blog samples](https://www.corpusdata.org/) |
+| "Google website" | [KLA analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/Cg34T1Q3) of the [Google home page](https://google.com) (accessed 10/20/2020) |
+| "Software languages" | [KLA analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/8Fb4DJ16) of the "Tower of Hanoi" (programming languages A-Z from [Rosetta Code](https://rosettacode.org/wiki/Towers_of_Hanoi)) |
 
 | Layout | Year | Website |
 | --- | --- | --- |
