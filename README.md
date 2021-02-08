@@ -25,14 +25,16 @@ See below for a full description and comparisons with other key layouts.
 
 <!--
 ### Default layer
-![Default (unshifted) state](https://github.com/binarybottle/engram/blob/master/assets/engram-base-layer.png?raw=true)
+![Default layer](https://github.com/binarybottle/engram/blob/master/assets/engram-base-layer.png?raw=true)
 ### Shift layer
-![Shift state](https://github.com/binarybottle/engram/blob/master/assets/engram-shift-layer.png?raw=true)
-
-### Ergonomic keyboard
-![Ergonomic keyboard](https://github.com/binarybottle/engram/blob/master/assets/engram-ergodox.png?raw=true)
-[Ergonomic keyboard images care of [Ergodox](https://configure.ergodox-ez.com/ergodox-ez/layouts/APXBR/latest/0).]
+![Shift layer](https://github.com/binarybottle/engram/blob/master/assets/engram-shift-layer.png?raw=true)
 -->
+
+### Default layer (ergonomic keyboard)
+![Ergonomic keyboard default layer](https://github.com/binarybottle/engram/blob/master/assets/engram-base-layer-ergodox.png?raw=true)
+### Shift layer (ergonomic keyboard)
+![Ergonomic keyboard Shift layer](https://github.com/binarybottle/engram/blob/master/assets/engram-shift-layer-ergodox.png?raw=true)
+[Ergonomic keyboard images care of [Ergodox](https://configure.ergodox-ez.com/ergodox-ez/layouts/APXBR/latest/0).]
 
 (c) 2021 Arno Klein, MIT license
 
