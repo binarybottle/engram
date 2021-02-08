@@ -12,14 +12,14 @@ Letters are optimally arranged according to ergonomic factors that promote reduc
              I  H  E  A            R  T  S  N  Z      
              P  K  J  G            L  B  F  M             
 
-Punctuation marks are logically grouped together in the middle columns (accessed by the Shift and R-Alt keys) and numbers are paired with mathematical and logic symbols (accessed by the Shift Key):
+The most common punctuation marks are logically grouped together in the middle columns (accessed normally and by the Shift key) and numbers are paired with mathematical and logic symbols (accessed by the Shift Key):
 
-          $  -  =  ~  +   <    >   /  &  %  *  ^  `
-          #  1  2  3  4   5    6   7  8  9  0  |  \
+          {  |  =  ~  +    <   >    ^  &  %  *  }  \
+          [  1  2  3  4    5   6    7  8  9  0  ]  /
 
-             Y  O  U  X  ([{  )]}  W  D  C  V  Q 
-             I  H  E  A  ,;:  .?!  R  T  S  N  Z      
-             P  K  J  G  "#@  '-_  L  B  F  M             
+             Y  O  U  X   '(   ")   W  D  C  V  Q  #$  @
+             I  H  E  A   ,;   .:   R  T  S  N  Z      
+             P  K  J  G   -_   ?!   L  B  F  M             
 
 See below for a full description and comparisons with other key layouts.
 
@@ -27,17 +27,14 @@ See below for a full description and comparisons with other key layouts.
 ![Default (unshifted) state](https://github.com/binarybottle/engram/blob/master/assets/engram-base-layer.png?raw=true)
 ### Shift layer
 ![Shift state](https://github.com/binarybottle/engram/blob/master/assets/engram-shift-layer.png?raw=true)
-### R-Alt layer
-![R-Alt state](https://github.com/binarybottle/engram/blob/master/assets/engram-ralt-layer.png?raw=true)
-[Standard keyboard images care of [Keyman](https://keyman.com).]
 
 ### Ergonomic keyboard
-![Default (unshifted) state](https://github.com/binarybottle/engram/blob/master/assets/engram-ergodox.png?raw=true)
+![Ergonomic keyboard](https://github.com/binarybottle/engram/blob/master/assets/engram-ergodox.png?raw=true)
 [Ergonomic keyboard images care of [Ergodox](https://configure.ergodox-ez.com/ergodox-ez/layouts/APXBR/latest/0).]
 
 (c) 2021 Arno Klein, MIT license
 
-----------------
+--------------------------------
 
 # Contents
 1. [Why a new key layout?](#why)
@@ -320,92 +317,105 @@ Our arrangement of letters is complete!
 
 Now that we have all 26 letters accounted for, we turn our attention to non-letter characters, taking into account frequency of punctuation and ease of recall.
     
-#### Frequency of punctuation 
+### Frequency of punctuation marks
 
-These sources helped guide our arrangement:
-    
-  - "Punctuation Input on Touchscreen Keyboards: Analyzing Frequency of Use and Costs" <br>
-    S Malik, L Findlater - College Park: The Human-Computer Interaction Lab. 2013 <br>
-    https://www.cs.umd.edu/sites/default/files/scholarly_papers/Malik.pdf
+  - Statistical values of punctuation frequency in 20 English-speaking countries (Table 1): <br>
+Sun, Kun & Wang, Rong. (2018). Frequency Distributions of Punctuation Marks in English: Evidence from Large-scale Corpora. English Today. 10.1017/S0266078418000512. <br> 
+https://www.researchgate.net/publication/328512136_Frequency_Distributions_of_Punctuation_Marks_in_English_Evidence_from_Large-scale_Corpora
+  <br>"frequency of punctuation marks attested for twenty English-speaking countries and regions... The data were acquired through GloWbE."
+  "The corpus of GloWbE (2013) is a large English corpus collecting international English from the internet, containing about 1.9 billion words of text from twenty different countries. For further information on the corpora used, see https://corpus.byu.edu/."
+  
+  - Google N-grams and Twitter analysis: <br>
+"Punctuation Input on Touchscreen Keyboards: Analyzing Frequency of Use and Costs" <br>
+S Malik, L Findlater - College Park: The Human-Computer Interaction Lab. 2013 <br>
+https://www.cs.umd.edu/sites/default/files/scholarly_papers/Malik.pdf <br>
+ "the Twitter corpora included substantially higher punctuation use than the Google corpus,  <br>
+ comprising 7.5% of characters in the mobile tweets and 7.6% in desktop versus only 4.4%...  <br>
+With the Google corpus,only 6 punctuation symbols (. -’ ( ) “) appeared more frequently than [q]"
 
   - "Frequencies for English Punctuation Marks" by Vivian Cook <br>
-    http://www.viviancook.uk/Punctuation/PunctFigs.htm
+http://www.viviancook.uk/Punctuation/PunctFigs.htm  <br>
+ "Based on a writing system corpus some 459 thousand words long.  <br> 
+ This includes three novels of different types (276 thousand words),  <br>
+ selections of articles from two newspapers (55 thousand), <br> 
+one bureaucratic report (94 thousand), and assorted academic papers <br>
+on language topics (34 thousand). More information is in <br>
+Cook, V.J. (2013) ‘Standard punctuation and the punctuation of the street’ <br>
+in M. Pawlak and L. Aronin (eds.), Essential Topics in Applied Linguistics and Multilingualism,  <br>
+ Springer International Publishing Switzerland (2013), 267-290"
 
-  - "Computer Languages Character Frequency" <br>
-    Xah Lee. Date: 2013-05-23. Last updated: 2020-06-29. <br>
-    http://xahlee.info/comp/computer_language_char_distribution.html
+  - "A Statistical Study of Current Usage in Punctuation": <br>
+Ruhlen, H., & Pressey, S. (1924). A Statistical Study of Current Usage in Punctuation. The English Journal, 13(5), 325-331. doi:10.2307/802253
 
-#### Add punctuation keys and number keys
+  - "Computer Languages Character Frequency"
+by Xah Lee.  <br>
+Date: 2013-05-23. Last updated: 2020-06-29. <br>
+http://xahlee.info/comp/computer_language_char_distribution.html <br>
+NOTE: biased toward C (19.8%) and Py (18.5%), which have high use of "_".
 
-We will place the most common punctuation marks in the middle columns: 
-**( ,  .  '  "  ;  :  -  _ )** 
+Frequency: 
 
-             Y  O  U  X  (    )    W  D  C  V  Q 
-             I  H  E  A  ,    .    R  T  S  N  Z      
-             P  K  J  G  '    "    L  B  F  M             
+             Sun:     Malik:   Ruhlen:    Cook:            Xah:
+              /1M   N-gram %   /10,000   /1,000       All%  JS%   Py%
 
-We will use the Shift and R-Alt keys to group similar punctuation marks:
+    .    42840.02      1.151       535     65.3       6.6   9.4  10.3
+    ,    44189.96                  556     61.6       5.8   8.9   7.5
+    "                  2.284        44     26.7       3.9   1.6   6.2
+    '     2980.35      0.200        40     24.3       4.4   4.0   8.6
+    -     9529.78      0.217        21     15.3       4.1   1.9   3.0
+    ()    4500.81      0.140         7                7.4   9.8   8.1
+    ;     1355.22      0.096        22      3.2       3.8   8.6
+    z                  0.09                   -         -
+    :     3221.82      0.087        11      3.4       3.5   2.8   4.7
+    ?     4154.78      0.032        14      5.6       0.3
+    /                  0.019                          4.0   4.9   1.1
+    !     2057.22      0.013         3      3.3       0.4
+    _                  0.001                         11.0   2.9  10.5
 
-             Y  O  U  X  ([{  )]}  W  D  C  V  Q 
-             I  H  E  A  ,;:  .?!  R  T  S  N  Z      
-             P  K  J  G  "#@  '-_  L  B  F  M             
+
+### Add punctuation keys and number keys
+
+We will assign the most frequent punctuation according to Sun, et al (2018) to the six keys in the middle two columns:  . , " ' - ? ; : () ! _
+
+             Y  O  U  X   '   "   W  D  C  V  Q 
+             I  H  E  A   ,   .   R  T  S  N  Z      
+             P  K  J  G   -   ?   L  B  F  M             
+
+We will use the Shift key to group similar punctuation marks (separating and joining marks in the left middle column and closing marks in the right middle column):
+
+             Y  O  U  X  '(   ")  W  D  C  V  Q 
+             I  H  E  A  ,;   .:  R  T  S  N  Z      
+             P  K  J  G  -_   ?!  L  B  F  M             
+ 
+**Separating marks (left)**: The comma separates text in lists; the semicolon can be used in place of the comma to separate items in a list (especially if these items contain commas); open parenthesis sets off an explanatory word, phrase, or sentence. 
+
+**Joining marks (left)**: The apostrophe joins words as contractions; the hyphen joins words as compounds; the underscore joins words in cases where whitespace characters are not permitted (such as in variables or file names). 
+
+**Closing marks (right)**: A sentence usually ends with a period, question mark, or exclamation mark. The colon ends one statement but precedes the following: an explanation, quotation, list, etc. Double quotes and close parenthesis closes a word, clause, or sentence separated by an open parenthesis.
+
+**Number keys**: 
+The numbers are flanked to the left and right by [square brackets], and {curly brackets} accessed by the Shift key. Each of the numbers is paired with a mathematical or logic symbol accessed by the Shift key:
     
-([{ )]} 
-&nbsp;&nbsp;&nbsp;&nbsp;
-Brackets: parentheses, square brackets, curly brackets (angle brackets are placed in the two number keys directly above).  
+          {  |  =  ~  +    <   >    ^  &  %  *  }  \
+          [  1  2  3  4    5   6    7  8  9  0  ]  /
 
-, ; : 
-&nbsp;&nbsp;&nbsp;&nbsp;
-Separating marks: the comma separates text, for example in lists; the semicolon can be used in place of the comma to separate items in a list (especially if these items contain commas); the colon ends one statement but precedes the following: an explanation, quotation, list, etc. 
-
-. ? ! 
-&nbsp;&nbsp;&nbsp;&nbsp;
-Ending marks: the period, question mark, and exclamation mark end a sentence.
-
-" # @ 
-&nbsp;&nbsp;&nbsp;&nbsp;
-Identifying characters: double quotation marks are for direct quotations from an identified source; the hashtag is a popular modern use of the pound/hash sign to identify digital content on a specific topic; the "at sign" identifies a location or affiliation (such as in email addresses), and acts as a "handle" to identify users in popular social media platforms and online forums.   
-
-' - _ 
-&nbsp;&nbsp;&nbsp;&nbsp;
-Joining characters: the apostrophe joins words as contractions; the hyphen joins words as compounds; the underscore joins words in cases where whitespace characters are not permitted (such as in variables or file names). 
-
-For the number keys, we will have the Shift key access mathematical and logic symbols:
-    
-          $  -  =  ~  +   <    >   /  &  %  *  ^
-          #  1  2  3  4   5    6   7  8  9  0  |
-
-\# $ 
-&nbsp;&nbsp;&nbsp;&nbsp;
-The pound/hash (duplicate) represents numbers and is set next to the number keys; the dollar sign signifies additional symbols ("S").
-
-\-  =  ~  +   <    >   \/  &  %  * &nbsp;&nbsp;&nbsp;&nbsp; 
-
-    1: - (minus/hyphen: 1 stroke, like the Chinese character for "1")
+    1: | (vertical bar or "pipe" represents the logical OR operator: 1 stroke, looks like the number one)
     2: = (equal: 2 strokes, like the Chinese character for "2")
     3: ~ (tilde: "almost equal", often written with 3 strokes, like the Chinese character for "3")
     4: + (plus: has four quadrants; resembles "4")
     5 & 6: < > ("less/greater than"; these angle brackets are directly above the other bracket keys)
-    7: / (forward slash: for division; resembles "7")
+    7: ^ (caret for logical XOR operator as well as exponentiation; resembles "7")
     8: & (ampersand: logical AND operator; resembles "8")
     9: % (percent: related to division; resembles "9")
-    0: * (asterisk: for multiplication; resembles "0")
+    0: * (asterisk: for multiplication; resembles "0") 
 
-| ^
-&nbsp;&nbsp;&nbsp;&nbsp;
-The vertical bar or "pipe" represents the logical OR operator; the caret represents the logical XOR operator, as well as exponentiation.
-
-Use of the Shift and R-Alt keys enables easy access to the most common punctuation marks in the middle columns, and it also frees up the three remaining keys in many common keyboards (flanking the upper right hand corner Backspace key). These three keys excessively stretch the right little finger, and are displaced in special ergonomic keyboards, such as the Kinesis Advantage and Ergodox. So for two of these keys, we will simply repeat the use of four of punctuation marks that are accessed in the middle columns by the R-Alt key (: ! and @ _). For the final (top rightmost) key, we will assign to it the two remaining symbols, used primarily by computer programmers:
-
-\\ \` 
-&nbsp;&nbsp;&nbsp;&nbsp;
-The backslash is often used as an escape character or to enclose regular expressions to process text; the backtick processes an enclosed string as part of a computer command (command substitution) or indicates code in comments.
+The three remaining keys in many common keyboards (flanking the upper right hand corner Backspace key) are displaced in special ergonomic keyboards, such as the Kinesis Advantage and Ergodox. For the top right key, we will assign the forward slash and backslash: / \\. For the remaining two keys, we will assign two symbols that in modern usage have significance in social media: the hash/pound sign and the "at sign". The hash or hashtag identifies digital content on a specific topic (the Shift key accesses the dollar sign). The "at sign" identifies a location or affiliation (such as in email addresses) and acts as a "handle" to identify users in popular social media platforms and online forums.
 
 The resulting Engram layout:
 
-          $  -  =  ~  +   <    >   /  &  %  *  ^  `
-          #  1  2  3  4   5    6   7  8  9  0  |  \
+          {  |  =  ~  +    <   >    ^  &  %  *  }  \
+          [  1  2  3  4    5   6    7  8  9  0  ]  /
 
-             Y  O  U  X  ([{  )]}  W  D  C  V  Q 
-             I  H  E  A  ,;:  .?!  R  T  S  N  Z      
-             P  K  J  G  "#@  '-_  L  B  F  M             
+             Y  O  U  X   '(   ")   W  D  C  V  Q  #$  @
+             I  H  E  A   ,;   .:   R  T  S  N  Z      
+             P  K  J  G   -_   ?!   L  B  F  M           
