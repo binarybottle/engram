@@ -24,19 +24,19 @@ The most common punctuation marks are logically grouped together in the middle c
 See below for a full description and comparisons with other key layouts.
 
 <!--
-### Default layer
-![Default layer](https://github.com/binarybottle/engram/blob/master/assets/engram-base-layer.png?raw=true)
-### Shift layer
-![Shift layer](https://github.com/binarybottle/engram/blob/master/assets/engram-shift-layer.png?raw=true)
--->
-
 ### Finger layout
 ![Finger layout](https://github.com/binarybottle/engram/blob/master/assets/engram-keyboard-layout-analyzer.png?raw=true)
+-->
+
+### Default layer
+![Default layer](https://github.com/binarybottle/engram/blob/master/assets/engram-base-layer-800px.png?raw=true)
+### Shift layer
+![Shift layer](https://github.com/binarybottle/engram/blob/master/assets/engram-shift-layer-800px.png?raw=true)
 
 ### Default layer (ergonomic keyboard)
-![Ergonomic keyboard default layer](https://github.com/binarybottle/engram/blob/master/assets/engram-base-layer-ergodox.png?raw=true)
+![Ergonomic keyboard default layer](https://github.com/binarybottle/engram/blob/master/assets/engram-base-layer-ergo-800px.png?raw=true)
 ### Shift layer (ergonomic keyboard)
-![Ergonomic keyboard Shift layer](https://github.com/binarybottle/engram/blob/master/assets/engram-shift-layer-ergodox.png?raw=true)
+![Ergonomic keyboard Shift layer](https://github.com/binarybottle/engram/blob/master/assets/engram-shift-layer-ergo-800px.png?raw=true)
 [Ergonomic keyboard images care of [Ergodox](https://configure.ergodox-ez.com/ergodox-ez/layouts/APXBR/latest/0).]
 
 (c) 2021 Arno Klein, MIT license
