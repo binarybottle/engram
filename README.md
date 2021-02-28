@@ -1,7 +1,5 @@
 # Arno's Engram key layout
 
-# Arno's Engram key layout
-
 Engram is a key layout optimized for comfortable and efficient touch typing in English 
 created by [Arno Klein](https://binarybottle.com), 
 with [open source code](https://github.com/binarybottle/engram) to create other optimized key layouts.
