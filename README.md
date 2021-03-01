@@ -21,12 +21,12 @@ The most common punctuation marks are logically grouped together in the middle c
 
 See below for a full description and comparisons with other key layouts.
 
-### Default and Shift-key layers (standard diagonal keyboard)
+### Standard diagonal keyboard (default and Shift-key layers)
 ![Standard keyboard](https://github.com/binarybottle/engram/blob/master/assets/engram-800px.png?raw=true)
 
-### Default and Shift-key layers ("ergonomic" orthonormal keyboard)
+### "Ergonomic" orthonormal keyboard (default and Shift-key layers)
 ![Orthonormal keyboard](https://github.com/binarybottle/engram/blob/master/assets/engram-ergo-squeezed-800px.png?raw=true)
-[Engram in Ergodox](https://configure.ergodox-ez.com/ergodox-ez/layouts/APXBR/latest/0).]
+[[Engram in Ergodox](https://configure.ergodox-ez.com/ergodox-ez/layouts/APXBR/latest/0).]
 
 (c) 2021 Arno Klein, MIT license
 
