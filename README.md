@@ -21,19 +21,12 @@ The most common punctuation marks are logically grouped together in the middle c
 
 See below for a full description and comparisons with other key layouts.
 
-<!--
-### Default layer
-![Default layer](https://github.com/binarybottle/engram/blob/master/assets/engram-base-layer-800px.png?raw=true)
-### Shift layer
-![Shift layer](https://github.com/binarybottle/engram/blob/master/assets/engram-shift-layer-800px.png?raw=true)
--->
-<!--
-### Default layer (ergonomic keyboard)
-![Ergonomic keyboard default layer](https://github.com/binarybottle/engram/blob/master/assets/engram-base-layer-ergo-800px.png?raw=true)
-### Shift layer (ergonomic keyboard)
-![Ergonomic keyboard Shift layer](https://github.com/binarybottle/engram/blob/master/assets/engram-shift-layer-ergo-800px.png?raw=true)
-[Ergonomic keyboard images care of [Ergodox](https://configure.ergodox-ez.com/ergodox-ez/layouts/APXBR/latest/0).]
--->
+### Default and Shift-key layers (standard diagonal keyboard)
+![Standard keyboard](https://github.com/binarybottle/engram/blob/master/assets/engram-800px.png?raw=true)
+
+### Default and Shift-key layers ("ergonomic" orthonormal keyboard)
+![Orthonormal keyboard](https://github.com/binarybottle/engram/blob/master/assets/engram-ergo-squeezed-800px.png?raw=true)
+[Engram in Ergodox](https://configure.ergodox-ez.com/ergodox-ez/layouts/APXBR/latest/0).]
 
 (c) 2021 Arno Klein, MIT license
 
