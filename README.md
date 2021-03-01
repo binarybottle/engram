@@ -8,36 +8,32 @@ or [try it out online](https://keymanweb.com/#en,Keyboard_engram).
 
 Letters are optimally arranged according to ergonomic factors that promote reduction of lateral finger movements and more efficient typing of high-frequency letter pairs: 
 
-             Y  O  U  X            W  D  C  V  Q 
-             I  H  E  A            R  T  S  N  Z      
-             P  K  J  G            L  B  F  M             
+             Y  P  O  X           F  C  M  W  Q
+             H  I  E  A           T  S  N  R  Z
+             G  K  J  U           D  V  B  L
 
-The most common punctuation marks are logically grouped together in the middle columns (accessed directly and by the Shift key) and numbers are paired with mathematical and logic symbols (accessed by the Shift Key):
+The most common punctuation marks are logically grouped together in the middle columns and numbers are paired with mathematical and logic symbols (shown as pairs of default and Shift-key-accessed characters):
 
-          {  |  =  ~  +    <   >    ^  &  %  *  }  \
-          [  1  2  3  4    5   6    7  8  9  0  ]  /
-
-             Y  O  U  X   '(   ")   W  D  C  V  Q  #$  @
-             I  H  E  A   ,;   .:   R  T  S  N  Z      
-             P  K  J  G   -_   ?!   L  B  F  M             
+         [{ 1| 2= 3~ 4+  5<  6>  7^ 8& 9% 0* ]} /\
+            yY pP oO xX  ‘(  “)  fF cC mM wW qQ #$ @`
+            hH iI eE aA  ,;  .:  tT sS nN rR zZ
+            gG kK jJ uU  -_  ?!  dD vV bB lL 
 
 See below for a full description and comparisons with other key layouts.
 
 <!--
-### Finger layout
-![Finger layout](https://github.com/binarybottle/engram/blob/master/assets/engram-keyboard-layout-analyzer.png?raw=true)
--->
-
 ### Default layer
 ![Default layer](https://github.com/binarybottle/engram/blob/master/assets/engram-base-layer-800px.png?raw=true)
 ### Shift layer
 ![Shift layer](https://github.com/binarybottle/engram/blob/master/assets/engram-shift-layer-800px.png?raw=true)
-
+-->
+<!--
 ### Default layer (ergonomic keyboard)
 ![Ergonomic keyboard default layer](https://github.com/binarybottle/engram/blob/master/assets/engram-base-layer-ergo-800px.png?raw=true)
 ### Shift layer (ergonomic keyboard)
 ![Ergonomic keyboard Shift layer](https://github.com/binarybottle/engram/blob/master/assets/engram-shift-layer-ergo-800px.png?raw=true)
-[[Ergodox configuration](https://configure.ergodox-ez.com/ergodox-ez/layouts/APXBR/latest/0).]
+[Ergonomic keyboard images care of [Ergodox](https://configure.ergodox-ez.com/ergodox-ez/layouts/APXBR/latest/0).]
+-->
 
 (c) 2021 Arno Klein, MIT license
 
@@ -46,9 +42,8 @@ See below for a full description and comparisons with other key layouts.
 # Contents
 1. [Why a new key layout?](#why)
 2. [How does Engram compare with other key layouts?](#scores)
-3. [Factors used to compute the Engram layout](#factors)
-4. [Guiding criteria](#criteria)
-5. [Summary of steps and results](#summary)
+3. [Guiding criteria](#criteria)
+4. [Summary of steps and results](#summary)
 
 ## Why a new key layout? <a name="why">
 
@@ -97,25 +92,25 @@ Despite the fact that the Engram layout was designed to reduce strain and discom
  
 #### Engram Scoring Model scores for existing layouts based on publicly available text data
     
-| Layout | Google bigrams | Alice in Wonderland | Romeo Juliet | Bhaghavad Gita | Memento screenplay | 100K tweets | 20K tweets | MASC tweets | MASC spoken | COCA blogs | Google website | Sofware languages |
+| Layout | Google bigrams | Alice | Romeo | Gita | Memento | 100K tweets | 20K tweets | MASC tweets | MASC spoken | COCA blogs | Google | Code |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Engram | 0.02497 | 0.01941 | 0.02095 | 0.01935 | 0.02592 | 0.03297 | 0.02976 | 0.02789 | 0.01835 | 0.02481 | 0.04379 | 0.02735 |
-| Halmak | 0.02465 | 0.01924 | 0.02078 | 0.01915 | 0.02579 | 0.03282 | 0.02951 | 0.02765 | 0.01826 | 0.02455 | 0.04342 | 0.02705 |
-| Norman | 0.02416 | 0.01899 | 0.02044 | 0.01892 | 0.02538 | 0.03224 | 0.02892 | 0.02709 | 0.01798 | 0.02409 | 0.04201 | 0.02653 |
-| Workman | 0.02445 | 0.01906 | 0.02058 | 0.01897 | 0.02557 | 0.03251 | 0.02924 | 0.02742 | 0.01804 | 0.02431 | 0.04277 | 0.02687 |
-| QGMLWB | 0.02324 | 0.01830 | 0.01969 | 0.01812 | 0.02445 | 0.03116 | 0.02811 | 0.02601 | 0.01738 | 0.02320 | 0.04094 | 0.02545 |
-| Colemak Mod-DH | 0.02421 | 0.01876 | 0.02034 | 0.01881 | 0.02519 | 0.03213 | 0.02876 | 0.02713 | 0.01783 | 0.02407 | 0.04216 | 0.02674 |
-| Colemak | 0.02431 | 0.01881 | 0.02044 | 0.01884 | 0.02530 | 0.03229 | 0.02888 | 0.02724 | 0.01790 | 0.02418 | 0.04221 | 0.02703 |
-| ASSET | 0.02371 | 0.01831 | 0.01996 | 0.01828 | 0.02484 | 0.03170 | 0.02836 | 0.02676 | 0.01743 | 0.02365 | 0.04188 | 0.02652 |
-| Capewell | 0.02383 | 0.01860 | 0.02013 | 0.01858 | 0.02489 | 0.03177 | 0.02844 | 0.02670 | 0.01768 | 0.02374 | 0.04141 | 0.02620 |
-| Dvorak | 0.02363 | 0.01847 | 0.02002 | 0.01834 | 0.02473 | 0.03148 | 0.02831 | 0.02640 | 0.01760 | 0.02355 | 0.04101 | 0.02596 |
-| QWERTY | 0.02133 | 0.01684 | 0.01812 | 0.01669 | 0.02242 | 0.02879 | 0.02580 | 0.02404 | 0.01581 | 0.02133 | 0.03793 | 0.02401 |
+| Engram | 0.02514 | 0.01953 | 0.02111 | 0.01948 | 0.02612 | 0.03319 | 0.02995 | 0.02808 | 0.01845 | 0.02497 | 0.04419 | 0.02743 |
+| Halmak | 0.02474 | 0.01931 | 0.02086 | 0.01922 | 0.02588 | 0.03294 | 0.02962 | 0.02776 | 0.01833 | 0.02464 | 0.04359 | 0.02714 |
+| Norman | 0.02422 | 0.01903 | 0.02049 | 0.01897 | 0.02543 | 0.03231 | 0.02898 | 0.02715 | 0.01802 | 0.02414 | 0.04211 | 0.02660 |
+| Workman | 0.02451 | 0.01910 | 0.02063 | 0.01901 | 0.02564 | 0.03260 | 0.02931 | 0.02749 | 0.01808 | 0.02437 | 0.04289 | 0.02695 |
+| QGMLWB | 0.02330 | 0.01835 | 0.01974 | 0.01817 | 0.02450 | 0.03123 | 0.02817 | 0.02606 | 0.01742 | 0.02325 | 0.04104 | 0.02553 |
+| Colemak Mod-DH | 0.02426 | 0.01880 | 0.02037 | 0.01885 | 0.02524 | 0.03220 | 0.02882 | 0.02719 | 0.01786 | 0.02411 | 0.04224 | 0.02680 |
+| Colemak | 0.02437 | 0.01886 | 0.02050 | 0.01889 | 0.02537 | 0.03238 | 0.02896 | 0.02731 | 0.01794 | 0.02424 | 0.04230 | 0.02711 |
+| ASSET | 0.02375 | 0.01834 | 0.02000 | 0.01832 | 0.02488 | 0.03176 | 0.02842 | 0.02682 | 0.01747 | 0.02369 | 0.04195 | 0.02657 |
+| Capewell | 0.02390 | 0.01866 | 0.02019 | 0.01864 | 0.02497 | 0.03188 | 0.02852 | 0.02679 | 0.01773 | 0.02382 | 0.04150 | 0.02630 |
+| Dvorak | 0.02370 | 0.01852 | 0.02008 | 0.01839 | 0.02480 | 0.03157 | 0.02840 | 0.02647 | 0.01765 | 0.02362 | 0.04115 | 0.02605 |
+| QWERTY | 0.02135 | 0.01685 | 0.01814 | 0.01670 | 0.02243 | 0.02882 | 0.02583 | 0.02405 | 0.01582 | 0.02135 | 0.03796 | 0.02403 |
 
 #### Keyboard Layout Analyzer scores for existing layouts based on publicly available text data
     
-| Layout | Alice in Wonderland | Romeo Juliet | Bhaghavad Gita | Memento screenplay | 100K tweets | 20K tweets | MASC tweets | MASC spoken | COCA blogs | Google website | Software languages |
+| Layout | Alice in Wonderland | Romeo Juliet | Bhagavad Gita | Memento screenplay | 100K tweets | 20K tweets | MASC tweets | MASC spoken | COCA blogs | Google website | Software languages |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Engram | 67.52 | 58.75 | 58.60 | 55.32 | 61.09 | 56.41 | 56.82 | 62.41 | 67.32 | 34.21 | 45.38 |
+| Engram | 66.65 | 58.16 | 58.75 | 54.49 | 61.77 | 56.01 | 58.23 | 62.14 | 67.93 | 33.81 | 48.09 |
 | Halmak | 66.25 | 57.02 | 57.45 | 55.03 | 60.86 | 55.53 | 57.13 | 62.32 | 67.29 | 30.41 | 47.60 |
 | Norman | 62.76 | 53.21 | 53.44 | 52.33 | 57.43 | 53.24 | 53.90 | 59.97 | 62.80 | 28.29 | 46.01 |
 | Workman | 64.78 | 56.67 | 56.97 | 54.29 | 59.98 | 55.81 | 56.25 | 61.34 | 65.27 | 29.28 | 47.76 | 
@@ -133,7 +128,7 @@ Despite the fact that the Engram layout was designed to reduce strain and discom
 | --- | --- |
 | "Alice in Wonderland" | [KLA analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/hm32fh0T) of Alice in Wonderland (Ch.1), a standard text used for comparing layouts |
 | "Romeo and Juliet" | [KLA analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/HfMrXLdJ) of [Romeo and Juliet](https://www.fulltextarchive.com/page/Romeo-and-Juliet1/) |
-| "Bhaghavad Gita" | [KLA analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/0MdR0v4d) of [Bhaghavad Gita](https://www.gutenberg.org/files/2388/2388-h/2388-h.htm) |
+| "Bhagavad Gita" | [KLA analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/0MdR0v4d) of [Bhaghavad Gita](https://www.gutenberg.org/files/2388/2388-h/2388-h.htm) |
 | "Memento screenplay" | [KLA analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/KJntKxWh) of the screenplay for [Memento](https://www.dailyscript.com/scripts/memento.html) |
 | "100K tweets" | 100,000 tweets from: [Sentiment140 dataset](https://data.world/data-society/twitter-user-data) training data |
 | "20K tweets" | 20,000 tweets from [Gender Classifier Data](https://www.kaggle.com/crowdflower/twitter-user-gender-classification) |
@@ -157,47 +152,41 @@ Despite the fact that the Engram layout was designed to reduce strain and discom
 | [Dvorak](https://keyboard-design.com/letterlayout.html?layout=dvorak.en.ansi) | 1936 | https://en.wikipedia.org/wiki/Dvorak_keyboard_layout | 
 | [QWERTY](https://keyboard-design.com/letterlayout.html?layout=qwerty.en.ansi) | 1873 | https://en.wikipedia.org/wiki/QWERTY |
 
-## Factors used to compute the Engram layout <a name="factors">
+## Guiding criteria   <a name="criteria">
+
+    1.  Assign letters to keys that don't require lateral finger movements.
+    2.  Promote alternating between hands over uncomfortable transitions with the same hand.
+    3.  Assign the most common letters to the most comfortable keys.
+    4.  Arrange letters so that more frequent bigrams are easier to type.
+    5.  Promote little-to-index-finger roll-ins over index-to-little-finger roll-outs.
+    6.  Balance finger loads according to their relative strength.
+    7.  Avoid stretching shorter fingers up and longer fingers down.
+    8.  Avoid using the same finger.
+    9.  Avoid the upper and lower rows.
+    10. Avoid skipping over the home row.
+    11. Assign the most common punctuation to keys in the middle of the keyboard.
+    12. Assign easy-to-remember symbols to the Shift-number keys.
+    
+### Factors used to compute the Engram layout <a name="factors">
   - **N-gram letter frequencies** <br>
     
     [Peter Norvig's analysis](http://www.norvig.com/mayzner.html) of data from Google's book scanning project
   - **Flow factors** (transitions between ordered key pairs) <br>
     These factors are influenced by Dvorak's 11 criteria (1936).
-  - **Finger strengths** (peak keyboard reaction forces) <br>
-      "Keyboard Reaction Force and Finger Flexor Electromyograms during Computer Keyboard Work", BJ Martin, TJ Armstrong, JA Foulke, S Natarajan, Human Factors,1996,38(4),654-664.
-  - **Speed** (unordered interkey stroke times) <br>
-      "Estimation of digraph costs for keyboard layout optimization", A Iseri, Ma Eksioglu, International Journal of Industrial Ergonomics, 48, 127-138, 2015. <br>
-      _NOTE: Speed data were only used for exploration of early key layouts._
-      
-
-## Guiding criteria   <a name="criteria">
-
-1.  Assign 24 letters to columns of keys that don't require lateral finger movement.
-2.  Assign common punctuation to keys in the middle columns of the keyboard.
-3.  Assign easier-to-remember characters to the shift-number keys.
-4.  Group letters for common command shortcuts close together.
-5.  Arrange letters so that more frequent bigrams are faster and easier to type.
-6.  Balance finger loads according to their relative strength.
-7.  Promote alternating between hands over uncomfortable transitions with the same hand.
-8.  Promote little-to-index-finger roll-ins over index-to-little-finger roll_outs.
-9.  Avoid stretching shorter fingers up and longer fingers down.
-10. Avoid using the same finger.
-11. Avoid the upper and lower rows.
-12. Avoid skipping over the home row.
-
 
 ## Summary of steps and results  <a name="summary">
+
 
 ### Step 1: Define the shape of the key layout to minimize lateral finger movements
 
 We will assign 24 letters to 8 columns of keys separated by two middle columns reserved for punctuation. These 8 columns require no lateral finger movements when touch typing, since there is one column per finger. The most comfortable keys include the left and right home rows (keys 5-8 and 17-20), the top-center keys (2,3 and 14,15) that allow the longer middle and ring fingers to uncurl upwards, as well as the bottom corner keys (9,12 and 21,24) that allow the shorter fingers to curl downwards. We will assign the two least frequent letters, Z and Q, to the two hardest-to-reach keys lying outside the 24-key columns in the upper right:
 
         Left:            Right:
-     1  2  3  4       13 14 15 16  Q/Z
-     5  6  7  8       17 18 19 20  Z/Q
+     1  2  3  4       13 14 15 16  Z/Q
+     5  6  7  8       17 18 19 20  Q/Z
      9 10 11 12       21 22 23 24
 
-### Step 2: Arrange the most frequent letters based on comfort and bigram frequencies
+### Step 2: Arrange the most frequent letters based on comfort and bigram frequencies  <a name="step2">
 
 We will assign letters to keys by choosing the arrangement with the highest score according to our scoring model. However, there are over four hundred septillion, or four hundred trillion trillion (26! = 403,291,461,126,605,635,584,000,000, or 4.032914611 E+26) possible arrangements of 26 letters (24! = 6.204484017 E+23), so we will arrange the letters in stages, based on ergonomic principles.
     
@@ -207,13 +196,49 @@ In prior experiments using the methods below, all vowels consistently automatica
     
 **E**, T, **A, O, I**, N, S, R, H, L, D, C, **U**, M, F, P, G, W, **Y**, B, V, K, X, J, Q, Z
 
-We will assign the four most frequent vowels (E,A,O,I) to the most comfortable keys in the home and upper rows (keys 5-8 and 2-3) of one side, with the letter E, the most frequent in the English language, assigned to either of the strongest keys (7 and 8, the middle and index fingers on the left home row). The letter U may also take the less comfortable key 4. We will arrange the vowels such that any top-frequency bigram (more than 1 billion instances in Peter Norvig's analysis of Google data) reads from left to right (ex: TH, not HT) for ease of typing (roll-in from little to index finger vs. roll-out from index to little finger). These constraints lead to two comfortable and efficient layouts:
+The high-frequency bigrams that contain these vowels are listed below in bold, with more than 10 billion instances:
+
+**OU, IO, EA, IE**, AI, IA, EI, UE, UA, AU, UI, OI, EO, OA, OE 
     
-         -  O  U  -
+     OU  24531132241
+     IO  23542263265
+     EA  19403941063
+     IE  10845731320
+     AI   8922759715
+     IA   8072199471   
+     EI   5169898489
+     UE   4158448570       
+     UA   3844138094   
+     AU   3356322923
+     UI   2852182384
+     OI   2474275212
+     EO   2044268477
+     OA   1620913259
+     OE   1089254517 
+   
+We will assign the vowels (E,A,O,I,U) to the most comfortable keys (keys 5-8, 2-3, 12) of one side, with the letter E, the most frequent in the English language, assigned to either of the strongest keys (7 and 8, the middle and index fingers on the left home row). We will arrange the vowels such that any top-frequency bigram (more than 1 billion instances in Peter Norvig's analysis of Google data) reads from left to right (ex: TH, not HT) for ease of typing (roll-in from little to index finger vs. roll-out from index to little finger). These constraints lead to comfortable and efficient layouts:
+    
+    (1)  -  O  U  -
          I  -  E  A    
 
-         -  -  U  - 
+    (2)  -  -  U  - 
          I  O  E  A      
+
+    (3)  -  -  -  - 
+         I  O  E  A
+         -  -  -  U
+    
+    (4)  -  O  -  - 
+         I  -  E  A
+         -  -  -  U 
+
+    (5)  -  -  O  - 
+         I  -  E  A
+         -  -  -  U 
+
+    (6)  -  -  O  - 
+         -  I  E  A
+         -  -  -  U 
    
 #### Consonants
 
@@ -225,61 +250,67 @@ These eight consonants are included among the highest frequency bigrams, listed 
 
 **TH, ND, ST, NT, CH, NS, CT, TR, RS, NC**, (RT), SH, LD, RD, LS, DS, LT, (TL), RL, HR, NL, (SL)
     
-To maximize the number of bigrams we can comfortably type, we select 4-consonant sequences that consist of three consecutive highest frequency (>10 billion instances) bigrams, such as NSTR = NS + ST + TR. We also restrict T to the strongest (middle or index) fingers, because T is the most frequent consonant. Below are the resulting 4 consonant sequences:
+     TH 100272945963  3.56% 
+     ND  38129777631  1.35%
+     ST  29704461829  1.05%
+     NT  29359771944  1.04%
+     CH  16854985236  0.60%
+     NS  14350320288   
+     CT  12997849406
+     TR  12006693396       
+     RS  11180732354   
+     NC  11722631112
+     RT  10198055461 
 
-         N  S  T  H
-         N  S  T  R
-         N  C  T  H
-         N  C  T  R
-    
-The resulting 2 arrangements of five vowels on the left and 4 arrangements of four consonants on the right gives us 8 layouts, each with 15 unassigned keys (letters on the right side are reversed, in case Hand 2 is assigned to the right hand):
+To maximize the number of bigrams we can comfortably type, we select 4-consonant sequences that consist of three consecutive highest frequency (>10 billion instances) bigrams, such as NSTR = NS + ST + TR. We also restrict T to the strongest (middle or index) fingers, because T is the most frequent consonant. Below are the resulting 5 consonant sequences and number of left-to-right bigrams with at least 10 billion instances:
+
+    N  S  T  H  (4)
+    N  S  T  R  (4)
+    N  C  T  H  (5)
+    N  C  T  R  (4)
+    N  R  S  T  (5)
+
+The resulting 6 arrangements of 5 vowels on the left and 5 arrangements of 4 consonants on the right gives us 30 layouts, each with 15 unassigned keys (letters on the right side are reversed, in case Hand 2 is assigned to the right hand):
 
         Hand 1            Hand 2
     -OU- I-EA ----    ---- HTSN ----
     -OU- I-EA ----    ---- RTSN ----
     -OU- I-EA ----    ---- HTCN ----
     -OU- I-EA ----    ---- RTCN ----
+    -OU- I-EA ----    ---- TSRN ----
     --U- IOEA ----    ---- HTSN ----
     --U- IOEA ----    ---- RTSN ----
     --U- IOEA ----    ---- HTCN ----
-    --U- IOEA ----    ---- RTCN ----    
+    --U- IOEA ----    ---- RTCN ----
+    --U- IOEA ----    ---- TSRN ----
+    ---- IOEA ---U    ---- HTSN ----
+    ---- IOEA ---U    ---- RTSN ----
+    ---- IOEA ---U    ---- HTCN ----
+    ---- IOEA ---U    ---- RTCN ----
+    ---- IOEA ---U    ---- TSRN ----
+    -O-- I-EA ---U    ---- HTSN ----
+    -O-- I-EA ---U    ---- RTSN ----
+    -O-- I-EA ---U    ---- HTCN ----
+    -O-- I-EA ---U    ---- RTCN ----
+    -O-- I-EA ---U    ---- TSRN ----
+    --O- I-EA ---U    ---- HTSN ----
+    --O- I-EA ---U    ---- RTSN ----
+    --O- I-EA ---U    ---- HTCN ----
+    --O- I-EA ---U    ---- RTCN ----   
+    --O- I-EA ---U    ---- TSRN ----
+    --O- -IEA ---U    ---- HTSN ----
+    --O- -IEA ---U    ---- RTSN ----
+    --O- -IEA ---U    ---- HTCN ----
+    --O- -IEA ---U    ---- RTCN ----
+    --O- -IEA ---U    ---- TSRN ----
 
-### Step 3: Optimize assignment of the remaining letters
+### Step 3: Optimize assignment of the remaining letters <a name="step3">
     
-We want to assign the 15 missing letters to the unassigned keys in each of the above 8 layouts based on our scoring model. That would mean scoring all possible arrangements for each layout and choosing the arrangement with the highest score, but since there are over 1.3 trillion possible ways of arranging 15 letters (15! = 1,307,674,368,000), we will need to break up the assignment into two stages: first for the most frequent remaining letters, and second for the least frequent remaining letters. 
-    
-#### Most frequent letters
-First we will compute scores for every possible arrangement of the 9 most frequent remaining letters among those in bold below for the most comfortable of the remaining positions (4,9,12,13,14,15,21,24, and either 2 or 6):
-
-E, T, A, O, I, N, **S, R, H, L, D, C**, U, **M, F, P, G, W**, Y, B, V, K, X, J, Q, Z
-
-       Hand 1:          Hand 2:
-     -  2  -  4       13 14 15  -
-     -  6  -  -        -  -  -  -
-     9  -  - 12       21  -  - 24
-    
-Since there are 9! = 362,880 possible combinations, and we have 8 layouts, we need to score and evaluate 2,903,040 combinations.  
-    
-To score each arrangement of letters, we construct a frequency matrix of each ordered pair of letters (bigram), and multiply this frequency matrix by our speed-strength-flow matrix to compute a score. 
-    
-#### Least frequent letters
-Second, we will compute scores for every possible arrangement of the 8 least frequent letters (aside from Z and Q) in bold below for the least comfortable remaining positions (1,10,11,16,22,23, and again: 4,13):
-
-E, T, A, O, I, N, S, R, H, L, D, C, U, M, F, P, **G, W, Y, B, V, K, X, J**, Q, Z
-
-       Hand 1:          Hand 2:
-     1  -  -  4       13  -  - 16
-     -  -  -  -       -   -  -  -
-     - 10 11  -       -  22 23  -   
-
-Since there are 8! = 40,320 possible combinations, and we have 8 layouts, we need to score and evaluate 322,560 more combinations.    
-    
+We want to assign the 15 missing letters to the unassigned keys in each of the above 30 layouts based on our scoring model. That would mean scoring all possible arrangements for each layout and choosing the arrangement with the highest score, but since there are over 1.3 trillion possible ways of arranging 15 letters (15! = 1,307,674,368,000), we will break up the assignment into two stages: first for the most frequent remaining letters, and second for the least frequent remaining letters. 
     
 #### **Engram Scoring Model**
     
-The optimization algorithm finds every permutation of a given set of letters, maps these letter permutations to a set of keys, and ranks these letter-key mappings according to a score reflecting ease of typing key pairs and frequency of letter pairs (bigrams). The score is the average of the scores for all possible bigrams in this arrangement. The score for each bigram is a product of the frequency of occurrence of that bigram and the factors Flow, Strength, and Speed: 
-
-**Flow**: measure of ease of a finger transition from the first in a pair of letters to the second
+The optimization algorithm finds every permutation of a given set of letters, maps these letter permutations to a set of keys, and ranks these letter-key mappings according to a score reflecting ease of typing key pairs and frequency of letter pairs (bigrams). The score is the average of the scores for all possible bigrams in this arrangement. The score for each bigram is a product of the frequency of occurrence of that bigram and Flow factors, where **Flow** is a measure of ease of a finger transition from the first in a pair of letters to the second.
 
 Flow factors to _penalize_ difficult key transitions include:
     
@@ -292,33 +323,66 @@ Flow factors to _penalize_ difficult key transitions include:
 - use same finger twice for a non-repeating letter
 - at least one key not on home row
 - one key on top row, the other on bottom row
-
-**Strength**: measure of the average strength of the finger(s) used to type the two letters
-
-Finger strengths are based on peak keyboard reaction forces (in newtons) from "Keyboard Reaction Force and Finger Flexor Electromyograms during Computer Keyboard Work", BJ Martin, TJ Armstrong, JA Foulke, S Natarajan, Human Factors,1996, 38(4), 654-664.
-
-**Speed**: normalized interkey stroke times
-
-These are left-right averaged versions derived from the study data below, to compensate for right-handedness of participants in the study (we used this data for early experimentation and validation):
-
-"Estimation of digraph costs for keyboard layout optimization", 
-A Iseri, Ma Eksioglu, International Journal of Industrial Ergonomics, 48, 127-138, 2015. 
-
     
-### Step 4: Stability Tests
-    
-We will run three types of stability tests on the 8 winning layouts:
-    1. Exchange letters in rows
-    2. Compare effects of Flow, Strength, and/or Speed matrices
-    3. Reset parameters
+#### Most frequent letters
+First we will compute scores for every possible arrangement of the 7 most frequent remaining letters among those in bold below for the most comfortable of the remaining positions (3,9,14,15,21,24, and either 2 or 6 or 12):
 
-It is clear from the results of all of the tests above that one layout consistently scores at the top, and we will accept this as the winning layout. Since the middle row spells "I HEARTS N" we'll put Z to the right for "I HEARTS NZ" (for New Zealand) so that it is easy to remember, and place the Q above:
+E, T, A, O, I, N, **S, R, H, L, D, C**, U, **M, F, P**, G, W, Y, B, V, K, X, J, Q, Z
 
-             Y  O  U  X     W  D  C  V  Q 
-             I  H  E  A     R  T  S  N  Z      
-             P  K  J  G     L  B  F  M             
+       Hand 1:          Hand 2:
+     -  2  3  -        - 14 15  -
+     x  6  x  x        x  x  x  x
+     9  -  - 12       21  -  - 24
     
-Our arrangement of letters is complete!
+Since there are 7! = 5,040 possible combinations, and we have 30 layouts, we need to score and evaluate 151,200 combinations.  
+    
+To score each arrangement of letters, we construct a frequency matrix of each ordered pair of letters (bigram), and multiply this frequency matrix by our speed-strength-flow matrix to compute a score. 
+
+#### Least frequent letters
+Second, we will compute scores for every possible arrangement of the 8 least frequent letters (aside from Z and Q) in bold below for the least comfortable remaining positions (1,4,10,11, and 13,16,22,23), after substituting in the results above:
+
+E, T, A, O, I, N, S, R, H, L, D, C, U, M, F, P, **G, W, Y, B, V, K, X, J**, Q, Z
+
+       Hand 1:          Hand 2:
+     1  -  -  4       13  -  - 16
+     -  -  -  -       -   -  -  -
+     - 10 11  -       -  22 23  -   
+
+Since there are 8! = 40,320 possible combinations, and we have 30 layouts, we need to score and evaluate 1,209,600 combinations.
+
+#### Exchange letters among rows
+
+If we treat the resulting layouts as initializations as opposed to final layouts, and permit reassignment of letters, then we can search for even higher-scoring layouts. As a final step we will exchange letters among rows. 
+    
+    1-6. Exchange letters among non-home rows.
+      1. Allow top and bottom rows to exchange letters on the left. 
+      2. Allow top and bottom rows to exchange letters on the right. 
+      3. Allow bottom rows to exchange letters.
+      4. Allow top rows to exchange letters.
+      5. Allow top left and bottom right rows to exchange letters. 
+      6. Allow top right and bottom left rows to exchange letters.
+    7. Exchange letters in corners.
+    8. Exchange letters in middle columns.
+    9. Exchange letters in the home rows.
+    10-19. Repeat 1-9.    
+    
+### Step 4: Stability Tests <a name="step4">
+
+We will run three stability tests on the winning layouts:
+    
+    1. Compare score of the winning layout after rearranging random letters 
+    2. Compare ranking of all final layouts based on interkey speed
+    3. Compare ranking of all final layouts after removing each scoring parameter
+
+The first test is to see if allowing random sets of eight letters to rearrange in every possible combination improves the score of the winning layout, repeated 100 times for a total of 4,032,000 additional layout tests. In the second test, we rescore all of the final layouts, replacing the flow matrix with the inter-key speed matrix to see if this affects their ranking, and also multiplying the flow matrix by the strength matrix. In the third test we remove each Engram scoring parameter one at a time and rescore all of the final layouts to see if this affects their ranking.
+
+For test 1, the top-scoring layout remains unchanged, attesting to its stability. For tests 2 and 3, the top-scored layout remains at the top, attesting to its efficiency with respect to speed and its robustness to parameter perturbations.
+
+We therefore corroborate the choice of the top-scoring layout as our Engram layout:
+
+    Y P O X    F C L B Q
+    H I E A    T S R N Z
+    G K J U    D V W M    
     
 ### Step 5. Arrange non-letter characters in easy-to-remember places
 
@@ -384,15 +448,19 @@ Frequency:
 
 We will assign the most frequent punctuation according to Sun, et al (2018) to the six keys in the middle two columns:  . , " ' - ? ; : () ! _
 
-             Y  O  U  X   '   "   W  D  C  V  Q 
-             I  H  E  A   ,   .   R  T  S  N  Z      
-             P  K  J  G   -   ?   L  B  F  M             
+    
+             Y  P  O  X   '   "   F  C  M  W  Q
+             H  I  E  A   ,   .   T  S  N  R  Z
+             G  K  J  U   -   ?   D  V  B  L
 
 We will use the Shift key to group similar punctuation marks (separating and joining marks in the left middle column and closing marks in the right middle column):
 
-             Y  O  U  X  '(   ")  W  D  C  V  Q 
-             I  H  E  A  ,;   .:  R  T  S  N  Z      
-             P  K  J  G  -_   ?!  L  B  F  M             
+          {  |  =  ~  +    <   >    ^  &  %  *  }  \
+          [  1  2  3  4    5   6    7  8  9  0  ]  /
+
+             Y  P  O  X  '(   ")  F  C  M  W  Q  #$  @
+             H  I  E  A  ,;   .:  T  S  N  R  Z
+             G  K  J  U  -_   ?!  D  V  B  L
  
 **Separating marks (left)**: The comma separates text in lists; the semicolon can be used in place of the comma to separate items in a list (especially if these items contain commas); open parenthesis sets off an explanatory word, phrase, or sentence. 
 
@@ -416,13 +484,13 @@ The numbers are flanked to the left and right by [square brackets], and {curly b
     9: % (percent: related to division; resembles "9")
     0: * (asterisk: for multiplication; resembles "0") 
 
-The three remaining keys in many common keyboards (flanking the upper right hand corner Backspace key) are displaced in special ergonomic keyboards, such as the Kinesis Advantage and Ergodox. For the top right key, we will assign the forward slash and backslash: / \\. For the remaining two keys, we will assign two symbols that in modern usage have significance in social media: the hash/pound sign and the "at sign". The hash or hashtag identifies digital content on a specific topic (the Shift key accesses the dollar sign). The "at sign" identifies a location or affiliation (such as in email addresses) and acts as a "handle" to identify users in popular social media platforms and online forums.
+The three remaining keys in many common keyboards (flanking the upper right hand corner Backspace key) are displaced in special keyboards, such as the Kinesis Advantage and Ergodox. For the top right key, we will assign the forward slash and backslash: / \\. For the remaining two keys, we will assign two symbols that in modern usage have significance in social media: the hash/pound sign and the "at sign". The hash or hashtag identifies digital content on a specific topic (the Shift key accesses the dollar sign). The "at sign" identifies a location or affiliation (such as in email addresses) and acts as a "handle" to identify users in popular social media platforms and online forums.
 
 The resulting Engram layout:
 
           {  |  =  ~  +    <   >    ^  &  %  *  }  \
           [  1  2  3  4    5   6    7  8  9  0  ]  /
 
-             Y  O  U  X   '(   ")   W  D  C  V  Q  #$  @
-             I  H  E  A   ,;   .:   R  T  S  N  Z      
-             P  K  J  G   -_   ?!   L  B  F  M           
+             Y  P  O  X  '(   ")  F  C  M  W  Q  #$  @
+             H  I  E  A  ,;   .:  T  S  N  R  Z
+             G  K  J  U  -_   ?!  D  V  B  L
