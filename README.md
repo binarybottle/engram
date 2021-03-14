@@ -4,7 +4,7 @@ Engram is a key layout optimized for comfortable and efficient touch typing in E
 created by [Arno Klein](https://binarybottle.com), 
 with [open source code](https://github.com/binarybottle/engram) to create other optimized key layouts.
 You can install the Engram layout on [Windows, macOS, and Linux](https://keyman.com/keyboards/engram)
-or [try it out online](https://keymanweb.com/#en,Keyboard_engram).
+or [try it out online](https://keymanweb.com/#en,Keyboard_engram). I have submitted a publication to a peer-reviewed journal; see the [preprint](https://www.preprints.org/manuscript/202103.0287/v1).
 
 Letters are optimally arranged according to ergonomic factors that promote reduction of lateral finger movements and more efficient typing of high-frequency letter pairs: 
 
