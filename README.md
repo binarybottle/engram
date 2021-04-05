@@ -3,8 +3,8 @@
 Engram is a key layout optimized for comfortable and efficient touch typing in English 
 created by [Arno Klein](https://binarybottle.com), 
 with [open source code](https://github.com/binarybottle/engram) to create other optimized key layouts.
-You can install the Engram layout on [Windows, macOS, and Linux](https://keyman.com/keyboards/engram)
-or [try it out online](https://keymanweb.com/#en,Keyboard_engram).
+Soon you will be able to install the Engram layout on [Windows, macOS, and Linux](https://keyman.com/keyboards/engram)
+or [try it out online](https://keymanweb.com/#en,Keyboard_engram) -- currently a pull request is under review by the Keyman community.
 An article is under review (see the [preprint](https://www.preprints.org/manuscript/202103.0287/v1) for an earlier description and preliminary layout).
 
 Letters are optimally arranged according to ergonomics factors that promote reduction of lateral finger movements and more efficient typing of high-frequency letter pairs. The most common punctuation marks are logically grouped together in the middle columns and numbers are paired with mathematical and logic symbols (shown as pairs of default and Shift-key-accessed characters). See below for a full description and comparisons with other key layouts.
