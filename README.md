@@ -7,20 +7,7 @@ You can install the Engram layout on [Windows, macOS, and Linux](https://keyman.
 or [try it out online](https://keymanweb.com/#en,Keyboard_engram).
 An article is under review (see the [preprint](https://www.preprints.org/manuscript/202103.0287/v1) for an earlier description and preliminary layout).
 
-Letters are optimally arranged according to ergonomics factors that promote reduction of lateral finger movements and more efficient typing of high-frequency letter pairs: 
-
-                 b y o u  '  "  l d w v z
-                 c i e a  ,  .  h t s n q
-                 g x j k  -  ?  r m f p
-
-The most common punctuation marks are logically grouped together in the middle columns and numbers are paired with mathematical and logic symbols (shown as pairs of default and Shift-key-accessed characters):
-
-         [{ 1| 2= 3~ 4+  5<  6>  7^ 8& 9% 0* ]} /\
-            bB yY oO uU  '(  ")  lL dD wW vV zZ #$ @`
-            cC iI eE aA  ,;  .:  hH tT sS nN qQ
-            gG xX jJ kK  -_  ?!  rR mM fF pP
-
-See below for a full description and comparisons with other key layouts.
+Letters are optimally arranged according to ergonomics factors that promote reduction of lateral finger movements and more efficient typing of high-frequency letter pairs. The most common punctuation marks are logically grouped together in the middle columns and numbers are paired with mathematical and logic symbols (shown as pairs of default and Shift-key-accessed characters). See below for a full description and comparisons with other key layouts.
 
 ### Standard diagonal keyboard (default and Shift-key layers)
 ![Standard keyboard](https://github.com/binarybottle/engram/blob/master/assets/engram-800px.png?raw=true)
