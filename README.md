@@ -525,9 +525,7 @@ The three remaining keys in many common keyboards (flanking the upper right hand
 
 The resulting Engram layout:
 
-          { | = ~ +   <  >   ^ & % * } \
-          [ 1 2 3 4   5  6   7 8 9 0 ] /
-
-            B Y O U  '(  ")  L D W V Z
-            C I E A  ,;  .:  H T S N Q
-            G X J K  -_  ?!  R M F P
+         [{ 1| 2= 3~ 4+  5<  6>  7^ 8& 9% 0* ]} /\
+            bB yY oO uU  '(  ")  lL dD wW vV zZ #$ @`
+            cC iI eE aA  ,;  .:  hH tT sS nN qQ
+            gG xX jJ kK  -_  ?!  rR mM fF pP
