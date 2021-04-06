@@ -70,67 +70,72 @@ Despite the fact that the Engram layout was designed to reduce strain and discom
 
 > The optimal layout score is based on a weighted calculation that factors in the distance your fingers moved (33%), how often you use particular fingers (33%), and how often you switch fingers and hands while typing (34%).
  
-#### Engram Scoring Model scores for existing layouts based on publicly available text data
-    
-| Layout | Google bigrams | Alice | Romeo | Gita | Memento | 100K tweets | 20K tweets | MASC tweets | MASC spoken | COCA blogs | Google | Code |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Engram | 0.02514 | 0.01953 | 0.02111 | 0.01948 | 0.02612 | 0.03319 | 0.02995 | 0.02808 | 0.01845 | 0.02497 | 0.04419 | 0.02743 |
-| Halmak | 0.02474 | 0.01931 | 0.02086 | 0.01922 | 0.02588 | 0.03294 | 0.02962 | 0.02776 | 0.01833 | 0.02464 | 0.04359 | 0.02714 |
-| Norman | 0.02422 | 0.01903 | 0.02049 | 0.01897 | 0.02543 | 0.03231 | 0.02898 | 0.02715 | 0.01802 | 0.02414 | 0.04211 | 0.02660 |
-| Workman | 0.02451 | 0.01910 | 0.02063 | 0.01901 | 0.02564 | 0.03260 | 0.02931 | 0.02749 | 0.01808 | 0.02437 | 0.04289 | 0.02695 |
-| QGMLWB | 0.02330 | 0.01835 | 0.01974 | 0.01817 | 0.02450 | 0.03123 | 0.02817 | 0.02606 | 0.01742 | 0.02325 | 0.04104 | 0.02553 |
-| Colemak Mod-DH | 0.02426 | 0.01880 | 0.02037 | 0.01885 | 0.02524 | 0.03220 | 0.02882 | 0.02719 | 0.01786 | 0.02411 | 0.04224 | 0.02680 |
-| Colemak | 0.02437 | 0.01886 | 0.02050 | 0.01889 | 0.02537 | 0.03238 | 0.02896 | 0.02731 | 0.01794 | 0.02424 | 0.04230 | 0.02711 |
-| ASSET | 0.02375 | 0.01834 | 0.02000 | 0.01832 | 0.02488 | 0.03176 | 0.02842 | 0.02682 | 0.01747 | 0.02369 | 0.04195 | 0.02657 |
-| Capewell | 0.02390 | 0.01866 | 0.02019 | 0.01864 | 0.02497 | 0.03188 | 0.02852 | 0.02679 | 0.01773 | 0.02382 | 0.04150 | 0.02630 |
-| Dvorak | 0.02370 | 0.01852 | 0.02008 | 0.01839 | 0.02480 | 0.03157 | 0.02840 | 0.02647 | 0.01765 | 0.02362 | 0.04115 | 0.02605 |
-| QWERTY | 0.02135 | 0.01685 | 0.01814 | 0.01670 | 0.02243 | 0.02882 | 0.02583 | 0.02405 | 0.01582 | 0.02135 | 0.03796 | 0.02403 |
+## How does Engram compare with other key layouts? <a name="scores">
 
-#### Keyboard Layout Analyzer scores for existing layouts based on publicly available text data
-    
-| Layout | Alice in Wonderland | Romeo Juliet | Bhagavad Gita | Memento screenplay | 100K tweets | 20K tweets | MASC tweets | MASC spoken | COCA blogs | Google website | Software languages |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Engram | 66.65 | 58.16 | 58.75 | 54.49 | 61.77 | 56.01 | 58.23 | 62.14 | 67.93 | 33.81 | 48.09 |
-| Halmak | 66.25 | 57.02 | 57.45 | 55.03 | 60.86 | 55.53 | 57.13 | 62.32 | 67.29 | 30.41 | 47.60 |
-| Norman | 62.76 | 53.21 | 53.44 | 52.33 | 57.43 | 53.24 | 53.90 | 59.97 | 62.80 | 28.29 | 46.01 |
-| Workman | 64.78 | 56.67 | 56.97 | 54.29 | 59.98 | 55.81 | 56.25 | 61.34 | 65.27 | 29.28 | 47.76 | 
-| QGMLWB | 65.45 | 55.67 | 55.57 | 54.07 | 60.51 | 56.05 | 56.90 | 62.23 | 66.26 | 33.05 | 45.72 | 
-| Colemak Mod-DH | 65.74 | 56.05 | 57.52 | 54.91 | 60.75 | 54.94 | 57.15 | 61.29 | 67.12 | 31.85 | 48.50 | 
-| Colemak | 65.83 | 56.12 | 57.63 | 54.94 | 60.67 | 54.97 | 57.04 | 61.36 | 67.14 | 31.48 | 48.65 | 
-| ASSET | 64.60 | 54.63 | 56.09 | 53.84 | 58.66 | 54.72 | 55.35 | 60.81 | 64.71 | 33.05 | 47.52 | 
-| Capewell | 63.40 | 55.67 | 56.56 | 53.45 | 59.27 | 52.84 | 55.28 | 59.80 | 64.29 | 28.27 | 45.62 | 
-| Dvorak | 65.86 | 58.18 | 57.29 | 55.09 | 60.93 | 55.56 | 56.59 | 62.75 | 66.64 | 28.85 | 45.55 | 
-| QWERTY | 53.06 | 43.74 | 44.92 | 44.25 | 48.28 | 44.99 | 44.59 | 51.79 | 52.31 | 24.28 | 39.89 | 
+Despite the fact that the Engram layout was designed to reduce strain and discomfort, not specifically to increase speed or reduce finger travel from the home row, it scores higher than all other key layouts (Colemak, Dvorak, QWERTY, etc.) for some large, representative, publicly available data (all text sources are listed below and available on [GitHub](https://github.com/binarybottle/text_data)). Below are tables of different prominent key layouts scored using the Engram Scoring Model (detailed below).
+ 
+#### Engram Scoring Model scores (x100) for layouts, based on publicly available text data
 
+| Layout | Google bigrams | Alice | Romeo | Gita | Memento | 100K tweets | 20K tweets | MASC tweets | MASC spoken | COCA blogs | Google | Code | Monkey | Coder | iweb |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Engram | 75.03 | 74.47 | 74.63 | 74.46 | 75.13 | 75.90 | 75.54 | 75.34 | 74.36 | 75.03 | 76.98 | 75.33 | 75.06 | 75.37 | 75.23 |
+| Hieamtsrn | 75.01 | 74.45 | 74.61 | 74.43 | 75.11 | 75.86 | 75.50 | 75.32 | 74.34 | 75.00 | 77.00 | 75.23 | 75.04 | 75.34 | 75.20 |
+| Halmak | 74.98 | 74.42 | 74.58 | 74.40 | 75.08 | 75.82 | 75.49 | 75.29 | 74.32 | 74.97 | 76.95 | 75.26 | 75.00 | 75.31 | 75.17 |
+| Workman | 74.94 | 74.39 | 74.55 | 74.38 | 75.05 | 75.77 | 75.44 | 75.25 | 74.29 | 74.93 | 76.83 | 75.22 | 74.97 | 75.27 | 75.12 |
+| MTGap 2.0 | 74.94 | 74.39 | 74.54 | 74.38 | 75.05 | 75.75 | 75.42 | 75.23 | 74.28 | 74.92 | 76.84 | 75.18 | 74.96 | 75.27 | 75.12 |
+| Colemak | 74.93 | 74.37 | 74.53 | 74.37 | 75.02 | 75.75 | 75.40 | 75.24 | 74.27 | 74.92 | 76.77 | 75.20 | 74.96 | 75.26 | 75.12 |
+| Colemak Mod-DH | 74.95 | 74.40 | 74.55 | 74.39 | 75.05 | 75.77 | 75.43 | 75.25 | 74.29 | 74.94 | 76.81 | 75.19 | 74.98 | 75.28 | 75.14 |
+| Norman | 74.91 | 74.38 | 74.52 | 74.37 | 75.02 | 75.72 | 75.39 | 75.21 | 74.27 | 74.90 | 76.76 | 75.17 | 74.94 | 75.22 | 75.09 |
+| Klausler | 74.92 | 74.38 | 74.54 | 74.37 | 75.03 | 75.75 | 75.42 | 75.22 | 74.28 | 74.91 | 76.81 | 75.17 | 74.95 | 75.23 | 75.10 |
+| QGMLWB | 74.91 | 74.37 | 74.52 | 74.35 | 75.02 | 75.73 | 75.40 | 75.21 | 74.27 | 74.90 | 76.80 | 75.13 | 74.94 | 75.23 | 75.09 |
+| BEAKL 15 | 74.98 | 74.42 | 74.59 | 74.41 | 75.08 | 75.85 | 75.49 | 75.30 | 74.33 | 74.98 | 76.92 | 75.28 | 75.01 | 75.31 | 75.18 |
+| Capewell-Dvorak | 74.90 | 74.37 | 74.52 | 74.35 | 75.01 | 75.73 | 75.39 | 75.21 | 74.27 | 74.90 | 76.76 | 75.15 | 74.93 | 75.22 | 75.08 |
+| Asset | 74.90 | 74.36 | 74.51 | 74.35 | 75.01 | 75.71 | 75.39 | 75.21 | 74.25 | 74.89 | 76.80 | 75.18 | 74.92 | 75.23 | 75.08 |
+| Dvorak | 74.90 | 74.37 | 74.53 | 74.35 | 75.01 | 75.73 | 75.40 | 75.20 | 74.27 | 74.90 | 76.71 | 75.17 | 74.93 | 75.20 | 75.09 |
+| QWERTY | 74.76 | 74.27 | 74.41 | 74.25 | 74.88 | 75.55 | 75.25 | 75.06 | 74.17 | 74.76 | 76.53 | 75.01 | 74.79 | 75.06 | 74.94 |
+    
 ---
-    
-| Text source | Information |
-| --- | --- |
-| "Alice in Wonderland" | [KLA analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/Z36pgChl) of Alice in Wonderland (Ch.1), a standard text used for comparing layouts |
-| "Romeo and Juliet" | [KLA analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/8lV58JvQ) of [Romeo and Juliet](https://www.fulltextarchive.com/page/Romeo-and-Juliet1/) |
-| "Bhagavad Gita" | [KLA analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/xj8xNS6K) of [Bhagavad Gita](https://www.gutenberg.org/files/2388/2388-h/2388-h.htm) |
-| "Memento screenplay" | [KLA analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/XRNbgCCK) of the screenplay for [Memento](https://www.dailyscript.com/scripts/memento.html) |
-| "100K tweets" | 100,000 tweets from: [Sentiment140 dataset](https://data.world/data-society/twitter-user-data) training data |
-| "20K tweets" | 20,000 tweets from [Gender Classifier Data](https://www.kaggle.com/crowdflower/twitter-user-gender-classification) |
-| "MASC tweets" | [KLA analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/rfxwCPVn) of [MASC](http://www.anc.org/data/masc/corpus/) tweets (cleaned of html markup) |
-| "MASC spoken" | [KLA analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/SgMB6n8v) of [MASC](http://www.anc.org/data/masc/corpus/) spoken transcripts (phone and face-to-face: 25,783 words) |
-| "COCA blogs" | [KLA analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/fv3Cj2zQ) of [Corpus of Contemporary American English](https://www.english-corpora.org/coca/) [blog samples](https://www.corpusdata.org/) |
-| "Google website" | [KLA analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/8dB6s1rL) of the [Google home page](https://google.com) (accessed 10/20/2020) |
-| "Software languages" | [KLA analysis](http://patorjk.com/keyboard-layout-analyzer/#/load/97D3c58k) of the "Tower of Hanoi" (programming languages A-Z from [Rosetta Code](https://rosettacode.org/wiki/Towers_of_Hanoi)) |
 
 | Layout | Year | Website |
 | --- | --- | --- |
 | Engram | 2021 | https://engram.dev |
+| [BEAKL 15](https://deskthority.net/wiki/BEAKL#BEAKL_15) | 2020 | https://deskthority.net/wiki/BEAKL#BEAKL_15 |
 | [Halmak 2.2](https://keyboard-design.com/letterlayout.html?layout=halmak-2-2.en.ansi) | 2016 | https://github.com/MadRabbit/halmak |
+| [Hieamtsrn](https://www.keyboard-design.com/letterlayout.html?layout=hieamtsrn.en.ansi) | 2014 | https://mathematicalmulticore.wordpress.com/the-keyboard-layout-project/#comment-4976 |
+| [Colemak Mod-DH](https://keyboard-design.com/letterlayout.html?layout=colemak-mod-DH-full.en.ansi) | 2014 | https://colemakmods.github.io/mod-dh/ | 
 | [Norman](https://keyboard-design.com/letterlayout.html?layout=norman.en.ansi) | 2013 | https://normanlayout.info/ |
 | [Workman](https://keyboard-design.com/letterlayout.html?layout=workman.en.ansi) | 2010 | https://workmanlayout.org/ | 
+| [MTGAP 2.0](https://www.keyboard-design.com/letterlayout.html?layout=mtgap-2-0.en.ansi) | 2010 | https://mathematicalmulticore.wordpress.com/2010/06/21/mtgaps-keyboard-layout-2-0/ |
 | [QGMLWB](https://keyboard-design.com/letterlayout.html?layout=qgmlwb.en.ansi) | 2009 | http://mkweb.bcgsc.ca/carpalx/?full_optimization | 
-| [Colemak Mod-DH](https://keyboard-design.com/letterlayout.html?layout=colemak-mod-DH-full.en.ansi) | 2017 | https://colemakmods.github.io/mod-dh/ | 
 | [Colemak](https://keyboard-design.com/letterlayout.html?layout=colemak.en.ansi) | 2006 | https://colemak.com/ | 
-| [ASSET](https://keyboard-design.com/letterlayout.html?layout=asset.en.ansi) | 2006 | http://millikeys.sourceforge.net/asset/ | 
-| [Capewell-Dvorak](https://keyboard-design.com/letterlayout.html?layout=capewell.en.ansi) | 2004 | http://michaelcapewell.com/projects/keyboard/layout_capewell-dvorak.htm |
+| [Asset](https://keyboard-design.com/letterlayout.html?layout=asset.en.ansi) | 2006 | http://millikeys.sourceforge.net/asset/ | 
+| Capewell-Dvorak | 2004 | http://michaelcapewell.com/projects/keyboard/layout_capewell-dvorak.htm |
+| [Klausler](https://www.keyboard-design.com/letterlayout.html?layout=klausler.en.ansi) | 2002 | https://web.archive.org/web/20031001163722/http://klausler.com/evolved.html |
 | [Dvorak](https://keyboard-design.com/letterlayout.html?layout=dvorak.en.ansi) | 1936 | https://en.wikipedia.org/wiki/Dvorak_keyboard_layout | 
 | [QWERTY](https://keyboard-design.com/letterlayout.html?layout=qwerty.en.ansi) | 1873 | https://en.wikipedia.org/wiki/QWERTY |
+
+---
+
+| Text source | Information |
+| --- | --- |
+| "Alice in Wonderland" | Alice in Wonderland (Ch.1) |
+| "Romeo and Juliet" | [Romeo and Juliet](https://www.fulltextarchive.com/page/Romeo-and-Juliet1/) |
+| "Bhagavad Gita" | [Bhagavad Gita](https://www.gutenberg.org/files/2388/2388-h/2388-h.htm) |
+| "Memento screenplay" | [Memento screenplay](https://www.dailyscript.com/scripts/memento.html) |
+| "100K tweets" | 100,000 tweets from: [Sentiment140 dataset](https://data.world/data-society/twitter-user-data) training data |
+| "20K tweets" | 20,000 tweets from [Gender Classifier Data](https://www.kaggle.com/crowdflower/twitter-user-gender-classification) |
+| "MASC tweets" | [MASC](http://www.anc.org/data/masc/corpus/) tweets (cleaned of html markup) |
+| "MASC spoken" | [MASC](http://www.anc.org/data/masc/corpus/) spoken transcripts (phone and face-to-face: 25,783 words) |
+| "COCA blogs" | [Corpus of Contemporary American English](https://www.english-corpora.org/coca/) [blog samples](https://www.corpusdata.org/) |
+| "Google website" | [Google homepage](https://google.com) (accessed 10/20/2020) |
+| "Software languages" | "Tower of Hanoi" (programming languages A-Z from [Rosetta Code](https://rosettacode.org/wiki/Towers_of_Hanoi)) |
+| "Monkey text" | Ian Douglas's English-generated [monkey0-7.txt corpus](https://zenodo.org/record/4642460) |
+| "Coder text" | Ian Douglas's software-generated [coder0-7.txt corpus](https://zenodo.org/record/4642460) |
+| "iweb cleaned corpus" | First 150,000 lines of Shai Coleman's [iweb-corpus-samples-cleaned.txt](https://colemak.com/pub/corpus/iweb-corpus-samples-cleaned.txt.xz) |
+
+Reference for Monkey and Coder texts:
+Douglas, Ian. (2021, March 28). Keyboard Layout Analysis: Creating the Corpus, Bigram Chains, and Shakespeare's Monkeys (Version 1.0.0). Zenodo. http://doi.org/10.5281/zenodo.4642460
+
 
 ## Guiding criteria   <a name="criteria">
 
