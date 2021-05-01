@@ -221,7 +221,8 @@ def tally_layout_samefinger_bigrams(layout, bigrams, bigram_frequencies, nkeys=3
 def tally_layout_bigram_rolls(layout, bigrams, bigram_frequencies, nkeys=32, verbose=False):
     """
     Tally the number of bigrams that engage little-to-index finger inward rolls
-    within (a list of 24 letters representing) a layout:
+    for (a list of 24 or 32 letters representing) a layout,
+    within the four columns of one hand, or any column across two hands.
     layout = ['P','Y','O','U','C','I','E','A','G','K','J','X','L','D','B','V','N','T','R','S','H','M','W','F']
     bigram_rolls, bigram_roll_counts, bigram_rolls_total = tally_layout_bigram_rolls(layout, bigrams, bigram_frequencies, nkeys=24, verbose=True)
     """   
@@ -269,6 +270,13 @@ def tally_layout_bigram_rolls(layout, bigrams, bigram_frequencies, nkeys=32, ver
                     [16,23],[16,22],[16,21],[16,30],[15,22],[15,21],[15,30],[14,21],[14,30],[13,30],
                     [24,15],[24,14],[24,13],[24,28],[23,14],[23,13],[23,28],[22,13],[22,28],[21,28],
                     [31,24],[31,23],[31,22],[31,21],[31,30]]
+        for i in [1,2,3,4,5,6,7,8,9,10,11,12, 25,26,27]:
+            for j in [13,14,15,16,17,18,19,20,21,22,23,24, 28,29,30,31,32]:
+                roll_keys.append([i+1,j+1])
+        for i in [13,14,15,16,17,18,19,20,21,22,23,24, 28,29,30,31,32]:
+            for j in [1,2,3,4,5,6,7,8,9,10,11,12, 25,26,27]:
+                roll_keys.append([i+1,j+1])
+
     elif nkeys == 24:
         #    1  2  3  4         13 14 15 16  
         #    5  6  7  8         17 18 19 20 
@@ -283,6 +291,12 @@ def tally_layout_bigram_rolls(layout, bigrams, bigram_frequencies, nkeys=32, ver
                     [20,23],[20,22],[20,21],[19,22],[19,21],[18,21], [24,19],[24,18],[24,17],[23,18],[23,17],[22,17],
                     [1,10],[1,11],[1,12],[2,11],[2,12],[3,12], [9,2],[9,3],[9,4],[10,3],[10,4],[11,4],
                     [16,23],[16,22],[16,21],[15,22],[15,21],[14,21], [24,15],[24,14],[24,13],[23,14],[23,13],[22,13]]
+        for i in range(0,12):
+            for j in range(12,24):
+                roll_keys.append([i+1,j+1])
+        for i in range(12,24):
+            for j in range(0,12):
+                roll_keys.append([i+1,j+1])
 
     layout = [str.upper(x) for x in layout]
     max_frequency = 1.00273E+11

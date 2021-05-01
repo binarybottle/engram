@@ -20,14 +20,13 @@ instances24 = [4.45155E+11,3.30535E+11,2.86527E+11,2.72277E+11,2.69732E+11,2.577
 factor = 0.9999327394984375
 
 # Establish which layouts are within a small difference of each other when using the speed matrix. 
-# We define an epsilon of 24.3 ms for a single bigram (of the 24^2 possible bigrams), 
-# one tenth of the range of times recorded in the study above, which is less than a quarter 
-# of the fastest measured digraph tapping speed (30,000/228 = 131.58 ms) recorded in that study:
-# "Estimation of digraph costs for keyboard layout optimization", 
+# We define an epsilon equal to 131.58 ms for a single bigram (of the 32^2 possible bigrams), 
+# where 131.58 ms is the fastest measured digraph tapping speed (30,000/228 = 131.58 ms) 
+# recorded in the study: "Estimation of digraph costs for keyboard layout optimization", 
 # A Iseri, Ma Eksioglu, International Journal of Industrial Ergonomics, 48, 127-138, 2015.
 #data_matrix_speed = Speed32x32
 #time_range = 243  # milliseconds
-#norm_range = np.max(data_matrix_speed) - np.min(data_matrix_speed)  #norm_range = 0.6535662299854439
-#ms_norm = norm_range / time_range  #ms_norm = 0.0026895729629030614
-#epsilon = time_range/10 * ms_norm / (24**2)
-epsilon    = 0.0001134663593724729
+#norm_range = np.max(data_matrix_speed) - np.min(data_matrix_speed)  # 0.6535662299854439
+#ms_norm = norm_range / time_range  # 0.0026895729629030614
+#epsilon = 131.58 * ms_norm / (32**2)
+epsilon    = 0.0003549615849447514
