@@ -11,7 +11,7 @@ for i in range(len(params0)):
 
 for iparam, P in enumerate(params_lists):
 
-    print('\nRemove parameter {0}:'.format(param_names[iparam]))
+    print('    Remove parameter {0}:'.format(param_names[iparam]))
 
     data_matrix_param = create_24x24_flow_matrix(not_home_row, side_top,
                                                  P[0],P[1],P[2],P[3],P[4],P[5],P[6],P[7],P[8],P[9],P[10],
@@ -23,18 +23,22 @@ for iparam, P in enumerate(params_lists):
     for letters in test_layout_strings:
         score = score_layout(data_matrix_param, letters, bigrams, bigram_frequencies, verbose=False);
         param_scores.append(score)
+        #print(letters, score)
             
-    param_scores_sorted, param_ranks_sorted, Isort_param = rank_within_epsilon(param_scores, factor, factor=True, verbose=False)
+    param_scores_sorted, param_ranks_sorted, Isort_param = rank_within_epsilon(param_scores, factor24, factor=True, verbose=False)
     param_layouts_sorted = []
     param_layout_strings_sorted = []
     for i in Isort_param:
-        param_layouts_sorted.append(test_layouts[i])
+        param_layouts_sorted.append(' '.join(test_layout_strings[i]))
         param_layout_strings_sorted.append(test_layout_strings[i])
 
-    print('Rank:   Layout                                             Score\n')
-    for i, rank in enumerate(param_ranks_sorted):
-        if rank == 1:
-            if rank_variations:
-                print('    {0}:  {1}    {2}'.format(rank, layouts_first_place[i], param_scores_sorted[i]))
+    print('    Layout                                                  Score')
+    for i, isort_param in enumerate(Isort_param):
+        if param_ranks_sorted[isort_param] == 1:
+            if isort_param < 9:
+                s = '  '
             else:
-                print('    {0}:  {1}    {2}'.format(rank, layout_strings_sorted[i], param_scores_sorted[i]))
+                s = ' '
+            print('    ({0}){1}{2}    {3}'.format(isort_param+1, s, 
+                                                  param_layouts_sorted[i], 
+                                                  param_scores_sorted[i]))

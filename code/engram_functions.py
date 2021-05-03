@@ -484,8 +484,8 @@ def rank_within_epsilon(numbers, epsilon, factor=False, verbose=True):
     >>> array([1., 1., 2., 2., 3.])
     numbers = np.array([0.798900824, 0.79899900824, 0.79900824])
     epsilon = 0.9**8 - 0.9**9
-    factor = ((24**2 - 1) + (1-epsilon)) / (24**2) # 0.999925266109375
-    rank_within_epsilon(numbers, factor, factor=True, verbose=True) 
+    factor24 = ((24**2 - 1) + (1-epsilon)) / (24**2) # 0.999925266109375
+    rank_within_epsilon(numbers, factor24, factor=True, verbose=True) 
     >>> array([2., 1., 1.])
     """
     numbers = np.array(numbers)

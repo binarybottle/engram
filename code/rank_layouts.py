@@ -8,24 +8,18 @@ for layout in top_layouts:
     scores.append(score)
 
 # Establish which layouts are within a small difference of the top-scoring layout 
-#    - half of the smallest difference between two flow penalties, ignoring strength: (0.9^9 - 0.9^10)/2
-#    - divided by the number of key pairs: 24^2
-delta_flow = (0.9**8 - 0.9**9)
-factor = ((24**2 - 1) + (1-delta_flow)) / (24**2)
-print('    The smallest difference between two flow penalties: (0.9^8 - 0.9^9) = {0}'.format(delta_flow))
-print('    ...divided by the number of key pairs (24^2) = {0}'.format(factor))
-scores_sorted, ranks_sorted, Isort = rank_within_epsilon(scores, factor, factor=True, verbose=False)
+scores_sorted, ranks_sorted, Isort = rank_within_epsilon(scores, factor32, factor=True, verbose=False)
 layouts_sorted = []
 layout_strings_sorted = []
 for i in Isort:
     layouts_sorted.append(top_layouts[i])
     layout_strings_sorted.append(layout_strings[i])
-print('\nRank:   Layout                                             Score\n')
+print('\n    Rank                                                   Score')
 for i, rank in enumerate(ranks_sorted):
     print('    {0}:  {1}    {2}'.format(rank, layout_strings_sorted[i], scores_sorted[i]))
 
 print('\nLayouts tied for first place, with letter frequencies:\n')
-print('Rank:   Layout                                             Score\n')
+print('    Rank                                                   Score')
 first_ranks = []
 first_layouts = []
 first_layout_strings = []
