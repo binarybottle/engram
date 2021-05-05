@@ -420,17 +420,17 @@ After assigning letters Z and Q to upper right keys outside of the home blocks a
     C I E A  H T S N Q
     G X J K  R M F P    
     
-We run tests on the winning layout:
+We ran tests on the winning layout:
     
     1. Evaluate optimized layouts using interkey speed estimates   
     2. Evaluate variants of the candidate winner using interkey speed estimates
     3. Test sensitivity of the candidate winner to the scoring parameters
 
-For test 1, we rescore all of the 20 top-scoring layouts optimized from the 20 initialized layouts, and replace the factor matrix with the inter-key speed matrix. The same two layouts that tied for first place do so again. 
+For test 1, we rescored all of the 20 top-scoring layouts optimized from the 20 initialized layouts, and replaced the factor matrix with the inter-key speed matrix. The same two layouts that tied for first place do so again. 
 
-For test 2, we rescore all of the 5,040 variants of the candidate winner that are tied for first place, replacing the factor matrix with the inter-key speed matrix. The candidate winner scores highest.
+For test 2, we rescored all of the 5,040 variants of the candidate winner that were tied for first place, replacing the factor matrix with the interkey speed matrix. The candidate winner scored highest.
 
-For test 3, we run a test on the variants of the candidate winner layout to see how robust they are to removal of scoring parameters. We removed each of the 11 scoring parameters one by one and ranked the new scores for the variants. The candidate winner scores highest for 8 of the 11 cases, and second highest for two other cases, demonstrating that this layout is not sensitive to individual parameters.
+For test 3, we ran a test on the variants of the candidate winner layout to see how robust they are to removal of scoring parameters. We removed each of the 11 scoring parameters one by one and ranked the new scores for the variants. The candidate winner scored highest for 8 of the 11 cases, and second highest for two other cases, demonstrating that this layout is not sensitive to individual parameters.
 
 ### Step 5. Arrange non-letter characters in easy-to-remember places
 
