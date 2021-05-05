@@ -154,8 +154,9 @@ KLA distance measures may not accurately reflect natural typing, so I include he
 #### Inward roll frequencies 
 Here we tally the number of bigrams (in billions of instances from Norvig's analysis of Google data) that engage inward rolls (little-to-index sequences), within the four columns of one hand, or any column across two hands. "24 keys" ensures that we are comparing Engram's letters with letters in other layouts (higher is better):
     
-Total inward roll frequency in billions (32 / 24 keys)
+Total inward roll frequency in billions
 
+    Layout             32 / 24 keys
     Engram:          4.64 / 4.51
     Halmak:          4.59 / 4.25
     Hieamtsrn:       4.69 / 4.16
