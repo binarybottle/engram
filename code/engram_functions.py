@@ -642,3 +642,23 @@ def print_layout24_instances(layout, letters24, instances24, bigrams, bigram_fre
     tally_layout_samefinger_bigrams(layout, bigrams, bigram_frequencies, nkeys=24, verbose=True)
     tally_layout_bigram_rolls(layout, bigrams, bigram_frequencies, nkeys=24, verbose=True)
    
+
+def print_bigram_frequency(input_pair, bigrams, bigram_frequencies):
+    """
+    >>> print_bigram_frequency(['t','h'], bigrams, bigram_frequencies)
+    """
+    # Find the bigram frequency
+    max_frequency = 1.00273E+11
+    input_text = [str.upper(str(x)) for x in input_pair]
+    nchars = len(input_text)
+    for ichar in range(0, nchars-1):
+        bigram1 = input_text[ichar] + input_text[ichar + 1]
+        bigram2 = input_text[ichar + 1] + input_text[ichar]
+        i2gram1 = np.where(bigrams == bigram1)
+        i2gram2 = np.where(bigrams == bigram2)
+        if np.size(i2gram1) > 0:
+            freq1 = max_frequency/1e9 * bigram_frequencies[i2gram1[0][0]]
+            print("{0}: {1:3.2f}B".format(bigram1, freq1))
+        if np.size(i2gram2) > 0:
+            freq2 = max_frequency/1e9 * bigram_frequencies[i2gram2[0][0]]
+            print("{0}: {1:3.2f}B".format(bigram2, freq2))
