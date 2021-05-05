@@ -106,7 +106,7 @@ Below we compare the Engram layout with different prominent key layouts (Colemak
     
 ---
     
-[Keyboard Layout Analyzer](http://patorjk.com/keyboard-layout-analyzer/) provides different measures. The distance measures may not accurately reflect natural typing, so I include here the tally of key presses with the same finger for different keys (lower is better):
+[Keyboard Layout Analyzer](http://patorjk.com/keyboard-layout-analyzer/) provides different measures. The distance measures may not accurately reflect natural typing, so I include here the tally of consecutive key presses with the same finger for different keys (lower is better):
 
 | Layout | Alice | Memento | Tweets_100K | Tweets_20K | Tweets_MASC | Spoken_MASC | COCA_blogs | iweb | Monkey | Coder | Rosetta |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
