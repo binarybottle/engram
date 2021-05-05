@@ -152,41 +152,24 @@ KLA distance measures may not accurately reflect natural typing, so I include he
 ---
   
 #### Inward roll frequencies 
-Here we tally the number of bigrams that engage little-to-index finger inward rolls for a layout, within the four columns of one hand, or any column across two hands (higher is better; "24 keys" ensures that we are comparing Engram's letters with letters in other layouts):
+Here we tally the number of bigrams (in billions of instances from Norvig's analysis of Google data) that engage inward rolls (little-to-index sequences), within the four columns of one hand, or any column across two hands. "24 keys" ensures that we are comparing Engram's letters with letters in other layouts (higher is better):
     
-Total inward roll frequency (32 keys)
+Total inward roll frequency in billions (32 / 24 keys)
 
-    Engram:          4,643,857,357,180
-    Halmak:          4,587,543,389,432
-    Hieamtsrn:       4,687,449,416,472
-    Norman:          3,986,293,479,795
-    Workman:         4,161,508,735,621
-    MTGap 2.0:       3,955,112,243,220
-    QGMLWB:          4,355,857,746,882
-    Colemak Mod-DH:  4,149,234,499,259
-    Colemak:         4,172,691,222,088
-    Asset:           4,030,480,481,215
-    Capewell-Dvorak: 4,389,895,101,342
-    Klausler:        4,419,227,882,707
-    Dvorak:          4,399,866,253,071
-    QWERTY:          3,623,728,194,261
-
-Total inward roll frequency (24 keys)
-
-    Engram:          4,510,975,281,377
-    Halmak:          4,253,767,971,967
-    Hieamtsrn:       4,164,117,996,155
-    Norman:          3,610,821,010,464
-    Workman:         3,634,276,745,473
-    MTGap 2.0:       3,580,649,934,912
-    QGMLWB:          2,813,037,855,864
-    Colemak Mod-DH:  3,512,845,512,938
-    Colemak:         3,163,798,288,974
-    Asset:           3,045,707,900,848
-    Capewell-Dvorak: 3,662,214,876,834
-    Klausler:        3,519,068,692,185
-    Dvorak:          3,200,414,087,942
-    QWERTY:          2,131,790,924,655
+    Engram:          4.64 / 4.51
+    Halmak:          4.59 / 4.25
+    Hieamtsrn:       4.69 / 4.16
+    Norman:          3.99 / 3.61
+    Workman:         4.16 / 3.63
+    MTGap 2.0:       3.96 / 3.58
+    QGMLWB:          4.36 / 2.81
+    Colemak Mod-DH:  4.15 / 3.51
+    Colemak:         4.17 / 3.16
+    Asset:           4.03 / 3.05
+    Capewell-Dvorak: 4.39 / 3.66
+    Klausler:        4.42 / 3.52
+    Dvorak:          4.40 / 3.20
+    QWERTY:          3.62 / 2.13
     
 ---
     
