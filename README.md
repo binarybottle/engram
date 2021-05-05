@@ -7,7 +7,15 @@ You can install the Engram layout on [Windows, macOS, and Linux](https://keyman.
 or [try it out online](https://keymanweb.com/#en,Keyboard_engram).
 An article is under review (see the [preprint](https://www.preprints.org/manuscript/202103.0287/v1) for an earlier (and superceded) version with description).
 
-Letters are optimally arranged according to ergonomics factors that promote reduction of lateral finger movements and more efficient typing of high-frequency letter pairs. The most common punctuation marks are logically grouped together in the middle columns and numbers are paired with mathematical and logic symbols (shown as pairs of default and Shift-key-accessed characters):
+Letters are optimally arranged according to ergonomics factors that promote reduction of lateral finger movements and more efficient typing of high-frequency letter pairs. The most common punctuation marks are logically grouped together in the middle columns and numbers are paired with mathematical and logic symbols (shown as pairs of default and Shift-key-accessed characters).
+
+See below for a full description and comparisons with other key layouts.
+
+### Standard diagonal keyboard (default and Shift-key layers)
+![Standard keyboard](https://github.com/binarybottle/engram/blob/master/assets/engram-800px.png?raw=true)
+
+### "Ergonomic" orthonormal keyboard (default and Shift-key layers)
+![Orthonormal keyboard](https://github.com/binarybottle/engram/blob/master/assets/engram-ergo-squeezed-800px.png?raw=true)
 
          [{ 1| 2= 3~ 4+  5<  6>  7^ 8& 9% 0* ]} /\
             bB yY oO uU  '(  ")  lL dD wW VV zZ #$ @`
@@ -23,14 +31,6 @@ Letter frequencies (Norvig, 2012), showing that the Engram layout emphasizes key
          53  59 272  97          145 136  60  38   3
         119 270 445 287          180 331 232 258   4
          67   8   6  19          224  90  86  76
-            
-See below for a full description and comparisons with other key layouts.
-
-### Standard diagonal keyboard (default and Shift-key layers)
-![Standard keyboard](https://github.com/binarybottle/engram/blob/master/assets/engram-800px.png?raw=true)
-
-### "Ergonomic" orthonormal keyboard (default and Shift-key layers)
-![Orthonormal keyboard](https://github.com/binarybottle/engram/blob/master/assets/engram-ergo-squeezed-800px.png?raw=true)
 
 (c) 2021 Arno Klein, MIT license
 
