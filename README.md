@@ -85,53 +85,59 @@ The name is a pun, referring both to "n-gram", letter permutations and their fre
 
 Below we compare the Engram layout with different prominent key layouts (Colemak, Dvorak, QWERTY, etc.) for some large, representative, publicly available data (all text sources are listed below and available on [GitHub](https://github.com/binarybottle/text_data)).
  
-#### Engram Scoring Model scores (x100) for layouts, based on publicly available text data (higher is better)
+#### Engram Scoring Model scores (x100) for layouts, based on publicly available text data
  
+Engram scores higher for all text and software sources than all other layouts according to its own scoring model (higher scores are better):
+    
 | Layout | Google bigrams | Alice | Memento | Tweets_100K | Tweets_20K | Tweets_MASC | Spoken_MASC | COCA_blogs | iweb | Monkey | Coder | Rosetta |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Engram    | 61.69 | 61.16 | 61.79 | 62.52 | 59.77 | 61.98 | 61.06 | 61.68 | 61.88 | 61.72 | 62.00 | 61.97 |
-| Halmak | 61.62 | 61.09 | 61.72 | 62.42 | 59.75 | 61.92 | 61.00 | 61.62 | 61.80 | 61.65 | 61.95 | 61.89 |
-| Hieamtsrn | 61.66 | 61.13 | 61.76 | 62.48 | 59.76 | 61.96 | 61.02 | 61.65 | 61.84 | 61.69 | 61.98 | 61.88 |
-| Colemak Mod-DH | 61.61 | 61.09 | 61.70 | 62.38 | 59.75 | 61.89 | 60.98 | 61.60 | 61.79 | 61.64 | 61.93 | 61.83 |
-| Norman | 61.58 | 61.06 | 61.68 | 62.34 | 59.70 | 61.87 | 60.96 | 61.57 | 61.75 | 61.60 | 61.88 | 61.83 |
-| Workman | 61.60 | 61.08 | 61.71 | 62.39 | 59.72 | 61.89 | 60.98 | 61.59 | 61.77 | 61.63 | 61.92 | 61.86 |
-| MTGap 2.0 | 61.59 | 61.07 | 61.70 | 62.36 | 59.71 | 61.87 | 60.97 | 61.58 | 61.76 | 61.62 | 61.91 | 61.81 |
-| QGMLWB | 61.59 | 61.07 | 61.69 | 62.38 | 59.75 | 61.88 | 60.97 | 61.58 | 61.77 | 61.62 | 61.91 | 61.80 |
-| Colemak | 61.59 | 61.06 | 61.67 | 62.36 | 59.74 | 61.88 | 60.96 | 61.58 | 61.77 | 61.62 | 61.91 | 61.84 |
-| Asset | 61.56 | 61.04 | 61.67 | 62.33 | 59.74 | 61.85 | 60.95 | 61.55 | 61.73 | 61.58 | 61.87 | 61.83 |
-| Capewell-Dvorak | 61.56 | 61.05 | 61.65 | 62.34 | 59.69 | 61.85 | 60.95 | 61.55 | 61.73 | 61.59 | 61.86 | 61.78 |
-| Klausler | 61.58 | 61.06 | 61.68 | 62.37 | 59.74 | 61.87 | 60.97 | 61.57 | 61.75 | 61.60 | 61.89 | 61.81 |
-| Dvorak | 61.55 | 61.05 | 61.65 | 62.33 | 59.71 | 61.83 | 60.95 | 61.54 | 61.72 | 61.58 | 61.83 | 61.80 |
-| QWERTY | 61.44 | 60.97 | 61.55 | 62.19 | 59.66 | 61.72 | 60.87 | 61.44 | 61.61 | 61.47 | 61.73 | 61.67 |
-    
+| Engram | 62.48 | 61.67 | 62.30 | 63.03 | 60.28 | 62.49 | 61.56 | 62.19 | 62.38 | 62.23 | 62.51 | 62.48 |
+| Halmak | 62.40 | 61.60 | 62.23 | 62.93 | 60.26 | 62.43 | 61.51 | 62.13 | 62.31 | 62.16 | 62.46 | 62.40 |
+| Hieamtsrn | 62.39 | 61.64 | 62.27 | 62.99 | 60.27 | 62.47 | 61.53 | 62.16 | 62.35 | 62.20 | 62.49 | 62.39 |
+| Norman | 62.35 | 61.57 | 62.20 | 62.86 | 60.21 | 62.39 | 61.47 | 62.08 | 62.27 | 62.12 | 62.40 | 62.35 |
+| Workman | 62.37 | 61.59 | 62.22 | 62.91 | 60.23 | 62.41 | 61.49 | 62.10 | 62.29 | 62.14 | 62.43 | 62.37 |
+| MTGap 2.0 | 62.32 | 61.59 | 62.21 | 62.88 | 60.22 | 62.39 | 61.49 | 62.09 | 62.28 | 62.13 | 62.42 | 62.32 |
+| QGMLWB | 62.31 | 61.58 | 62.21 | 62.90 | 60.25 | 62.40 | 61.49 | 62.10 | 62.29 | 62.14 | 62.43 | 62.31 |
+| Colemak Mod-DH | 62.36 | 61.60 | 62.22 | 62.90 | 60.26 | 62.41 | 61.49 | 62.12 | 62.30 | 62.16 | 62.44 | 62.36 |
+| Colemak | 62.36 | 61.58 | 62.20 | 62.89 | 60.25 | 62.40 | 61.48 | 62.10 | 62.29 | 62.14 | 62.43 | 62.36 |
+| Asset | 62.34 | 61.56 | 62.18 | 62.86 | 60.25 | 62.37 | 61.46 | 62.07 | 62.25 | 62.10 | 62.39 | 62.34 |
+| Capewell-Dvorak | 62.29 | 61.56 | 62.17 | 62.86 | 60.20 | 62.36 | 61.47 | 62.06 | 62.24 | 62.10 | 62.37 | 62.29 |
+| Klausler | 62.34 | 61.58 | 62.20 | 62.89 | 60.25 | 62.39 | 61.48 | 62.09 | 62.27 | 62.12 | 62.41 | 62.34 |
+| Dvorak | 62.31 | 61.56 | 62.17 | 62.85 | 60.23 | 62.35 | 61.46 | 62.06 | 62.24 | 62.09 | 62.35 | 62.31 |
+| QWERTY | 62.19 | 61.49 | 62.08 | 62.72 | 60.17 | 62.25 | 61.39 | 61.96 | 62.13 | 61.99 | 62.25 | 62.19 |
+
 ---
     
-[Keyboard Layout Analyzer](http://patorjk.com/keyboard-layout-analyzer/) (KLA) scores for the same text sources (higher is better):
-
+[Keyboard Layout Analyzer](http://patorjk.com/keyboard-layout-analyzer/) (KLA) scores for the same text sources
+    
 > The optimal layout score is based on a weighted calculation that factors in the distance your fingers moved (33%), how often you use particular fingers (33%), and how often you switch fingers and hands while typing (34%).
+    
+Engram scores highest for 7 of the 9 and second highest for 2 of the 9 text sources; Engram scores third and fourth highest for the two software sources, "Coder" and "Rosetta" (higher scores are better):
 
-| Layout | Alice in Wonderland | Romeo Juliet | Bhagavad Gita | Memento screenplay | 100K tweets | 20K tweets | MASC tweets | MASC spoken | COCA blogs | iweb | Monkey | Coder | Software languages |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Engram    | 70.13 | 61.48 | 61.93 | 57.16 | 64.64 | 58.58 | 60.24 | 64.39 | 69.66 | 68.25 | 67.66 | 46.81 | 47.69 |
-| Halmak    | 66.25 | 57.02 | 57.45 | 55.03 | 60.86 | 55.53 | 57.13 | 62.32 | 67.29 | 65.50 | 64.75 | 45.68 | 47.60 |
-| Hieamtsrn | 69.43 | 60.94 | 60.87 | 56.75 | 64.40 | 58.95 | 60.47 | 64.33 | 69.93 | 69.15 | 68.30 | 46.01 | 46.48 | 
-| Colemak Mod-DH | 65.74 | 56.05 | 57.52 | 54.91 | 60.75 | 54.94 | 57.15 | 61.29 | 67.12 | 65.98 | 64.85 | 47.35 | 48.50 |
-| Norman    | 62.76 | 53.21 | 53.44 | 52.33 | 57.43 | 53.24 | 53.90 | 59.97 | 62.80 | 60.90 | 59.82 | 43.76 | 46.01 |
-| Workman   | 64.78 | 56.67 | 56.97 | 54.29 | 59.98 | 55.81 | 56.25 | 61.34 | 65.27 | 63.76 | 62.90 | 45.33 | 47.76 |
-| MTGAP 2.0 | 66.13 | 53.98 | 56.57 | 53.78 | 59.87 | 55.30 | 55.81 | 60.32 | 65.68 | 63.81 | 62.74 | 45.38 | 44.34 | 
-| QGMLWB    | 65.45 | 55.67 | 55.57 | 54.07 | 60.51 | 56.05 | 56.90 | 62.23 | 66.26 | 64.76 | 63.91 | 46.38 | 45.72 |
-| Colemak   | 65.83 | 56.12 | 57.63 | 54.94 | 60.67 | 54.97 | 57.04 | 61.36 | 67.14 | 66.01 | 64.91 | 47.30 | 48.65 |
-| Asset     | 64.60 | 54.63 | 56.09 | 53.84 | 58.66 | 54.72 | 55.35 | 60.81 | 64.71 | 63.17 | 62.44 | 45.54 | 47.52 |
-| Capewell-Dvorak | 66.94 | 58.31 | 57.39 | 55.66 | 62.14 | 56.85 | 57.99 | 62.83 | 66.95 | 65.23 | 64.70 | 45.30 | 45.62 |
-| Klausler  | 68.24 | 59.91 | 59.71 | 55.75 | 62.57 | 56.45 | 58.34 | 64.04 | 68.34 | 66.89 | 66.31 | 46.83 | 45.66 |
-| Dvorak    | 65.86 | 58.18 | 57.29 | 55.09 | 60.93 | 55.56 | 56.59 | 62.75 | 66.64 | 64.87 | 64.26 | 45.46 | 45.55 | 
-| QWERTY    | 53.06 | 43.74 | 44.92 | 44.25 | 48.28 | 44.99 | 44.59 | 51.79 | 52.31 | 50.19 | 49.18 | 38.46 | 39.89 | 
+| Layout | Alice in Wonderland | Memento screenplay | 100K tweets | 20K tweets | MASC tweets | MASC spoken | COCA blogs | iweb | Monkey | Coder | Rosetta |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Engram    | 70.13 | 57.16 | 64.64 | 58.58 | 60.24 | 64.39 | 69.66 | 68.25 | 67.66 | 46.81 | 47.69 |
+| Halmak    | 66.25 | 55.03 | 60.86 | 55.53 | 57.13 | 62.32 | 67.29 | 65.50 | 64.75 | 45.68 | 47.60 |
+| Hieamtsrn | 69.43 | 56.75 | 64.40 | 58.95 | 60.47 | 64.33 | 69.93 | 69.15 | 68.30 | 46.01 | 46.48 | 
+| Colemak Mod-DH | 65.74 | 54.91 | 60.75 | 54.94 | 57.15 | 61.29 | 67.12 | 65.98 | 64.85 | 47.35 | 48.50 |
+| Norman    | 62.76 | 52.33 | 57.43 | 53.24 | 53.90 | 59.97 | 62.80 | 60.90 | 59.82 | 43.76 | 46.01 |
+| Workman   | 64.78 | 54.29 | 59.98 | 55.81 | 56.25 | 61.34 | 65.27 | 63.76 | 62.90 | 45.33 | 47.76 |
+| MTGAP 2.0 | 66.13 | 53.78 | 59.87 | 55.30 | 55.81 | 60.32 | 65.68 | 63.81 | 62.74 | 45.38 | 44.34 | 
+| QGMLWB    | 65.45 | 54.07 | 60.51 | 56.05 | 56.90 | 62.23 | 66.26 | 64.76 | 63.91 | 46.38 | 45.72 |
+| Colemak   | 65.83 | 54.94 | 60.67 | 54.97 | 57.04 | 61.36 | 67.14 | 66.01 | 64.91 | 47.30 | 48.65 |
+| Asset     | 64.60 | 53.84 | 58.66 | 54.72 | 55.35 | 60.81 | 64.71 | 63.17 | 62.44 | 45.54 | 47.52 |
+| Capewell-Dvorak | 66.94 | 55.66 | 62.14 | 56.85 | 57.99 | 62.83 | 66.95 | 65.23 | 64.70 | 45.30 | 45.62 |
+| Klausler  | 68.24 | 59.91 | 62.57 | 56.45 | 58.34 | 64.04 | 68.34 | 66.89 | 66.31 | 46.83 | 45.66 |
+| Dvorak    | 65.86 | 58.18 | 60.93 | 55.56 | 56.59 | 62.75 | 66.64 | 64.87 | 64.26 | 45.46 | 45.55 | 
+| QWERTY    | 53.06 | 43.74 | 48.28 | 44.99 | 44.59 | 51.79 | 52.31 | 50.19 | 49.18 | 38.46 | 39.89 | 
 
 ---
 
 #### Keyboard Layout Analyzer consecutive same-finger key presses
 
-KLA distance measures may not accurately reflect natural typing, so I include here the tally of consecutive key presses with the same finger for different keys (lower is better):
+KLA (and other) distance measures may not accurately reflect natural typing, so below is a more reliable measure of one source of effort and strain -- the tally of consecutive key presses with the same finger for different keys. Engram scores lowest for 6 of the 11 texts, second lowest for two texts, and third or fifth lowest for three texts, two of which are software text sources (lower scores are better):
+
+KLA (and other) distance measures may not accurately reflect natural typing, so below is a more reliable measure of one source of effort and strain -- the tally of consecutive key presses with the same finger for different keys. Engram scores lowest for 6 of the 9 and second or third lowest for 3 of the 9 text sources, and third or fifth lowest for the two software text sources (lower scores are better):
 
 | Layout | Alice | Memento | Tweets_100K | Tweets_20K | Tweets_MASC | Spoken_MASC | COCA_blogs | iweb | Monkey | Coder | Rosetta |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -152,7 +158,7 @@ KLA distance measures may not accurately reflect natural typing, so I include he
 ---
   
 #### Inward roll frequencies 
-Here we tally the number of bigrams (in billions of instances from Norvig's analysis of Google data) that engage inward rolls (little-to-index sequences), within the four columns of one hand, or any column across two hands. "24 keys" ensures that we are comparing Engram's letters with letters in other layouts (higher is better):
+Here we tally the number of bigrams (in billions of instances from Norvig's analysis of Google data) that engage inward rolls (little-to-index sequences), within the four columns of one hand, or any column across two hands. Engram scores second highest for 32 keys and highest for 24 keys, where the latter ensures that we are comparing Engram's letters with letters in other layouts (higher scores are better):
     
 Total inward roll frequency in billions
 
@@ -171,7 +177,7 @@ Total inward roll frequency in billions
     Klausler:        4.42 / 3.52
     Dvorak:          4.40 / 3.20
     QWERTY:          3.62 / 2.13
-    
+   
 ---
     
 | Layout | Year | Website |
