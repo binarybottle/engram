@@ -1,0 +1,57 @@
+// Arno's Engram keyboard layout v2.0 - https://engram.dev
+partial alphanumeric_keys
+xkb_symbols "engram"
+{
+	include "us(basic)"
+
+	key <TLDE> { [  bracketleft,   braceleft ] }; // [{
+	key <AE01> { [            1,         bar ] }; // 1|
+	key <AE02> { [            2,       equal ] }; // 2=
+	key <AE03> { [            3,  asciitilde ] }; // 3~
+	key <AE04> { [            4,        plus ] }; // 4+
+	key <AE05> { [            5,        less ] }; // 5<
+	key <AE06> { [            6,     greater ] }; // 6>
+	key <AE07> { [            7, asciicircum ] }; // 7^
+	key <AE08> { [            8,   ampersand ] }; // 8&
+	key <AE09> { [            9,     percent ] }; // 9%
+	key <AE10> { [            0,    asterisk ] }; // 0*
+	key <AE11> { [ bracketright,  braceright ] }; // ]}
+	key <AE12> { [        slash,   backslash ] }; // /\
+
+	key <AD01> { [            b,           B ] }; // bB
+	key <AD02> { [            y,           Y ] }; // yY
+	key <AD03> { [            o,           O ] }; // oO
+	key <AD04> { [            u,           U ] }; // uU
+	key <AD05> { [   apostrophe,   parenleft ] }; // '(
+	key <AD06> { [     quotedbl,  parenright ] }; // ")
+	key <AD07> { [            l,           L ] }; // lL
+	key <AD08> { [            d,           D ] }; // dD
+	key <AD09> { [            w,           W ] }; // wW
+	key <AD10> { [            v,           V ] }; // vV
+	key <AD11> { [            z,           Z ] }; // zZ
+	key <AD12> { [   numbersign,      dollar ] }; // #$
+	key <BKSL> { [           at,       grave ] }; // @`
+
+	key <AC01> { [            c,           C ] }; // cC
+	key <AC02> { [            i,           I ] }; // iI
+	key <AC03> { [            e,           E ] }; // eE
+	key <AC04> { [            a,           A ] }; // aA
+	key <AC05> { [        comma,   semicolon ] }; // ,;
+	key <AC06> { [       period,       colon ] }; // .:
+	key <AC07> { [            h,           H ] }; // hH
+	key <AC08> { [            t,           T ] }; // tT
+	key <AC09> { [            s,           S ] }; // sS
+	key <AC10> { [            n,           N ] }; // nN
+	key <AC11> { [            q,           Q ] }; // qQ
+
+	key <AB01> { [            g,           G ] }; // gG
+	key <AB02> { [            x,           X ] }; // xX
+	key <AB03> { [            j,           J ] }; // jJ
+	key <AB04> { [            k,           K ] }; // kK
+	key <AB05> { [        minus,  underscore ] }; // -_
+	key <AB06> { [     question,      exclam ] }; // ?!
+	key <AB07> { [            r,           R ] }; // rR
+	key <AB08> { [            m,           M ] }; // mM
+	key <AB09> { [            f,           F ] }; // fF
+	key <AB10> { [            p,           P ] }; // pP
+};
