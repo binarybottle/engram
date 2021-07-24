@@ -361,7 +361,7 @@ def optimize_layout(data_matrix, bigrams, bigram_frequencies, letter_permutation
 def exchange_letters(letters, fixed_letter_indices, all_letters, all_keys, data_matrix, 
                      bigrams, bigram_frequencies, verbose=True, ntop=0):
     """
-    Exchange letters, 8 keys at a time (8! = 40,320) selected twice in 32 different ways:
+    Exchange letters, 8 keys at a time (8! = 40,320) selected twice in 14 different ways:
 
     Indices:
          0  1  2  3     12 13 14 15
