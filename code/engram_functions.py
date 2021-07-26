@@ -28,7 +28,7 @@ def permute_optimize_keys(fixed_letters, fixed_letter_indices, open_letter_indic
         print("{0} permutations".format(len(letter_permutations)))
     top_permutation, top_score = optimize_layout(matrix_selected, bigrams, bigram_frequencies, letter_permutations, open_letter_indices, fixed_letters, fixed_letter_indices, min_score, verbose)
     if top_score == min_score:
-        top_permutation = letters 
+        top_permutation = np.array(letters)
     
     return top_permutation, top_score
 
@@ -60,7 +60,7 @@ def permute_optimize(letters, all_letters, all_keys, data_matrix, bigrams, bigra
         print("{0} permutations".format(len(letter_permutations)))
     top_permutation, top_score = optimize_layout(matrix_selected, bigrams, bigram_frequencies, letter_permutations, open_positions, fixed_letters, fixed_positions, min_score, verbose)
     if top_score == min_score:
-        top_permutation = letters 
+        top_permutation = np.array(letters) 
         
     return top_permutation, top_score
 
