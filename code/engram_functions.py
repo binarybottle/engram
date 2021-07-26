@@ -1,3 +1,4 @@
+# %load code/engram_functions.py
 # Import dependencies
 import xlrd
 import numpy as np
@@ -9,7 +10,7 @@ import seaborn as sns
 
 def permute_optimize_keys(fixed_letters, fixed_letter_indices, open_letter_indices, 
                           all_letters, keys, data_matrix, bigrams, bigram_frequencies, 
-                          verbose=False, ntop=0):
+                          min_score=0, verbose=False):
     """
     Find all permutations of letters, optimize layout, and generate output.
     """
@@ -23,15 +24,16 @@ def permute_optimize_keys(fixed_letters, fixed_letter_indices, open_letter_indic
                 break
 
     letter_permutations = permute_letters(unassigned_letters, verbose)
-    top_permutation, scores = optimize_layout(matrix_selected, bigrams, bigram_frequencies, letter_permutations, open_letter_indices, fixed_letters, fixed_letter_indices, verbose)
-
-    if ntop > 0:
-        print_top_scores(letter_permutations, scores, ntop)
+    if verbose:
+        print("{0} permutations".format(len(letter_permutations)))
+    top_permutation, top_score = optimize_layout(matrix_selected, bigrams, bigram_frequencies, letter_permutations, open_letter_indices, fixed_letters, fixed_letter_indices, min_score, verbose)
+    if top_score == min_score:
+        top_permutation = letters 
     
-    return top_permutation, letter_permutations, scores
+    return top_permutation, top_score
 
 
-def permute_optimize(letters, all_letters, all_keys, data_matrix, bigrams, bigram_frequencies, verbose=False, ntop=0):
+def permute_optimize(letters, all_letters, all_keys, data_matrix, bigrams, bigram_frequencies, min_score=0, verbose=False):
     """
     Find all permutations of letters, optimize layout, and generate output.
     """
@@ -52,13 +54,15 @@ def permute_optimize(letters, all_letters, all_keys, data_matrix, bigrams, bigra
         else:
             fixed_positions.append(iletter)
             fixed_letters.append(letter)
-    #print(open_positions, fixed_positions, open_letters, fixed_letters)
+
     letter_permutations = permute_letters(open_letters, verbose)
-    top_permutation, scores = optimize_layout(matrix_selected, bigrams, bigram_frequencies, letter_permutations, open_positions, fixed_letters, fixed_positions, verbose)
-    if ntop > 0:
-        print_top_scores(letter_permutations, scores, ntop)
-    
-    return top_permutation, letter_permutations, scores
+    if verbose:
+        print("{0} permutations".format(len(letter_permutations)))
+    top_permutation, top_score = optimize_layout(matrix_selected, bigrams, bigram_frequencies, letter_permutations, open_positions, fixed_letters, fixed_positions, min_score, verbose)
+    if top_score == min_score:
+        top_permutation = letters 
+        
+    return top_permutation, top_score
 
 
 def select_keys(data_matrix, keys, verbose=False):
@@ -82,9 +86,6 @@ def select_keys(data_matrix, keys, verbose=False):
     Select = newMin + (Select - np.min(Select)) * (newMax - newMin) / (np.max(Select) - np.min(Select))
     
     if verbose:
-        #print("Matrix:")
-        #np.set_printoptions(precision=2); print(Select)
-
         # Heatmap of array
         heatmap(data=Select, title="Matrix heatmap", xlabel="Key 1", ylabel="Key 2", print_output=False); plt.show()
     
@@ -99,8 +100,6 @@ def permute_letters(letters, verbose=False):
     for p in multiset_permutations(letters):
         letter_permutations.append(p)
     letter_permutations = np.array(letter_permutations)
-    #if verbose:
-    #    print("First permutation: {0}".format(letter_permutations[0])) 
     
     return letter_permutations
 
@@ -301,22 +300,21 @@ def tally_layout_bigram_rolls(layout, bigrams, bigram_frequencies, nkeys=32, ver
     return bigram_rolls, bigram_roll_counts, bigram_rolls_total 
 
 
-def optimize_layout(data_matrix, bigrams, bigram_frequencies, letter_permutations, open_positions, fixed_letters, fixed_positions=[], verbose=False):
+def optimize_layout(data_matrix, bigrams, bigram_frequencies, letter_permutations, open_positions, fixed_letters, fixed_positions=[], min_score=0, verbose=False):
     """
     Compute scores for all letter-key layouts.
     """
     iter = 0
-    top_score = 0
-    scores = []
+    top_score = min_score
     use_score_function = False
 
     nletters = len(open_positions) + len(fixed_positions)
-    top_permutation = np.array(['E' for x in range(nletters)])
+    top_permutation = np.array([])
     F2 = np.zeros((nletters, nletters))
 
     # Loop through the permutations of the selected letters:
     for p in letter_permutations:
-        letters = np.array(['E' for x in range(nletters)])  # KEEP to initialize!
+        letters = np.array(['W' for x in range(nletters)])  # KEEP to initialize!
         for imove, open_position in enumerate(open_positions):
             letters[open_position] = p[imove]
         for ifixed, fixed_position in enumerate(fixed_positions):
@@ -344,22 +342,19 @@ def optimize_layout(data_matrix, bigrams, bigram_frequencies, letter_permutation
             # Compute the score for this permutation:
             score  = np.average(data_matrix * F) 
 
-        # Store all scores and the top score and permutation:
-        scores.append(score)
         if score > top_score:
             top_score = score
             top_permutation = letters
             
-    #print("Topmost of {0} permutations: {1}".format(len(letter_permutations), top_score))
     if verbose:
         print("{0:0.8f}".format(top_score))
         print(*top_permutation)
         
-    return top_permutation, scores
+    return top_permutation, top_score
 
 
 def exchange_letters(letters, fixed_letter_indices, all_letters, all_keys, data_matrix, 
-                     bigrams, bigram_frequencies, verbose=True, ntop=0):
+                     bigrams, bigram_frequencies, verbose=True):
     """
     Exchange letters, 8 keys at a time (8! = 40,320) selected twice in 14 different ways:
 
@@ -411,8 +406,8 @@ def exchange_letters(letters, fixed_letter_indices, all_letters, all_keys, data_
     15. Repeat 1-14
          
     """
-    score = score_layout(data_matrix, letters, bigrams, bigram_frequencies, verbose=False)
-    print('Initial score: {0}'.format(score)) 
+    top_score = score_layout(data_matrix, letters, bigrams, bigram_frequencies, verbose=False)
+    print('Initial score: {0}'.format(top_score)) 
     print(*letters) 
     top_permutation = letters
 
@@ -451,9 +446,9 @@ def exchange_letters(letters, fixed_letter_indices, all_letters, all_keys, data_
                          
     for istep in [1,2]:
         if istep == 1:
-            s = "First set of 14 letter exchanges: "
+            s = "Set 1: 14 letter exchanges: "
         elif istep == 2:
-            s = "Second set of 14 letter exchanges: "
+            s = "Set 2: 14 letter exchanges: "
 
         for ilist, open_indices in enumerate(lists_of_open_indices):
             print_statement = lists_of_print_statements[ilist]     
@@ -464,16 +459,20 @@ def exchange_letters(letters, fixed_letter_indices, all_letters, all_keys, data_
             for open_index in open_indices:
                 if open_index not in fixed_letter_indices:
                     top_permutation[open_index] = ''
-                    
-            top_permutation, letter_permutations, scores = permute_optimize(top_permutation, letters24, keys24, data_matrix, bigrams, bigram_frequencies, verbose=True, ntop=0)            
-            top_permutation = top_permutation.tolist()
+            
+            output_permutation, top_score = permute_optimize(top_permutation, letters24, keys24, data_matrix, 
+                                                             bigrams, bigram_frequencies, min_score=top_score, 
+                                                             verbose=True)            
+            output_permutation = output_permutation.tolist()
+            if output_permutation:
+                top_permutation = output_permutation
         
     if verbose:
         print('')
         print('    -------- DONE --------') 
         print('')
 
-    return top_permutation
+    return top_permutation, top_score
                              
 
 def rank_within_epsilon(numbers, epsilon, factor=False, verbose=True):
@@ -528,18 +527,6 @@ def rank_within_epsilon(numbers, epsilon, factor=False, verbose=True):
     return numbers_sorted, ranks_sorted, Isort
 
 
-def print_top_scores(letter_permutations, scores, ntop):
-    """
-    Print top-scored letter permutations.
-    """
-    scores_negative = -np.array(scores)
-    isort = np.argsort(scores_negative)[:ntop]
-    sorted_scores = [scores[isort[x]] for x in range(len(isort))]
-    sorted_letter_permutations = [letter_permutations[isort[x]].tolist() for x in range(len(isort))]
-    for ix, x in enumerate(sorted_letter_permutations):
-        print("{0:0.8f}".format(sorted_scores[ix]))
-        print(*x)
-    
 def print_matrix_info(matrix_data, matrix_label, nkeys, nlines=10):
     """
     Print matrix output.

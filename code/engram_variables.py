@@ -1,3 +1,4 @@
+# %load code/engram_variables.py
 # Print .png figures and .txt text files
 print_output = False # True
 
