@@ -30,7 +30,7 @@ def permute_optimize_keys(fixed_letters, fixed_letter_indices, open_letter_indic
                                                  letter_permutations, open_letter_indices, 
                                                  fixed_letters, fixed_letter_indices, min_score, verbose)
     
-    return top_permutation, top_score, letter_permutations, permutation_scores
+    return top_permutation, top_score, letter_permutations
 
 
 def permute_optimize(starting_permutation, letters, all_letters, all_keys, 
