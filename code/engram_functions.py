@@ -26,12 +26,15 @@ def permute_optimize_keys(fixed_letters, fixed_letter_indices, open_letter_indic
     letter_permutations = permute_letters(unassigned_letters, verbose)
     if verbose:
         print("{0} permutations".format(len(letter_permutations)))
-    top_permutation, top_score = optimize_layout(np.array([]), matrix_selected, bigrams, bigram_frequencies, letter_permutations, open_letter_indices, fixed_letters, fixed_letter_indices, min_score, verbose)
+    top_permutation, top_score = optimize_layout(np.array([]), matrix_selected, bigrams, bigram_frequencies, 
+                                                 letter_permutations, open_letter_indices, 
+                                                 fixed_letters, fixed_letter_indices, min_score, verbose)
     
-    return top_permutation, top_score
+    return top_permutation, top_score, letter_permutations, permutation_scores
 
 
-def permute_optimize(letters, all_letters, all_keys, data_matrix, bigrams, bigram_frequencies, min_score=0, verbose=False):
+def permute_optimize(starting_permutation, letters, all_letters, all_keys, 
+                     data_matrix, bigrams, bigram_frequencies, min_score=0, verbose=False):
     """
     Find all permutations of letters, optimize layout, and generate output.
     """
@@ -56,7 +59,9 @@ def permute_optimize(letters, all_letters, all_keys, data_matrix, bigrams, bigra
     letter_permutations = permute_letters(open_letters, verbose)
     if verbose:
         print("{0} permutations".format(len(letter_permutations)))
-    top_permutation, top_score = optimize_layout(letters, matrix_selected, bigrams, bigram_frequencies, letter_permutations, open_positions, fixed_letters, fixed_positions, min_score, verbose)
+    top_permutation, top_score = optimize_layout(starting_permutation, matrix_selected, bigrams, 
+                                                 bigram_frequencies, letter_permutations, open_positions, 
+                                                 fixed_letters, fixed_positions, min_score, verbose)
         
     return top_permutation, top_score
 
@@ -205,7 +210,7 @@ def tally_layout_samefinger_bigrams(layout, bigrams, bigram_frequencies, nkeys=3
             samefinger_bigrams.append(bigram2)
             samefinger_bigram_counts.append(max_frequency * bigram_frequencies[i2gram2] / np.max(bigram_frequencies))
 
-    samefinger_bigrams_total = np.sum(samefinger_bigram_counts)
+    samefinger_bigrams_total = np.sum([x[0] for x in samefinger_bigram_counts])
 
     if verbose:
         print("    Total same-finger bigram frequencies: {0:15.0f}".format(samefinger_bigrams_total))
@@ -288,7 +293,7 @@ def tally_layout_bigram_rolls(layout, bigrams, bigram_frequencies, nkeys=32, ver
             bigram_rolls.append(bigram2)
             bigram_roll_counts.append(max_frequency * bigram_frequencies[i2gram2] / np.max(bigram_frequencies))
 
-    bigram_rolls_total = np.sum(bigram_roll_counts)
+    bigram_rolls_total = np.sum([x[0] for x in bigram_roll_counts])
 
     if verbose:
         print("    Total bigram inward roll frequencies: {0:15.0f}".format(bigram_rolls_total))
@@ -296,11 +301,11 @@ def tally_layout_bigram_rolls(layout, bigrams, bigram_frequencies, nkeys=32, ver
     return bigram_rolls, bigram_roll_counts, bigram_rolls_total 
 
 
-def optimize_layout(starting_letters, data_matrix, bigrams, bigram_frequencies, letter_permutations, open_positions, fixed_letters, fixed_positions=[], min_score=0, verbose=False):
+def optimize_layout(starting_permutation, data_matrix, bigrams, bigram_frequencies, letter_permutations, 
+                    open_positions, fixed_letters, fixed_positions=[], min_score=0, verbose=False):
     """
     Compute scores for all letter-key layouts.
     """
-    iter = 0
     top_score = min_score
     use_score_function = False
 
@@ -344,7 +349,7 @@ def optimize_layout(starting_letters, data_matrix, bigrams, bigram_frequencies, 
     if verbose:
         if top_score == min_score:
             print("top_score = min_score")
-            top_permutation = starting_letters
+            top_permutation = starting_permutation
         print("{0:0.8f}".format(top_score))
         print(*top_permutation)
         
@@ -453,14 +458,15 @@ def exchange_letters(letters, fixed_letter_indices, all_letters, all_keys, data_
 
             if verbose:
                 print('{0} {1}'.format(s, print_statement))
-                             
+              
+            starting_permutation = top_permutation.copy()
             for open_index in open_indices:
                 if open_index not in fixed_letter_indices:
                     top_permutation[open_index] = ''
             
-            top_permutation, top_score = permute_optimize(top_permutation, letters24, keys24, data_matrix, 
-                                                          bigrams, bigram_frequencies, min_score=top_score, 
-                                                          verbose=True)                    
+            top_permutation, top_score = permute_optimize(starting_permutation, top_permutation, letters24, 
+                                                          keys24, data_matrix, bigrams, bigram_frequencies, 
+                                                          min_score=top_score, verbose=True)                    
     if verbose:
         print('')
         print('    -------- DONE --------') 
@@ -600,7 +606,7 @@ def print_layout24_instances(layout, letters24, instances24, bigrams, bigram_fre
     for letter in layout:
         index = letters24.index(letter)
         layout_instances.append(instances24[index])
-        layout_instances_strings.append('{0:3.0f}'.format(instances24[index]/1000000000))
+        layout_instances_strings.append('{0:3.0f}'.format(instances24[index]/instances_denominator))
  
     print('    {0}  {1}'.format(' '.join(layout_instances_strings[0:4]),
                                 ' '.join(layout_instances_strings[12:16])))
@@ -608,8 +614,8 @@ def print_layout24_instances(layout, letters24, instances24, bigrams, bigram_fre
                                 ' '.join(layout_instances_strings[16:20])))
     print('    {0}  {1}'.format(' '.join(layout_instances_strings[8:12]),
                                 ' '.join(layout_instances_strings[20:24])))
-    left_sum = np.sum(layout_instances[0:12])/1000000000000
-    right_sum = np.sum(layout_instances[12:24])/1000000000000
+    left_sum = np.sum(layout_instances[0:12])
+    right_sum = np.sum(layout_instances[12:24])
     pL = ''
     pR = ''
     if left_sum > right_sum:
@@ -617,8 +623,7 @@ def print_layout24_instances(layout, letters24, instances24, bigrams, bigram_fre
     elif right_sum > left_sum:
         pR = ' ({0:3.2f}%)'.format(100 * (right_sum - left_sum) / left_sum)
     
-    print('\n    left: {0:3.3f}T{1}  right: {2:3.3f}T{3}'.format(left_sum, pL, 
-                                                                 right_sum, pR))
+    print('\n    left: {0}{1}  right: {2}{3}'.format(left_sum, pL, right_sum, pR))
     
     tally_layout_samefinger_bigrams(layout, bigrams, bigram_frequencies, nkeys=24, verbose=True)
     tally_layout_bigram_rolls(layout, bigrams, bigram_frequencies, nkeys=24, verbose=True)
@@ -629,7 +634,6 @@ def print_bigram_frequency(input_pair, bigrams, bigram_frequencies):
     >>> print_bigram_frequency(['t','h'], bigrams, bigram_frequencies)
     """
     # Find the bigram frequency
-    max_frequency = 1.00273E+11
     input_text = [str.upper(str(x)) for x in input_pair]
     nchars = len(input_text)
     for ichar in range(0, nchars-1):
@@ -638,8 +642,8 @@ def print_bigram_frequency(input_pair, bigrams, bigram_frequencies):
         i2gram1 = np.where(bigrams == bigram1)
         i2gram2 = np.where(bigrams == bigram2)
         if np.size(i2gram1) > 0:
-            freq1 = max_frequency/1e9 * bigram_frequencies[i2gram1[0][0]]
-            print("{0}: {1:3.2f}B".format(bigram1, freq1))
+            freq1 = bigram_frequencies[i2gram1[0][0]]
+            print("{0}: {1:3.2f}".format(bigram1, freq1))
         if np.size(i2gram2) > 0:
-            freq2 = max_frequency/1e9 * bigram_frequencies[i2gram2[0][0]]
-            print("{0}: {1:3.2f}B".format(bigram2, freq2))
+            freq2 = bigram_frequencies[i2gram2[0][0]]
+            print("{0}: {1:3.2f}".format(bigram2, freq2))
