@@ -306,6 +306,7 @@ def optimize_layout(starting_permutation, data_matrix, bigrams, bigram_frequenci
     """
     Compute scores for all letter-key layouts.
     """
+    top_permutation = starting_permutation
     top_score = min_score
     use_score_function = False
 
@@ -349,7 +350,6 @@ def optimize_layout(starting_permutation, data_matrix, bigrams, bigram_frequenci
     if verbose:
         if top_score == min_score:
             print("top_score = min_score")
-            top_permutation = starting_permutation
         print("{0:0.8f}".format(top_score))
         print(*top_permutation)
         
