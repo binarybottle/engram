@@ -18,9 +18,9 @@ See below for a full description and comparisons with other key layouts.
 ![Orthonormal keyboard](https://github.com/binarybottle/engram/blob/master/assets/engram-ergo-squeezed-800px.png?raw=true)
 
          [{ 1| 2= 3~ 4+  5<  6>  7^ 8& 9% 0* ]} /\
-            bB yY oO uU  '(  ")  lL dD wW VV zZ #$ @`
+            bB yY oO uU  '(  ")  lL dD wW vV zZ #$ @`
             cC iI eE aA  ,;  .:  hH tT sS nN qQ 
-            gG xX jJ kK  -_  ?!  rR MM fF pP
+            gG xX jJ kK  -_  ?!  rR mM fF pP
             
 Letter frequencies (Norvig, 2012), showing that the Engram layout emphasizes keys in the home row:
 
