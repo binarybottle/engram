@@ -7,6 +7,8 @@ You can install the Engram layout on [Windows, macOS, and Linux](https://keyman.
 or [try it out online](https://keymanweb.com/#en,Keyboard_engram).
 An article is under review (see the [preprint](https://www.preprints.org/manuscript/202103.0287/v1) for an earlier (and superceded) version with description).
 
+[See [here](https://github.com/binarybottle/engram-es) for the Spanish version, engram-es]
+
 Letters are optimally arranged according to ergonomics factors that promote reduction of lateral finger movements and more efficient typing of high-frequency letter pairs. The most common punctuation marks are logically grouped together in the middle columns and numbers are paired with mathematical and logic symbols (shown as pairs of default and Shift-key-accessed characters).
 
 See below for a full description and comparisons with other key layouts.
