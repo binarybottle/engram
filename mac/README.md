@@ -2,8 +2,8 @@ Engram keyboard layout for Mac OSX
 ===========
 
 There are 2 layout options. 
-Engram - all inputs will use the Engram layout.
-Engram + QWERTY ⌘ - all command shortcuts will use the QWERTY layout.
+* Engram - all inputs will use the Engram layout.
+* Engram + QWERTY ⌘ - all command shortcuts will use the QWERTY layout.
 
 ## Installation
 
