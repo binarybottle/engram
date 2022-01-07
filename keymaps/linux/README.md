@@ -4,6 +4,8 @@ Install:
 
     sudo make install
     echo Now restart your X session.
+    
+The Engram layout should be available under your desktop environment's keyboard selection utility.
 
 Activate:
 
