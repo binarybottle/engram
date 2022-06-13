@@ -1,15 +1,13 @@
-# Engram Windows installation README
+## Windows
 
-Contributed by @AbbyRead
+1. Install the official _Microsoft Keyboard Layout Creator_ app: [MSKLC version 1.4](
+  https://www.microsoft.com/en-us/download/details.aspx?id=102134
+).
 
-[https://github.com/binarybottle/engram/discussions/33](https://github.com/binarybottle/engram/discussions/33)
+2. Launch the MSKLC app and load the `engram.klc` keyboard layout source file: 
 
-"I made one for Windows using the Microsoft Keyboard Layout Creator. All the 
-relevant stuff is in this zip file, including the source, which is the .klc. 
-Should be able to open it and edit it if need be for any reason. To install 
-the layout, either click setup.exe or the .msi file specific to your 
-computer's processor. Setup.exe just seems to figure it out for you. You can 
-use the same msi to uninstall or repair."
+       "C:\Program Files (x86)\Microsoft Keyboard Layout Creator 1.4\MSKLC.exe" engram.klc
 
-"I claim no ownership rights. Use however you like. Thank you for your 
-awesome work on this layout."
+3. Open the "Project" menu and select the "Build DLL and Setup Package" item.
+
+4. Open the resulting build directory and run the `setup.exe` installer file.
