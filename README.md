@@ -352,7 +352,7 @@ E, T, A, O, I, N, S, R, H, **L, D, C, U, M, F, P**, G, W, Y, B, V, K, X, J, Q, Z
 
 Since there are 5,040 (7!) possible combinations of eight letters for each of the 21 layouts, we need to score and evaluate 105,840 layouts. To score each arrangement of letters, we construct a frequency matrix where we multiply a matrix containing the frequency of each ordered pair of letters (bigram) by our flow and strength matrices to compute a score.
     
-###3 Least frequent letters
+### Least frequent letters
 Next we will compute scores for every possible (40,320 = 8!) arrangement of the least frequent eight letters (in bold below, besides Z and Q) in the remaining keys, after substituting in the 21 results of the above for an additional 846,720 layouts:
 
 E, T, A, O, I, N, S, R, H, L, D, C, U, M, F, P, **G, W, Y, B, V, K, X, J**, Q, Z
