@@ -6,7 +6,7 @@ Using a small iOS app called [xKeyboard - Custom Keyboard](https://apps.apple.co
 
 Try the following:
 
-1. Download the `.xkeyboard` file in this directory to your iOS device.
+1. Download the [`.xkeyboard` file](https://raw.githubusercontent.com/binarybottle/engram/master/install/ios/Engram.xkeyboard) in this directory to your iOS device.
    
 2. Install [xKeyboard - Custom Keyboard](https://apps.apple.com/us/app/xkeyboard-custom-keyboard/id1440245962) on your iOS device using the App Store.
 
