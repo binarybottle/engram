@@ -1,3 +1,7 @@
 #*
 .#*
 .ipynb_checkpoints/*-checkpoint.ipynb
+.DS_Store
+deno.lock
+.clj-kondo
+.lsp
