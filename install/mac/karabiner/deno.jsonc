@@ -1,0 +1,10 @@
+{
+  "tasks": {
+    "build": "deno run -A index.ts"
+  },
+  "importMap": "import_map.json",
+  "fmt": {
+    "semiColons": false,
+    "singleQuote": true
+  }
+}

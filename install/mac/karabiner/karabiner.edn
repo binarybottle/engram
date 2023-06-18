@@ -1,0 +1,148 @@
+;; ORDER IS IMPORTANT! 
+;; This profile makes extensive use of the ## / optional any modifier. 
+;; Any shifted variants need to appear BEFORE the unshifted variant. 
+;; Karabiner will match the first rule it can. 
+{:profiles
+ {:Engram {:default true ;↓ delays can be set individually in mod-tap layer definitions if you want separate default values here
+           :sim  	 50	; |  50|	simultaneous_threshold_milliseconds   	different from simlayers, this is for cases like [:a :b]
+           :alone	209	; |1000|	to_if_alone_timeout_milliseconds      	??? must be < than ↓:delay/:held to avoid the bug where mod-tap layer stays 1
+           :held 	210	; | 500|	to_if_held_down_threshold_milliseconds	should = ↓:delay for mod-tap layers
+           :delay	210	; |    |	to_delayed_action_delay_milliseconds  	should = ↑:held  for mod-tap layers
+        ;;    :default true
+        ;;    :sim     500
+        ;;    :delay   500
+        ;;    :alone   500
+        ;;    :held    200
+           }}
+;;  :devices {:internal [{:vendor_id 1452 :product_id 641}]}
+ :main [{:des "Nav and Clipboard"
+         :rules [[:##caps_lock ["nac" 1] [:!symbols :!mouse :!shifted :!system] {:afterup ["nac" 0] :alone :escape}]
+                 :nac
+                    ;arrows
+                 [:##j :left_arrow] [:##k :down_arrow] [:##l :up_arrow] [:##semicolon :right_arrow]
+                    ; clipboard
+                 [:##z :!Cz] [:##x :!Cx] [:##c :!Cc] [:##v :!Cv]]}
+        
+
+        {:des "  [⌂] mod-tap layers (asdf jkl;)" :rules [; When adding a new layer, if you want it to be able to cross with an old one, you must add the name negated (:!new_name) to all other mod-tap layer conditions
+  ; remove these negations to allow mod key combos
+    ; ⎇◆  (⌥⌘) sd and lkt
+    ; ⇧⎇        sf and jl
+    ; ⇧◆  (⇧⌘) fd and jk
+    ; ⇧⎈  (⇧^) fa and jsc
+                                                         [:a nil [:!mode_s :!mode_d          :!mode_j :!mode_k :!mode_l :!mod_sc] ;mode_a
+                                                          {:alone {:key :a :halt true} :delayed {:canceled {:key :a}} :held {:set ["mode_a" 1] :repeat false} :afterup {:set ["mode_a" 0]}
+                                                           :params {:alone 194 :held 195 :delay 195}}]
+                                                         [:s nil [:!mode_a                            :!mode_j :!mode_k :!mode_l :!mod_sc] ;mode_s
+                                                          {:alone {:key :s :halt true} :delayed {:canceled {:key :s}} :held {:set ["mode_s" 1] :repeat false} :afterup {:set ["mode_s" 0]}
+                                                           :params {:alone 194 :held 195 :delay 195}}]
+                                                         [:d nil [:!mode_a                            :!mode_j :!mode_k :!mode_l :!mod_sc] ;mode_d
+                                                          {:alone {:key :d :halt true} :delayed {:canceled {:key :d}} :held {:set ["mode_d" 1] :repeat false} :afterup {:set ["mode_d" 0]}
+                                                           :params {:alone 194 :held 195 :delay 195}}]
+                                                         [:f nil [:!mode_j :!mode_k :!mode_l :!mod_sc] ;mode_f
+                                                          {:alone {:key :f :halt true} :delayed {:canceled {:key :f}} :held {:set ["mode_f" 1] :repeat false} :afterup {:set ["mode_f" 0]}
+                                                           :params {:alone 194 :held 195 :delay 195}}]
+                                                         [:j nil [:!mode_a :!mode_s :!mode_d :!mode_f] ;mode_f
+                                                          {:alone {:key :j :halt true} :delayed {:canceled {:key :j}} :held {:set ["mode_j" 1] :repeat false} :afterup {:set ["mode_j" 0]}
+                                                           :params {:alone 194 :held 195 :delay 195}}]
+                                                         [:k nil [:!mode_a :!mode_s :!mode_d :!mode_f                            :!mod_sc] ;mode_k
+                                                          {:alone {:key :k :halt true} :delayed {:canceled {:key :k}} :held {:set ["mode_k" 1] :repeat false} :afterup {:set ["mode_k" 0]}
+                                                           :params {:alone 194 :held 195 :delay 195}}]
+                                                         [:l nil [:!mode_a :!mode_s :!mode_d :!mode_f                            :!mod_sc] ;mode_l
+                                                          {:alone {:key :l :halt true} :delayed {:canceled {:key :l}} :held {:set ["mode_l" 1] :repeat false} :afterup {:set ["mode_l" 0]}
+                                                           :params {:alone 194 :held 195 :delay 195}}]
+                                                         [:semicolon nil [:!mode_a :!mode_s :!mode_d :!mode_f          :!mode_k :!mode_l] ;mod_sc
+                                                          {:alone {:key :semicolon :halt true} :delayed {:canceled {:key :semicolon}} :held {:set ["mod_sc" 1] :repeat false} :afterup {:set ["mod_sc" 0]}
+                                                           :params {:alone 194 :held 195 :delay 195}}]]}
+
+
+
+
+        ;; {:des "Home Row Mods"
+         :rules [; modifiers
+                 [:##a :left_control nil {:alone {:key :c}
+                                          :sim {:key :c}
+
+                ;;   :delayed {:invoked {:key :c} :canceled {:key :c} } 
+                ;;   :held {:key :left_control}
+                                          }]
+                 [:##s :left_option nil {:alone {:key :i}
+                                         :sim {:key :i}
+                                ;; :delayed {:invoked {:key :i} :canceled {:key :i}} 
+                                ;; :held {:key :left_option}
+                                         }]
+                 [:##d :left_command nil {:alone {:key :e}
+                                          :sim {:key :e}
+                                ;; :delayed {:invoked {:key :e} :canceled {:key :e}} 
+                                ;; :held {:key :left_command}
+                                          }]
+                 [:##f :left_shift nil {:alone {:key :a}
+                                        :sim {:key :a}
+                                ;; :delayed {:invoked {:key :a} :canceled {:key :a}} 
+                                ;; :held {:key :left_shift}
+                                        }]
+                 [:##j :left_shift nil {:alone {:key :h}
+                                        :sim {:key :h}
+                ;;   :delayed {:canceled {:key :h}} 
+                ;;                :held {:key :left_shift}
+                                        }]
+                 [:##k :left_command nil {:alone {:key :t}
+                                          :sim {:key :t}
+                ;;   :delayed { :canceled {:key :t}} 
+                ;;                 :held {:key :left_command}
+                                          }]
+                 [:##l :left_option nil {:alone {:key :s}
+                                         :sim {:key :s}
+                ;;   :delayed {:invoked {:key :s} :canceled {:key :s}} 
+                                ;;        :held {:key :left_option}}] 
+                                         }]
+                 [:##semicolon :left_control nil {:alone {:key :n}
+                                                  :sim {:key :n}
+                ;;   :delayed {:invoked {:key :n} :canceled {:key :n}} 
+                                        ;; :held {:key :left_control}
+                                                  }]]}
+
+
+        {:des "Short Pinkies, Working Thumbs"
+         :rules [;;  Make  Equal Sign Backspace so I don't have to reach so far, and change right shift to slash
+                 [:##left_command :left_command nil {:alone :delete_or_backspace}]
+                 [:##right_command :left_command nil {:alone :return_or_enter}]
+                 [:##equal_sign :delete_or_backspace]
+                 [:!S##right_shift :backslash]
+                 [:##right_shift :slash]
+                 [:##left_command :delete_or_backspace]
+                 [:##right_command :return_or_enter]]}
+        {:des "Engram"
+         :rules [;; Number Row
+                 [:##grave_accent_and_tilde :open_bracket] [:!S##1 :!Sbackslash] [:!S##2 :equal_sign] [:!S##3 :!Sgrave_accent_and_tilde] [:!S##4 :!Sequal_sign] [:!S##5 :!Scomma] [:!S##6 :!Speriod] [:!S##7 :!S6] [:!S##8 :!S7] [:!S##9 :!S5] [:!S##0 :!S8] [:##hyphen :close_bracket] [:!S##equal_sign :backslash] [:##equal_sign :slash]
+                ;; Center Column/Punctuation
+                 [:!S##t :!S9] [:##t :quote] [:!S##y :!S0] [:##y :!Squote]
+                 [:!S##g :semicolon] [:##g :comma] [:!S##h :!Ssemicolon] [:##h :period]
+                 [:##b :hyphen] [:!S##n :!S1] [:##n :!Sslash]
+                 [:!S##close_bracket :!S4] [:##close_bracket :!S3] [:!S##backslash :grave_accent_and_tilde] [:##backslash :!S2]
+                ;;  Letters 
+                 [:##q :b] [:##w :y] [:##e :o] [:##r :u] [:##u :l] [:##i :d] [:##o :w] [:##p :v] [:##open_bracket :z]
+                 [:##a :c] [:##s :i] [:##d :e] [:##f :a] [:##j :h] [:##k :t] [:##l :s] [:##semicolon :n] [:##quote :q]
+                 [:##z :g] [:##x :x] [:##c :j] [:##v :k] [:##m :r] [:##comma :m] [:##period :f] [:##slash :p]]}]}
+
+    ;; !  | means mandatory
+    ;; #  | means optional
+    ;; C  | left_command
+    ;; T  | left_control
+    ;; O  | left_option
+    ;; S  | left_shift
+    ;; F  | fn
+    ;; Q  | right_command
+    ;; W  | right_control
+    ;; E  | right_option
+    ;; R  | right_shift
+    ;; P  | caps_lock
+    ;; !! | mandatory command + control + optional + shift (hyper)
+    ;; ## | optional any
+
+    ;; examples
+
+    ;; !CTSequal_sign  | mandatory command control shift =
+    ;;                 | which is command control +
+    ;; !O#Sright_arrow | mandatory option optional any right_arrow
+
