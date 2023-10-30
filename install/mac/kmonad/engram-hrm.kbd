@@ -1,0 +1,60 @@
+;; See kmonad's keymap/tutorial.kbd for a more complete tutorial
+
+;; Engram, for reference
+;;  [{ 1| 2= 3~ 4+  5<  6>  7^ 8& 9% 0* ]} /\
+;;     bB yY oO uU  '(  ")  lL dD wW vV zZ #$ @`
+;;     cC iI eE aA  ,;  .:  hH tT sS nN qQ 
+;;     gG xX jJ kK  -_  ?!  rR mM fF pP
+
+(defcfg
+  input (iokit-name "Apple Internal Keyboard / Trackpad")
+  output (kext)
+  fallthrough true
+  allow-cmd false
+  )
+
+(defsrc
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
+  caps a    s    d    f    g    h    j    k    l    ;    '    ret
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft up
+  fn   lctl lalt lmet           spc            rmet ralt left down rght
+)
+
+(defalias
+    up (layer-toggle engram_shifted_homerow_mods)
+
+    cc (tap-hold-next-release 200 c lctl)
+    ai (tap-hold-next-release 200 i lalt)
+    me (tap-hold-next-release 200 e lmet)
+    sa (tap-hold-next-release 200 a @up)
+    sh (tap-hold-next-release 200 h @up)
+    mt (tap-hold-next-release 200 t rmet)
+    as (tap-hold-next-release 200 s lalt)
+    cn (tap-hold-next-release 200 n rctl)
+    
+    csc (tap-hold-next-release 200 C S-lctl)
+    asi (tap-hold-next-release 200 I S-lalt)
+    mse (tap-hold-next-release 200 E S-lmet)
+    ssa (tap-hold-next-release 200 A lsft)
+    ssh (tap-hold-next-release 200 H rsft)
+    mst (tap-hold-next-release 200 T S-rmet)
+    ass (tap-hold-next-release 200 S S-lalt)
+    csn (tap-hold-next-release 200 N S-rctl)
+)
+
+(deflayer engram_homerow_mods
+  [    1    2    3    4    5    6    7    8    9    0    ]    /    bspc
+  tab  b    y    o    u    '    "    l    d    w    v    z    #    @
+  caps @cc  @ai  @me  @sa  ,    .    @sh  @mt  @as  @cn  q    ret
+  @up  g    x    j    k    -    ?    r    m    f    p    @up  up
+  fn   lctl lalt lmet           spc            rmet ralt left down rght
+)
+
+(deflayer engram_shifted_homerow_mods
+ {    |    =    ~    +    <    >    ^    &    %    *    }    \    S-bspc
+ tab  B    Y    O    U    \(   \)   L    D    W    V    Z    $    `
+ caps @csc @asi @mse @ssa ;    :    @ssh @mst @ass @csn Q    S-ret
+ @up  G    X    J    K    _    !    R    M    F    P    @up  S-up
+ S-fn S-lctl S-lalt S-lmet     S-spc          S-rmet S-ralt S-left S-down S-rght
+)

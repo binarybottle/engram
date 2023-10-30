@@ -12,7 +12,7 @@ Engram layouts for Karabiner.
 ```           
 
 
-# Using Karabiner with Engram
+## Using Karabiner with Engram
 
 To use the vanilla Engram layout on MacOS, simply
 
@@ -26,26 +26,10 @@ Or you can view the JSON [here](https://raw.githubusercontent.com/binarybottle/e
 
 This directory also includes [Karabiner.ts](https://github.com/evan-liu/karabiner.ts) config, as well as a [Goku](https://github.com/yqrashawn/GokuRakuJoudo) config.
 
-Home Row Mods are working better in the Karabiner.ts config than the Goku one. (They're configured as simlayers in the Karabiner.ts version.) Karabiner.ts also 🏃🏻‍♂️s 53 times faster--73.6ms vs. 3.947s. 
 
-The command keys are set to work more like they do on a mech ergo board.
+## Home Row Mods
 
-Currently, Home Row Mods work only one at a time, but hoping to get that sorted shortly. 🤓
-
-Karabiner still has some shortcomings. It seems like no matter how it's configured, typing rhythm isn't as natural with Karabiner as it is with [timeless Home Row Mods](https://github.com/urob/zmk-config#timeless-homerow-mods) in zmk using below config. 
-
-```dtsi
-    hrml: home_row_mod_left {
-        compatible = "zmk,behavior-hold-tap";
-        label = "HOME_ROW_MOD_LEFT";
-        #binding-cells = <2>;
-        flavor = "balanced";
-        tapping-term-ms = <HM_TAPPING_TERM>;
-        hold-trigger-key-positions = < KEYS_R THUMBS >;
-        hold-trigger-on-release;
-        bindings = <&kp>, <&kp>;
-        };
-```        
+Home row mods don't work very well in Karabiner. If you are interested in using home row mods on MacOS, you'll probably be happier installing KMonad, also documented in the `engram/install/mac` directory.
 
 
 ## Installing
