@@ -1,5 +1,0 @@
-{
-  "imports": {
-    "karabinerts": "https://deno.land/x/karabinerts/deno.ts"
-  }
-}
