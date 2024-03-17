@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="instructions">
+        <p>Please touch type the following text as you would usually type -- at your usual typing speed on a keyboard of your choice. Each correctly typed character will turn green and each incorrectly typed character will turn red. You will not be able to go back or correct any mistakes. Just keep typing until you have finished.</p>
+    </div>
+    <div id="text-container"></div>
+    <table id="keystroke-data">
+        <thead>
+            <tr>
+                <th>Expected Char</th>
+                <th>Typed Char</th>
+                <th>Match</th>
+                <th>Timestamp (Press)</th>
+                <th>Timestamp (Release)</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>

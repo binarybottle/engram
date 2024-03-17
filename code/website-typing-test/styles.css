@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+#instructions {
+    margin: 20px;
+    padding: 10px;
+    text-align: left; /* Left-justify the instructions */
+    width: 80%; /* Adjust width as needed */
+}
+
+#text-container {
+    color: black;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px 0;
+    font-size: 1.5em; /* Increase the size of the provided text */
+    width: 80%; /* Adjust width as needed */
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+
+table {
+    border-collapse: collapse;
+    width: 60%; /* Make table smaller */
+    font-size: 0.8em; /* Decrease font size in the table */
+    margin-top: 500px; /* Push the table far down the page */
+}
+
+th, td {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
