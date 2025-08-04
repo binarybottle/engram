@@ -1,0 +1,56 @@
+;; See keymap/tutorial.kbd for a more complete tutorial
+
+(defcfg
+  input (iokit-name "Apple Internal Keyboard / Trackpad")
+  output (kext)
+  fallthrough true
+  allow-cmd false
+  )
+
+(defsrc
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
+  caps a    s    d    f    g    h    j    k    l    ;    '    ret
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft up
+  fn   lctl lalt lmet           spc            rmet ralt left down rght
+)
+
+(defalias
+    cc (tap-hold-next-release 200 c lctl)
+    ai (tap-hold-next-release 200 i lalt)
+    me (tap-hold-next-release 200 e lmet)
+    sa (tap-hold-next-release 200 a lsft)
+    sh (tap-hold-next-release 200 h rsft)
+    mt (tap-hold-next-release 200 t rmet)
+    as (tap-hold-next-release 200 s lalt)
+    cn (tap-hold-next-release 200 n rctl)
+    nav (tap-hold 180 caps (layer-toggle navigation))
+    af #(spc \( \) spc = > spc )
+    ht #(h t t p s : / /)
+    moi #(Y o u r spc N a m e)
+
+)
+
+(deflayer engram_homerow_mods
+  grv  1    2    3    4    5    6    7    8    9    0    [    ]    bspc
+  tab  b    y    o    u    '    ;    l    d    w    v    z    =    \
+  @nav @cc  @ai  @me  @sa  ,    .    @sh  @mt  @as  @cn  q    ret
+  g    x    j    k    -    @af  /    r    m    f    p    @ht  up
+  fn   M-spc esc bspc           spc            ret  @moi left down rght
+)
+
+(deflayer navigation
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    home pgdn pgup end  _    _    _
+  _    _    _    _    _    _    _    left down up   rght _    _
+  _    _    _    _    _    _    M-S-z M-z M-x  M-c  M-v  _    _
+  _    _    _    _              _              _    _    _    _    _
+)
+
+;; (deflayer blank
+;;   _    _    _    _    _    _    _    _    _    _    _    _    _    _
+;;   _    _    _    _    _    _    _    _    _    _    _    _    _    _
+;;   _    _    _    _    _    _    _    _    _    _    _    _    _
+;;   _    _    _    _    _    _    _    _    _    _    _    _    _
+;;   _    _    _    _              _              _    _    _    _    _
+;; )

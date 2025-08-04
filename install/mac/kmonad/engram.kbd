@@ -1,0 +1,42 @@
+;; See kmonad's keymap/tutorial.kbd for a more complete tutorial
+
+;; Engram, for reference
+;;  [{ 1| 2= 3~ 4+  5<  6>  7^ 8& 9% 0* ]} /\
+;;     bB yY oO uU  '(  ")  lL dD wW vV zZ #$ @`
+;;     cC iI eE aA  ,;  .:  hH tT sS nN qQ 
+;;     gG xX jJ kK  -_  ?!  rR mM fF pP
+
+(defcfg
+  input (iokit-name "Apple Internal Keyboard / Trackpad")
+  output (kext)
+  fallthrough true
+  allow-cmd false
+  )
+
+(defsrc
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
+  caps a    s    d    f    g    h    j    k    l    ;    '    ret
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft up
+  fn   lctl lalt lmet           spc            rmet ralt left down rght
+)
+
+(defalias
+    up (layer-toggle engram_shifted)
+)
+
+(deflayer engram
+  [    1    2    3    4    5    6    7    8    9    0    ]    /    bspc
+  tab  b    y    o    u    '    "    l    d    w    v    z    #    @
+  caps c    i    e    a    ,    .    h    t    s    n    q    ret
+  @up  g    x    j    k    -    ?    r    m    f    p    @up  up
+  fn   lctl lalt lmet           spc            rmet ralt left down rght
+)
+
+(deflayer engram_shifted
+ {    |    =    ~    +    <    >    ^    &    %    *    }    \    S-bspc
+ tab  B    Y    O    U    \(   \)   L    D    W    V    Z    $    `
+ caps C    I    E    A    ;    :    H    T    S    N    Q    S-ret
+ @up  G    X    J    K    _    !    R    M    F    P    @up  S-up
+ S-fn S-lctl S-lalt S-lmet     S-spc          S-rmet S-ralt S-left S-down S-rght
+)

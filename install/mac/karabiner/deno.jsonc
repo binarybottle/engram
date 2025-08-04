@@ -2,7 +2,9 @@
   "tasks": {
     "build": "deno run -A index.ts"
   },
-  "importMap": "import_map.json",
+    "imports": {
+      "karabinerts": "https://deno.land/x/karabinerts/deno.ts"
+    },
   "fmt": {
     "semiColons": false,
     "singleQuote": true
