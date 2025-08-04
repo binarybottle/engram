@@ -1,8 +1,9 @@
+//ENGRAM BEGIN
 // Arno's Engram keyboard layout v2.0 - https://engram.dev
-partial alphanumeric_keys
+partial alphanumeric_keys modifier_keys
 xkb_symbols "engram"
 {
-	include "us(basic)"
+	name[Group1]="English (Engram)";
 
 	key <TLDE> { [  bracketleft,   braceleft ] }; // [{
 	key <AE01> { [            1,         bar ] }; // 1|
@@ -55,3 +56,4 @@ xkb_symbols "engram"
 	key <AB09> { [            f,           F ] }; // fF
 	key <AB10> { [            p,           P ] }; // pP
 };
+//ENGRAM END
