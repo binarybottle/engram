@@ -3,7 +3,7 @@ Engram is a family of keyboard layouts optimized for comfortable and efficient t
 
 An article is currently under review that describes the Engram approach to optimizing keyboard layouts, based on language-dependent n-gram frequencies and language-independent typing preferences, using multi-objective optimization informed by crowdsourced typing data. Letters are optimally arranged according to ergonomics factors that promote reduction of lateral finger movements and more efficient typing of high-frequency letter pairs. The most common punctuation marks are logically grouped together in the middle columns and numbers are paired with mathematical and logic symbols.
 
-Currently, there are Engram keyboard layouts for typing in English ([Engram-en](engram-en/)) and Spanish ([Engram-es](engram-es/)). 
+Currently, there are Engram keyboard layouts for typing in English ([Engram-en](https://github.com/binarybottle/engram/tree/main/engram-en/)) and Spanish ([Engram-es](https://github.com/binarybottle/engram/tree/main/engram-es/)). 
 
 <!-- You can install the Engram-en layout on [Windows, macOS, and Linux](https://keyman.com/keyboards/engram_en)
 or [try it out online](https://keymanweb.com/#en,Keyboard_engram).-->

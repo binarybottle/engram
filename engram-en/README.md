@@ -1,5 +1,5 @@
 # Engram-en keyboard layout
-Engram-en is a keyboard layout optimized for comfortable and efficient touch typing in English created by [Arno Klein](https://arnoklein.info) ([GitHub repository](https://github.com/binarybottle/engram/engram-en/)).
+Engram-en is a keyboard layout optimized for comfortable and efficient touch typing in English created by [Arno Klein](https://arnoklein.info) ([GitHub repository](https://github.com/binarybottle/engram/tree/main/engram-en/)).
 
 An article is currently under review that describes the Engram approach to optimizing keyboard layouts, and development and comparative evaluation of the Engram-en layout, and you can use the Engram [open-source software](https://github.com/binarybottle/engram) to create new key layouts optimized for different languages.
 

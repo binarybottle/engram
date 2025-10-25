@@ -1,5 +1,5 @@
 # Engram-es Spanish keyboard layout
-Engram-es is a keyboard layout optimized for comfortable and efficient touch typing in English created by [Arno Klein](https://arnoklein.info) ([GitHub repository](https://github.com/binarybottle/engram/engram-es/)).
+Engram-es is a keyboard layout optimized for comfortable and efficient touch typing in English created by [Arno Klein](https://arnoklein.info) ([GitHub repository](https://github.com/binarybottle/engram/tree/main/engram-es/)).
 
 An article is currently under review that describes the Engram approach to optimizing keyboard layouts, including development of the Engram-es layout, and you can use the Engram [open-source software](https://github.com/binarybottle/engram) to create new key layouts optimized for different languages.
 
