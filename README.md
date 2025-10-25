@@ -8,7 +8,7 @@ Currently, there are Engram keyboard layouts for typing in English ([Engram-en](
 <!-- You can install the Engram-en layout on [Windows, macOS, and Linux](https://keyman.com/keyboards/engram_en)
 or [try it out online](https://keymanweb.com/#en,Keyboard_engram).-->
 
-### Engram-en layout for English:
+### Engram-en layout for English
 
 **"Ergonomic" orthonormal keyboard**
 ![Orthonormal keyboard](https://github.com/binarybottle/engram/blob/main/assets/Fig1_engram_layout_46keys_orth.jpg)
