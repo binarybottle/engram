@@ -8,12 +8,12 @@ Currently, there are Engram keyboard layouts for typing in English ([Engram-en](
 <!-- You can install the Engram-en layout on [Windows, macOS, and Linux](https://keyman.com/keyboards/engram_en)
 or [try it out online](https://keymanweb.com/#en,Keyboard_engram).-->
 
-Here is the English Engram-en layout:
+### Engram-en layout for English:
 
-### "Ergonomic" orthonormal keyboard (default and Shift-key layers)
+**"Ergonomic" orthonormal keyboard**
 ![Orthonormal keyboard](https://github.com/binarybottle/engram/blob/main/assets/Fig1_engram_layout_46keys_orth.jpg)
 
-### Staggered/diagonal keyboard (default and Shift-key layers)
+**Staggered/diagonal keyboard**
 ![Standard keyboard](https://github.com/binarybottle/engram/blob/main/assets/Fig2_engram_layout_46keys_diag.jpg)
 
          [{ 1| 2= 3~ 4+  5<  6>  7^ 8& 9% 0* ]} /\
