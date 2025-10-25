@@ -12,10 +12,10 @@ or [try it out online](https://keymanweb.com/#en,Keyboard_engram).-->
 Here is the English Engram-en layout:
 
 ### Standard diagonal keyboard (default and Shift-key layers)
-![Standard keyboard](https://github.com/binarybottle/engram/engram-en/blob/master/assets/Fig1_engram_layout_46keys_diag.jpg?raw=true)
+![Standard keyboard](https://github.com/binarybottle/engram/blob/main/assets/Fig1_engram_layout_46keys_diag.jpg)
 
 ### "Ergonomic" orthonormal keyboard (default and Shift-key layers)
-![Orthonormal keyboard](https://github.com/binarybottle/engram-2021/blob/master/assets/Fig1_engram_layout_46keys_orth.jpg?raw=true)
+![Orthonormal keyboard](https://github.com/binarybottle/engram/blob/main/assets/Fig1_engram_layout_46keys_orth.jpg)
 
          [{ 1| 2= 3~ 4+  5<  6>  7^ 8& 9% 0* ]} /\
             bB yY oO uU  '(  ")  dD nN gG vV qQ #$ @`
