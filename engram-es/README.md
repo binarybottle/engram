@@ -31,4 +31,4 @@ The Engram approach is based on language-dependent n-gram frequencies and langua
     AltGr + l = £ (pound currency)
 
 ### Layout (default, Shift, and AltGr layers)
-![Layout](../assets/engram-es/engram-es.jpg)
+![Layout](engram-es.jpg)
