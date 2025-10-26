@@ -11,10 +11,10 @@ or [try it out online](https://keymanweb.com/#en,Keyboard_engram).-->
 ### Engram-en layout for English
 
 **"Ergonomic" orthonormal keyboard**
-![Orthonormal keyboard](assets/engram-en/Fig1_engram_layout_46keys_orth.jpg)
+![Orthonormal keyboard](../assets/engram-en/Fig1_engram_layout_46keys_orth.jpg)
 
 **Staggered/diagonal keyboard**
-![Staggered keyboard](assets/engram-en/Fig2_engram_layout_46keys_diag.jpg)
+![Standard keyboard](../assets/engram-en/Fig2_engram_layout_46keys_diag.jpg)
 
          [{ 1| 2= 3~ 4+  5<  6>  7^ 8& 9% 0* ]} /\
             bB yY oO uU  '(  ")  dD nN gG vV qQ #$ @`
