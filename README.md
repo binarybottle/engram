@@ -6,12 +6,12 @@ A manuscript has been accepted for publication that describes the Engram approac
 
 ## Current layouts
 
-| Layout | GitHub | Version | Install | Try online |
-|--------|---------|---------|---------|------------|
-| [Engram-en](engram-en) (English) | [engram-en](https://github.com/binarybottle/engram-en) | v2025.10.31 | [Keyman](https://keyman.com/keyboards/engram_en) | [Online](https://keymanweb.com/#en,Keyboard_engram_en) |
-| [Engram-es](engram-es) (Spanish) | [engram-es](https://github.com/binarybottle/engram-es) | v2025.10.31 |  |  |
+| Language | Website | GitHub | Version | Install | Try online |
+|--------|---------|---------|---------|---------|------------|
+| English | [Engram-en](https://engram-layouts.xyz/engram-en) | [engram-en](engram-en) | v2025.10.31 | [Keyman](https://keyman.com/keyboards/engram_en) | [Online](https://keymanweb.com/#en,Keyboard_engram_en) |
+| Spanish | [Engram-es](https://engram-layouts.xyz/engram-es) | [engram-es](engram-es) | v2025.10.31 |  |  |
 
-## Engram-en layout for English
+## Example: Engram-en layout for English
 
 **"Ergonomic" orthonormal keyboard**
 ![Orthonormal keyboard](engram-en/Fig1_engram_layout_46keys_orth.jpg)
