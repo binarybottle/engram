@@ -8,8 +8,8 @@ A manuscript has been accepted for publication that describes the Engram approac
 
 | Language | Website | GitHub | Version | Install | Try online |
 |--------|---------|---------|---------|---------|------------|
-| English | [Engram-en](https://engram-layouts.xyz/engram-en) | [engram-en](https://github.com/binarybottle/engram-en) | v2025.10.31 | [Keyman](https://keyman.com/keyboards/engram_en) | [Online](https://keymanweb.com/#en,Keyboard_engram_en) |
-| Spanish | [Engram-es](https://engram-layouts.xyz/engram-es) | [engram-es](https://github.com/binarybottle/engram-es) | v2025.10.31 |  |  |
+| English | [Engram-en](https://engram-layouts.xyz/engram-en) | [engram-en](https://github.com/binarybottle/engram/tree/main/engram-en) | v2025.10.31 | [Keyman](https://keyman.com/keyboards/engram_en) | [Online](https://keymanweb.com/#en,Keyboard_engram_en) |
+| Spanish | [Engram-es](https://engram-layouts.xyz/engram-es) | [engram-es](https://github.com/binarybottle/engram/tree/main/engram-es) | v2025.10.31 |  |  |
 
 ## Example: Engram-en layout for English
 
