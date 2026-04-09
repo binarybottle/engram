@@ -1,6 +1,6 @@
 # Arno's Engram keyboard layouts
 
-Engram is a family of keyboard layouts optimized for comfortable and efficient touch typing in different languages, created by [Arno Klein](https://arnoklein.info). You can use the [open-source software](https://github.com/binarybottle/optimize-layouts) to create new key layouts optimized for different languages.
+Engram is a family of keyboard layouts optimized for comfortable and efficient touch typing in different languages, created by [Arno Klein](https://arnoklein.info). You can use the [open-source optimize_layouts software](https://github.com/binarybottle/optimize_layouts) to create new key layouts optimized for different languages.
 
 A manuscript has been accepted for publication that describes the Engram approach to optimizing keyboard layouts, based on language-dependent n-gram frequencies and language-independent typing preferences, using multi-objective optimization informed by crowdsourced typing data. Letters are optimally arranged according to ergonomics factors that promote reduction of lateral finger movements and more efficient typing of high-frequency letter pairs. The most common punctuation marks are logically grouped together in the middle columns and numbers are paired with mathematical and logic symbols.
 
