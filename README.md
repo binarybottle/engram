@@ -35,8 +35,8 @@ Engram layouts use [CalVer](https://calver.org/) versioning (YYYY.MM.DD).
 | Engram v1.2 | 2021-02-08 | — | Early prototype |
 | Engram v1.3 | 2021-03-20 | — | Refined scoring parameters |
 | **Engram** (v2.0) | 2021-12-18 | `BYOU LDWV` / `CIEA HTSN` / `GXJK RMFP` | Original algorithm ([engram-2021 repo](https://github.com/binarybottle/engram-2021)) |
-| **Engram-en** v2025.10.25 | 2025-10-25 | `BYOU DNGV` / `HIAE TRSC` / `KJXW MLFP` | New approach: crowdsourced preferences + MOO |
-| **Engram-es** v2025.10.25 | 2025-10-25 | Spanish layout | Same new approach, Spanish n-grams |
+| **Engram-en** v2025.10.31 | 2025-10-31 | `BYOU DNGV` / `HIAE TRSC` / `KJXW MLFP` | New approach: crowdsourced preferences + MOO |
+| **Engram-es** v2025.10.31 | 2025-10-31 | Spanish layout | Same new approach, Spanish n-grams |
 
 The original [Engram](https://github.com/binarybottle/engram-2021) layout (2021) used a different optimization algorithm. Engram-en and Engram-es represent a fundamentally new approach described in the forthcoming article. See the [engram-2021 repo](https://github.com/binarybottle/engram-2021) for details on the original layout and its scoring model.
 
