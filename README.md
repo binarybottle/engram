@@ -13,9 +13,7 @@ A manuscript has been accepted for publication that describes the Engram approac
 
 ## Example: Engram-en layout for English
 
-[Try out](https://keyman.com/keyboards/engram_en) Engram-en online.
-
-**"Ergonomic" orthonormal keyboard**
+**"Ergonomic" ortholinear keyboard**
 ![Orthonormal keyboard](engram-en/Fig1_engram_layout_46keys_orth.jpg)
 
 **Staggered/diagonal keyboard**
