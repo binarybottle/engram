@@ -26,21 +26,6 @@ A manuscript has been accepted for publication that describes the Engram approac
         kK jJ xX wW  -_  ?!  mM lL fF pP
 ```
 
-## Version history
-
-Engram layouts use [CalVer](https://calver.org/) versioning (YYYY.MM.DD).
-
-| Version | Date | Layout | Notes |
-|---------|------|--------|-------|
-| Engram v1.2 | 2021-02-08 | — | Early prototype |
-| Engram v1.3 | 2021-03-20 | — | Refined scoring parameters |
-| **Engram** (v2.0) | 2021-12-18 | `BYOU LDWV` / `CIEA HTSN` / `GXJK RMFP` | Original algorithm ([engram-2021 repo](https://github.com/binarybottle/engram-2021)) |
-| **Engram-es** (v1.0) | 2021-09-30 |  | Spanish layout, original algorithm ([engram-es-2021 repo](https://github.com/binarybottle/engram-es-2021)) |
-| **Engram-en** v2025.10.31 | 2025-10-31 | `BYOU DNGV` / `HIAE TRSC` / `KJXW MLFP` | New approach: crowdsourced preferences + MOO |
-| **Engram-es** v2025.10.31 | 2025-10-31 | Spanish layout | Same new approach, Spanish n-grams |
-
-The original [Engram](https://github.com/binarybottle/engram-2021) layout (2021) used a different optimization algorithm. Engram-en and Engram-es represent a fundamentally new approach described in the forthcoming article. See the [engram-2021 repo](https://github.com/binarybottle/engram-2021) for details on the original layout and its scoring model.
-
 ---
 
 ## Contents
@@ -49,6 +34,7 @@ The original [Engram](https://github.com/binarybottle/engram-2021) layout (2021)
 2. [Why me?](#why-me)
 3. [Why "Engram"?](#why-engram)
 4. [Acknowledgments](#acknowledgments)
+4. [Version history](#version-history)
 
 ## Why new layouts?
 
@@ -71,3 +57,20 @@ The name is a pun, referring both to "n-gram", letter permutations and their fre
 The Engram layouts are the culmination of years of effort devoted to studying and optimizing keyboard layouts, so there are plenty of people and resources I wish to acknowledge. I would like to thank all of the people who have been so supportive over the years. To my family, friends, colleagues, and online participants and discussants for supporting this endeavor, whether by funding the GoFundMe campaign, volunteering as online participants for this study, or by engaging in helpful discussions. To Jack Grinband and Ian Douglas in particular for their helpful discussions. The Spanish version would not have been possible were it not for Ian Douglas cleaning up the Leipzig Spanish corpus and computing Spanish character and bigram frequencies. To those who have tried out earlier versions of my keyboard layouts and to those who have expressed interest in seeing Engram applied to different languages in the future. To the Keyman community who have helped to make distribution of the Engram (and thousands of other) layouts very convenient. I would also like to express my gratitude to all of my predecessors who have made valiant efforts to improve our relationship with computers by advancing the ergonomics of keyboard designs and keyboard layouts.
 
 I must also express my appreciation to that damned DEC workstation at the MIT Media Lab that introduced me to repetitive strain injury 30 years ago, which has prompted me over the years to experiment with voice dictation, one-handed and keyless keyboards, foot pedals, foot mouse, and various ortholinear ergonomic keyboards like the Kinesis Advantage and Ergodox.
+
+## Version history
+
+Engram layouts use [CalVer](https://calver.org/) versioning (YYYY.MM.DD).
+
+| Version | Date | Layout | Notes |
+|---------|------|--------|-------|
+| Engram v1.2 | 2021-02-08 | — | Early prototype |
+| Engram v1.3 | 2021-03-20 | — | Refined scoring parameters |
+| **Engram** (v2.0) | 2021-12-18 | `BYOU LDWV` / `CIEA HTSN` / `GXJK RMFP` | Original algorithm ([engram-2021 repo](https://github.com/binarybottle/engram-2021)) |
+| **Engram-es** (v1.0) | 2021-09-30 |  | Spanish layout, original algorithm ([engram-es-2021 repo](https://github.com/binarybottle/engram-es-2021)) |
+| **Engram-en** v2025.10.31 | 2025-10-31 | `BYOU DNGV` / `HIAE TRSC` / `KJXW MLFP` | New approach: crowdsourced preferences + MOO |
+| **Engram-es** v2025.10.31 | 2025-10-31 | Spanish layout | Same new approach, Spanish n-grams |
+
+The original [Engram](https://github.com/binarybottle/engram-2021) layout (2021) used a different optimization algorithm. Engram-en and Engram-es represent a fundamentally new approach described in the forthcoming article. See the [engram-2021 repo](https://github.com/binarybottle/engram-2021) for details on the original layout and its scoring model.
+
+
