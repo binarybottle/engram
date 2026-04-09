@@ -8,8 +8,8 @@ A manuscript has been accepted for publication that describes the Engram approac
 
 | Layout | Version | Install | Try online |
 |--------|---------|---------|------------|
-| [Engram-en](engram-en) (English) | v2025.10.25 | [Keyman](https://keyman.com/keyboards/engram_en) | [Online](https://keymanweb.com/#en,Keyboard_engram_en) |
-| [Engram-es](engram-es) (Spanish) | v2025.10.25 |  |  |
+| [Engram-en](engram-en) (English) | v2025.10.31 | [Keyman](https://keyman.com/keyboards/engram_en) | [Online](https://keymanweb.com/#en,Keyboard_engram_en) |
+| [Engram-es](engram-es) (Spanish) | v2025.10.31 |  |  |
 
 ## Engram-en layout for English
 
